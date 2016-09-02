@@ -3953,6 +3953,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/img\/00818320-750f-45da-a7b6-0a337a7ed648.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71485,
+		"inputAbbreviatedPath": "\/img\/00818320-750f-45da-a7b6-0a337a7ed648.jpeg",
+		"outputAbbreviatedPath": "\/img\/00818320-750f-45da-a7b6-0a337a7ed648.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/12-col.png": {
 		"fileType": 32768,
 		"ignore": 0,

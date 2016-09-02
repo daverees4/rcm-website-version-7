@@ -10,6 +10,11 @@ img {
   display: block
 }
 
+.expanded {
+  margin-right: -0.5rem;
+  margin-left:-0.5rem;	
+}
+
 @media screen and ( max-height: 768px ){
     .small-vertical-nav {
       display: block
@@ -20,6 +25,18 @@ img {
     }
 }
 
+@media screen and ( min-width: 1024px ){
+.row {
+  margin-right: 1.375rem;
+  margin-left:-0.625rem;	
+}
+.expanded {
+  margin-right: -0.625rem;
+}
+
+
+}
+
 .columns {
   margin-bottom: 1rem;
 }
@@ -27,3 +44,9 @@ img {
 .menu-text {
   padding: 0;
 }
+
+.master-columns {
+  float: left;
+  margin: 0;
+}
+

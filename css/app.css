@@ -852,12 +852,12 @@ button {
     padding-right: 0; }
   .row .row {
     max-width: none;
-    margin-left: -1rem;
-    margin-right: -1rem; }
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; }
     @media screen and (min-width: 40em) {
       .row .row {
-        margin-left: -1.25rem;
-        margin-right: -1.25rem; } }
+        margin-left: -0.625rem;
+        margin-right: -0.625rem; } }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -870,12 +870,12 @@ button {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
   @media screen and (min-width: 40em) {
     .column, .columns {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem; } }
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -1137,8 +1137,8 @@ button {
   margin-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
 
 .small-centered {
   float: none;
@@ -1402,8 +1402,8 @@ button {
     margin-right: 0; }
 
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
 
   .medium-centered {
     float: none;
@@ -1666,8 +1666,8 @@ button {
     margin-right: 0; }
 
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
 
   .large-centered {
     float: none;
