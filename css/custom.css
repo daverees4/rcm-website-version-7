@@ -1,0 +1,29 @@
+img {
+  width: 100%;
+}
+
+.small-vertical-nav {
+  display: none;
+}
+
+.large-vertical-nav {
+  display: block
+}
+
+@media screen and ( max-height: 768px ){
+    .small-vertical-nav {
+      display: block
+    }
+    
+    .large-vertical-nav {
+      display: none;
+    }
+}
+
+.columns {
+  margin-bottom: 1rem;
+}
+
+.menu-text {
+  padding: 0;
+}
