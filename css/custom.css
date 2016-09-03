@@ -11,7 +11,7 @@ img {
   display: none;
 }
 
-@media screen and ( min-height: 768px ){
+@media screen and ( min-height: 600px ){
     .small-vertical-nav {
       display: none;
     }
