@@ -11,47 +11,42 @@
   <body>
     <div class="top-bar hide-for-large">
       <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
+        <ul class="dropdown menu">
           <li class="menu-text">Mobile Menu</li>
         </ul>
       </div>
     </div>
-    <div class="master-row">
-      <div class="large-2 master-columns show-for-large" data-sticky-container>     
-        <div class="sticky" data-sticky data-margin-top="0">
-          <div style="height:768px" class="large-vertical-nav callout">
-            <h3>Large Menu (768px)</h3>
+
+      <div class="large-2 master-columns show-for-large" data-sticky-container>
+          <div class="callout" data-sticky data-margin-top="0">
+            <h3 class="large-vertical-nav">Large Menu (768px)</h3>
+            <h4 class="small-vertical-nav">Smaller Menu (550px)</h4>
           </div>
-          <div style="height:550px" class="small-vertical-nav callout">
-            <h4>Small Menu (550px)</h4>
-          </div>
-        </div>
       </div>
-      <div class="large-10 master-columns">
-        <div class="row">
-            <img src="img/12-col.png" class="hero" />
-        </div>
+      <div class="large-10 master-columns" id="main-content">
+     
+        <img src="img/12-col.png" class="hero" />
+
         <div class="row">
           <div class="medium-6 columns">
             <img src="img/6-col.png" />
           </div>
-          <div class="medium-6 columns">
-             <img src="img/6-col.png" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="medium-4 columns">
-            <img src="img/4-col.png" />
-          </div>
-          <div class="medium-4 columns">
-             <img src="img/4-col.png" />
-          </div>
-          <div class="medium-4 columns">
-             <img src="img/4-col.png" />
-          </div>
+        <div class="medium-6 columns">
+         <img src="img/6-col.png" />
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="medium-4 columns">
+          <img src="img/4-col.png" />
+        </div>
+        <div class="medium-4 columns">
+          <img src="img/4-col.png" />
+        </div>
+        <div class="medium-4 columns">
+         <img src="img/4-col.png" />
+        </div>
+      </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>

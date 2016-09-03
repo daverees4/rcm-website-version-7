@@ -22,9 +22,35 @@ img {
 }
 
 
-.columns, .hero {
-  margin-bottom: 1rem;
+  
+  .row {
+  margin-left: 8px;
+  margin-right:  8px;
 }
 
+
+
+@media screen and ( min-width: 1024px ){
+  
+  .row {
+  margin-left: 40px;
+  margin-right:  40px;
+}
+
+
+}
+
+
+.columns, .hero {
+  margin-bottom: 20px;
+}
+
+.master-columns {
+  float: left
+}
+
+#main-content {
+  background-color: blue;
+}
 
 
