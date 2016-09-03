@@ -4,20 +4,20 @@ img {
 }
 
 .small-vertical-nav {
-  display: none;
+  display: block;
   }
 
 .large-vertical-nav {
-  display: block;
+  display: none;
 }
 
-@media screen and ( max-height: 769px ){
+@media screen and ( min-height: 768px ){
     .small-vertical-nav {
-      display: block
+      display: none;
     }
     
     .large-vertical-nav {
-      display: none;
+      display: block;
     }
 }
 
