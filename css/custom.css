@@ -1,11 +1,39 @@
+/*  RCM WEBSITE V7 CUSTOM CSS - David Rees - 2016
+   ---------------------------------------------
+Contents
+
+1. Grid 
+*/
+
+/* 1. Grid
+ ---------
+*/
+
+/* Assuming 100% width images width for now. */
 
 img {
   width: 100%;
 }
 
+/* Outside frame and vertical spacing */
+  
+.columns, .hero {
+  margin-bottom: 20px;
+}
+
+.master-columns {
+  float: left
+}
+
+#main-content {
+  background-color: blue;
+}
+
+/* Creating Two Different Vertical Navs for different screens */
+
 .small-vertical-nav {
   display: block;
-  }
+}
 
 .large-vertical-nav {
   display: none;
@@ -21,36 +49,20 @@ img {
     }
 }
 
+/* Equalizing Margins for content grid */
 
-  
-  .row {
+.row {
   margin-left: 8px;
   margin-right:  8px;
 }
 
-
-
-@media screen and ( min-width: 1024px ){
-  
+@media screen and ( min-width: 1024px ){ 
   .row {
   margin-left: 40px;
   margin-right:  40px;
+  }
 }
 
 
-}
-
-
-.columns, .hero {
-  margin-bottom: 20px;
-}
-
-.master-columns {
-  float: left
-}
-
-#main-content {
-  background-color: blue;
-}
 
 
