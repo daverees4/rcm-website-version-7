@@ -39,7 +39,7 @@ img {
   display: none;
 }
 
-@media screen and ( min-height: 600px ){
+@media screen and ( min-height: 601px ){
     .small-vertical-nav {
       display: none;
     }
