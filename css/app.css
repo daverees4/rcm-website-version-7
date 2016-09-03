@@ -1681,6 +1681,16 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+@media screen and (max-height: 769px) {
+  .small-vertical-nav {
+    display: block; }
+
+  .large-vertical-nav {
+    display: none; } }
+.master-columns {
+  float: left;
+  margin: 0; }
+
 div,
 dl,
 dt,
