@@ -22,11 +22,12 @@ img {
 }
 
 .master-columns {
-  float: left
+  float: left;
 }
 
-#main-content {
-  background-color: blue;
+.master-container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* Creating Two Different Vertical Navs for different screens */
@@ -51,17 +52,25 @@ img {
 
 /* Equalizing Margins for content grid */
 
-.row {
-  margin-left: 8px;
-  margin-right:  8px;
-}
+
 
 @media screen and ( min-width: 1024px ){ 
   .row {
-  margin-left: 30px;
-  margin-right:  30px;
+  margin-left: -0.625rem;
+  margin-right:  1.875rem;
   }
+  
+  .master-menu {
+  width: 20%;
 }
+
+.master-content {
+  width:80%;
+}
+
+}
+
+
 
 
 
