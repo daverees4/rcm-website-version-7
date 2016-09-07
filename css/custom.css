@@ -27,7 +27,6 @@ img {
 
 .master-container {
   max-width: 1920px;
-  margin: 0 auto;
 }
 
 /* Creating Two Different Vertical Navs for different screens */
@@ -61,11 +60,11 @@ img {
   }
   
   .master-menu {
-  width: 20%;
+  width: 19%;
 }
 
 .master-content {
-  width:80%;
+  width:81%;
 }
 
 }
