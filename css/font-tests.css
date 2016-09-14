@@ -1,0 +1,53 @@
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.text-test-area {
+  max-width: 620px;
+}
+
+.lead {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.futura-plus h1, 
+.futura-plus h2, 
+.futura-plus h3, 
+.futura-plus h4, 
+.futura-plus h5, 
+.futura-plus h6 {
+  font-family:'Futura Plus W08 Medium';
+}
+
+.futura-plus p {
+  font-family:'Futura Plus W08 Book';  
+}
+
+.futura-pt h1, 
+.futura-pt h2, 
+.futura-pt h3, 
+.futura-pt h4, 
+.futura-pt h5, 
+.futura-pt h6 {
+  font-family:'Futura PT W01 Medium';
+}
+
+.futura-pt p {
+  font-family:'Futura PT W01 Book';  
+}
+
+.futura-bt h1, 
+.futura-bt h2, 
+.futura-bt h3, 
+.futura-bt h4, 
+.futura-bt h5, 
+.futura-bt h6 {
+  font-family:'Futura BT W01 Medium';
+}
+
+.futura-bt p {
+  font-family:'Futura BT W01 Book'; 
+}
+
