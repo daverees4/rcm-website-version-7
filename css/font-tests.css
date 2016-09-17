@@ -3,12 +3,22 @@ p {
   line-height: 25px;
 }
 
+.futura-bt p {
+  font-size: 16px;
+}
+
+
 .text-test-area {
   max-width: 620px;
 }
 
 .lead {
   font-size: 22px;
+  line-height: 32px;
+}
+
+.futura-bt .lead {
+  font-size:20px;
   line-height: 32px;
 }
 
