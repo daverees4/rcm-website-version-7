@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/custom.css">
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/b104529c-157f-48f1-9fe8-ec6293219684.css"/>
-    <link rel="stylesheet" href="css/font-tests.css">
+    <link type="text/css" rel="stylesheet" href="css/fontello/css/fontello.css"/>
   </head>
   <body>
     <div class="master-container">
-      <div class="top-bar hide-for-large">
-        <div class="top-bar-left">
-          <ul class="dropdown menu">
-            <li class="menu-text">Mobile Menu</li>
-          </ul>
+      <div class="top-bar hide-for-medium" id="mobile-menu-block">
+        <div class="top-bar-title">
+          <img src="img/rcm-logo-horizontal.svg" id="mobile-logo"/>
+        </div>
+        <div class="float-right">
+          <span data-responsive-toggle="mobile-menu" data-hide-for="large" class="right">
+            <button class="icon-menu-five mobile-menu-toggle-button" type="button" data-toggle id="mobile-menu-toggle"></button>
+          </span>
         </div>
       </div>
-      <div class="master-menu master-columns show-for-large" data-sticky-container>
-          <div data-sticky data-margin-top="0">
-            <h3 class="large-vertical-nav"></h3>
-            <h4 class="small-vertical-nav"></h4>
-          </div>
+      <div class="master-menu master-columns show-for-medium">
+        <img src="img/rcm-logo-portrait.svg" id="vert-logo"/>
+        <div id="vert-menu-container">
+          <ul class="menu vertical" id="menu-items">
+            <li><a href="#" class="top-3-menu" id="study">Study</a></li>
+            <li><a href="#" class="top-3-menu">What's On</a></li>
+            <li class="menu-spacer"><a href="#" class="top-3-menu">Get Involved</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Your Support</a></li>
+            <li><a href="#"><i class="icon-search"></i></a></li>
+          </ul>  
+        </div>        
       </div>
       <div class="master-content master-columns" id="main-content">
+ 

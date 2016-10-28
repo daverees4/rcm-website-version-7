@@ -772,7 +772,7 @@ th {
   padding: 0; }
 
 .foundation-mq {
-  font-family: "small=0em&medium=47.8125em&large=64em&xlarge=75em&xxlarge=90em"; }
+  font-family: "small=0em&medium=64em&large=75em&xlarge=75em&xxlarge=90em"; }
 
 html {
   font-size: 100%;
@@ -786,7 +786,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Futura PT W01 Book", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -854,11 +854,11 @@ button {
     max-width: none;
     margin-left: -0.5rem;
     margin-right: -0.5rem; }
-    @media screen and (min-width: 47.8125em) {
+    @media screen and (min-width: 64em) {
       .row .row {
         margin-left: -0.5rem;
         margin-right: -0.5rem; } }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 75em) {
       .row .row {
         margin-left: -0.625rem;
         margin-right: -0.625rem; } }
@@ -876,11 +876,11 @@ button {
   float: left;
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
-  @media screen and (min-width: 47.8125em) {
+  @media screen and (min-width: 64em) {
     .column, .columns {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 75em) {
     .column, .columns {
       padding-left: 0.625rem;
       padding-right: 0.625rem; } }
@@ -1161,7 +1161,7 @@ button {
   margin-right: 0;
   float: left; }
 
-@media screen and (min-width: 47.8125em) {
+@media screen and (min-width: 64em) {
   .medium-1 {
     width: 8.3333333333%; }
 
@@ -1425,7 +1425,7 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
   .large-1 {
     width: 8.3333333333%; }
 
@@ -1713,7 +1713,7 @@ td {
 
 p {
   font-size: inherit;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1rem;
   text-rendering: optimizeLegibility; }
 
@@ -1737,7 +1737,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Futura PT W01 Medium", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1772,7 +1772,7 @@ h5 {
 h6 {
   font-size: 1rem; }
 
-@media screen and (min-width: 47.8125em) {
+@media screen and (min-width: 64em) {
   h1 {
     font-size: 3rem; }
 
@@ -1791,12 +1791,12 @@ h6 {
   h6 {
     font-size: 1rem; } }
 a {
-  color: #2199e8;
+  color: #0a0a0a;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #1585cf; }
+    color: #090909; }
   a img {
     border: 0; }
 
@@ -1813,7 +1813,7 @@ hr {
 ul,
 ol,
 dl {
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1rem;
   list-style-position: outside; }
 
@@ -1842,7 +1842,7 @@ blockquote {
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #cacaca; }
   blockquote, blockquote p {
-    line-height: 1.6;
+    line-height: 1.5;
     color: #8a8a8a; }
 
 cite {
@@ -1905,7 +1905,7 @@ kbd {
 .text-justify {
   text-align: justify; }
 
-@media screen and (min-width: 47.8125em) {
+@media screen and (min-width: 64em) {
   .medium-text-left {
     text-align: left; }
 
@@ -1917,7 +1917,7 @@ kbd {
 
   .medium-text-justify {
     text-align: justify; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
   .large-text-left {
     text-align: left; }
 
@@ -2014,16 +2014,16 @@ kbd {
   vertical-align: middle;
   border: 1px solid transparent;
   border-radius: 0;
-  padding: 0.85em 1em;
+  padding: 1em 1em;
   margin: 0 0 1rem 0;
-  font-size: 0.9rem;
-  background-color: #2199e8;
-  color: #fefefe; }
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #706f6f; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #1583cc;
-    color: #fefefe; }
+    background-color: white;
+    color: #706f6f; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -2037,34 +2037,34 @@ kbd {
     margin-right: 0; }
   .button.primary {
     background-color: #2199e8;
-    color: #fefefe; }
+    color: #706f6f; }
     .button.primary:hover, .button.primary:focus {
       background-color: #147cc0;
-      color: #fefefe; }
+      color: #706f6f; }
   .button.secondary {
     background-color: #777;
-    color: #fefefe; }
+    color: #706f6f; }
     .button.secondary:hover, .button.secondary:focus {
       background-color: #5f5f5f;
-      color: #fefefe; }
+      color: #706f6f; }
   .button.success {
     background-color: #3adb76;
-    color: #fefefe; }
+    color: #706f6f; }
     .button.success:hover, .button.success:focus {
       background-color: #22bb5b;
-      color: #fefefe; }
+      color: #706f6f; }
   .button.warning {
     background-color: #ffae00;
-    color: #fefefe; }
+    color: #706f6f; }
     .button.warning:hover, .button.warning:focus {
       background-color: #cc8b00;
-      color: #fefefe; }
+      color: #706f6f; }
   .button.alert {
     background-color: #ec5840;
-    color: #fefefe; }
+    color: #706f6f; }
     .button.alert:hover, .button.alert:focus {
       background-color: #da3116;
-      color: #fefefe; }
+      color: #706f6f; }
   .button.hollow {
     border: 1px solid #2199e8;
     color: #2199e8; }
@@ -2107,8 +2107,8 @@ kbd {
     opacity: 0.25;
     cursor: not-allowed; }
     .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #2199e8;
-      color: #fefefe; }
+      background-color: #ffffff;
+      color: #706f6f; }
   .button.dropdown::after {
     content: '';
     display: block;
@@ -2194,12 +2194,12 @@ kbd {
     display: table-cell; }
   .menu.vertical > li {
     display: block; }
-  @media screen and (min-width: 47.8125em) {
+  @media screen and (min-width: 64em) {
     .menu.medium-horizontal > li {
       display: table-cell; }
     .menu.medium-vertical > li {
       display: block; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 75em) {
     .menu.large-horizontal > li {
       display: table-cell; }
     .menu.large-vertical > li {
@@ -2334,7 +2334,7 @@ kbd {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #2199e8 transparent transparent;
+  border-color: #0a0a0a transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   right: 5px;
@@ -2360,7 +2360,7 @@ kbd {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #2199e8 transparent transparent;
+  border-color: transparent #0a0a0a transparent transparent;
   border-right-style: solid;
   border-left-width: 0; }
 .dropdown.menu.vertical > li.opens-right > a::after {
@@ -2369,10 +2369,10 @@ kbd {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #2199e8;
+  border-color: transparent transparent transparent #0a0a0a;
   border-left-style: solid;
   border-right-width: 0; }
-@media screen and (min-width: 47.8125em) {
+@media screen and (min-width: 64em) {
   .dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu {
     left: auto;
     right: 0;
@@ -2390,7 +2390,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #2199e8 transparent transparent;
+    border-color: #0a0a0a transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -2412,7 +2412,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #2199e8 transparent transparent;
+    border-color: transparent #0a0a0a transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -2421,10 +2421,10 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #2199e8;
+    border-color: transparent transparent transparent #0a0a0a;
     border-left-style: solid;
     border-right-width: 0; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
   .dropdown.menu.large-horizontal > li.opens-left > .is-dropdown-submenu {
     left: auto;
     right: 0;
@@ -2442,7 +2442,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #2199e8 transparent transparent;
+    border-color: #0a0a0a transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -2464,7 +2464,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #2199e8 transparent transparent;
+    border-color: transparent #0a0a0a transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -2473,7 +2473,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #2199e8;
+    border-color: transparent transparent transparent #0a0a0a;
     border-left-style: solid;
     border-right-width: 0; } }
 .dropdown.menu.align-right .is-dropdown-submenu.first-sub {
@@ -2521,7 +2521,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #2199e8 transparent transparent;
+    border-color: transparent #0a0a0a transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -2530,7 +2530,7 @@ kbd {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #2199e8;
+    border-color: transparent transparent transparent #0a0a0a;
     border-left-style: solid;
     border-right-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu {
@@ -2592,7 +2592,7 @@ kbd {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #fff; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -2604,11 +2604,11 @@ kbd {
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
     width: 100%; }
-  @media screen and (min-width: 47.8125em) {
+  @media screen and (min-width: 64em) {
     .top-bar .top-bar-left,
     .top-bar .top-bar-right {
       width: auto; } }
-  @media screen and (max-width: 63.9375em) {
+  @media screen and (max-width: 74.9375em) {
     .top-bar.stacked-for-medium .top-bar-left,
     .top-bar.stacked-for-medium .top-bar-right {
       width: 100%; } }
@@ -2633,43 +2633,43 @@ kbd {
 .invisible {
   visibility: hidden; }
 
-@media screen and (max-width: 47.75em) {
+@media screen and (max-width: 63.9375em) {
   .hide-for-small-only {
     display: none !important; } }
 
-@media screen and (max-width: 0em), screen and (min-width: 47.8125em) {
+@media screen and (max-width: 0em), screen and (min-width: 64em) {
   .show-for-small-only {
     display: none !important; } }
 
-@media screen and (min-width: 47.8125em) {
+@media screen and (min-width: 64em) {
   .hide-for-medium {
     display: none !important; } }
 
-@media screen and (max-width: 47.75em) {
+@media screen and (max-width: 63.9375em) {
   .show-for-medium {
     display: none !important; } }
 
-@media screen and (min-width: 47.8125em) and (max-width: 63.9375em) {
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
   .hide-for-medium-only {
     display: none !important; } }
 
-@media screen and (max-width: 47.75em), screen and (min-width: 64em) {
+@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
   .show-for-medium-only {
     display: none !important; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
   .hide-for-large {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 74.9375em) {
   .show-for-large {
     display: none !important; } }
 
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+@media screen and (min-width: 75em) and (max-width: 74.9375em) {
   .hide-for-large-only {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+@media screen and (max-width: 74.9375em), screen and (min-width: 75em) {
   .show-for-large-only {
     display: none !important; } }
 

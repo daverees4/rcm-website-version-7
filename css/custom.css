@@ -1,4 +1,4 @@
-/*  RCM WEBSITE V7 CUSTOM CSS - David Rees - 2016
+  /*  RCM WEBSITE V7 CUSTOM CSS - David Rees - 2016
    ---------------------------------------------
 Contents
 
@@ -10,6 +10,7 @@ Contents
 */
 
 /* Assuming 100% width images width for now. */
+
 
 img {
   width: 100%;
@@ -29,25 +30,22 @@ img {
   max-width: 1920px;
 }
 
-/* Creating Two Different Vertical Navs for different screens */
+/* Buttons, HRs */
 
-.small-vertical-nav {
-  display: block;
+.hr-above {
+border-top: 0.0625rem solid #7cc8c5;
+padding-top: 0.625rem;
 }
 
-.large-vertical-nav {
-  display: none;
+.hr-below {
+  border-bottom: 0.0625rem solid #7cc8c5;  
+  padding-bottom: 0.625rem;
 }
 
-@media screen and ( min-height: 601px ){
-    .small-vertical-nav {
-      display: none;
-    }
-    
-    .large-vertical-nav {
-      display: block;
-    }
+.button {
+  border: 0.0625rem solid #c5003e;
 }
+
 
 /* Equalizing Margins for content grid */
 
@@ -58,20 +56,312 @@ img {
 
 @media screen and ( min-width: 1024px ){ 
   .row {
-  margin-left: -0.625rem;
-  margin-right:  1.875rem;
+    margin-left: -0.625rem;
+    margin-right:  1.875rem;
+    }
+    
+  .master-menu {
+    width: 19%;
+    position: fixed;
+    top: 0;
+    left:0;
   }
   
-  .master-menu {
-  width: 19%;
+  .master-content {
+    width:81%;
+    margin-left: 19%;
+  }
 }
 
-.master-content {
-  width:81%;
+
+/* Mobile Menu */
+
+#mobile-menu-block {
+  height: 3.75rem;
+  position: fixed;
+  top:0;
+  width: 100%;
 }
+
+#mobile-logo {
+  width: 13.5rem;
+  margin-left: 1rem;
+  margin-top: 0.4375rem;
+  
+}
+
+.top-bar {
+  padding: 0;
+}
+
+.mobile-menu-toggle-button, #mobile-menu-close, .mobile-menu-foldout-toggle-button {
+  font-size: 1.875rem;
+  margin-right: 1rem;
+  margin-top: 0.875rem;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 3.75rem;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#mobile-menu-container {
+  margin: 0 1rem;
+}
+
+
+#mobile-menu-items li a, .mobile-menu-foldout-items li a {
+  line-height: 2.625rem;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+#mobile-menu-items, #mobile-menu-foldout-container {
+  margin-top: 1.75rem; 
+}
+
+#mobile-menu-foldout {
+
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #bde3e1;
+}
+
+.mobile-menu-foldout-container {
+
+  padding: 0 1rem;
+}
+
+#mobile-menu-foldout-topbar {
+  height: 3.75rem;
+  z-index: 1001;
+}
+
+
+
+/* Desktop Menu */
+
+#vert-logo {
+  display:block;
+  width:5.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.875rem; 
+}
+
+#vert-menu-container {
+  width: 5.5rem;
+  margin-right: auto;
+  margin-left:auto;
+  padding-left: 0.44rem;
+}
+
+.top-3-menu {
+  font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
+}
+
+#menu-items {
+  position: fixed;
+  bottom: 0.625rem; 
+}
+
+#menu-items li a{
+  line-height: 2rem;
+  padding: 0;
+}
+
+@media screen and ( min-height: 672px ){
+  #vert-logo {
+  width: 6.7rem;
+  margin-top: 2.25rem; 
+  }
+  
+  #vert-menu-container {
+    width: 6.7rem;
+    padding-left: 0.56rem;
+  }
+  #menu-items {
+    bottom: 1rem; 
+  }
+  #menu-items li a {
+    font-size: 1.25rem;
+    line-height: 2.125rem;  
+  }  
+  .menu-spacer {
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media screen and ( min-height: 728px ){
+  #vert-logo {
+  width: 8.36rem;
+  margin-top: 2.25rem; 
+  }
+  #vert-menu-container {
+    width: 8.36rem;
+     padding-left: 0.69rem;
+  }
+}
+
+@media screen and ( min-height: 768px ){
+  #vert-logo {
+  margin-top: 3.5rem;
+  }
+  
+  #menu-items {
+  position: static;
+  margin-top: 4.375rem;
+  }
+}
+
+/* Foldout Menu Desktop */
+
+.overlay-menu {
+    position:fixed;
+    top:0;
+    left:19%;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background-color: #007377;
+    opacity: 0.6;
+}
+
+.desktop-foldout {
+  position: fixed;
+  top 0;
+  left: 19%;
+  background-color: #bde3e1;
+  width: 16.25rem;
+  height: 100%;
+  opacity: 1;
+  z-index: 1001;
+  
+}
+
+#foldout-menu-container {
+  margin: 0 2.25rem;
+}
+
+
+#foldout-menu-items li a{
+  line-height: 2rem;
+  padding: 0;
+}
+
+#foldout-menu-items {
+  margin-top: 2.75rem; 
+}
+
+@media screen and ( min-height: 672px ){
+  #foldout-menu-items li a {
+    font-size: 1.25rem;
+    line-height: 2.125rem;  
+  }
+  
+  .menu-spacer {
+    margin-bottom: 0.625rem;
+  }
+  
+  #foldout-menu-items {
+  margin-top: 4.75rem; 
+  }
 
 }
 
+@media screen and ( min-height: 728px ){
+
+  #vert-menu-container {
+    width: 8.36rem;
+     padding-left: 0.69rem;
+  }
+  
+  #foldout-menu-items {
+  margin-top: 5.25rem; 
+  }
+}
+
+@media screen and ( min-height: 768px ){  
+  #foldout-menu-items {
+  margin-top: 6.6875rem;
+  }
+}
+
+.foldout-menu-spacer {
+  margin-bottom: 0.625rem;
+}
+
+
+
+
+/* Footer */
+
+#footer, #footer a {
+  color: #706f6f;
+}
+
+#footer-border {
+  height:0px;
+  border-top: 0.1875rem solid #c6c6c6;
+  margin-bottom: 1.25rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.footer-document-logo {
+  width: 1.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#address-block {
+  margin-bottom: 0.8125rem;
+}
+
+#footer p {
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.social-icons {
+  font-size: 2.8675rem;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#social-icons  {
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media screen and ( min-width: 1024px ){
+  #footer-border {
+    margin-bottom: 2.25rem;
+  }
+  
+  #footer p {
+  line-height: 1.625rem;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  }
+  
+  #footer-links p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .newsletter-button {
+    font-size: 1.125rem;
+  }
+}
 
 
 
