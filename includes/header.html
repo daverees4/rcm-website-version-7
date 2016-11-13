@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,93 +12,49 @@
   </head>
   <body>
     <div class="master-container">
-      <div class="top-bar hide-for-medium" id="mobile-menu-block">
-        <div class="top-bar-title">
+
+      <div id="search-overlay"></div>
+      <div class="container">
+      <div id="nav-panel"> 
           <img src="img/rcm-logo-horizontal.svg" id="mobile-logo"/>
-        </div>
-        <div class="float-right">
-          <span data-responsive-toggle="mobile-menu" data-hide-for="large" class="right">
-            <button class="icon-menu-five mobile-menu-toggle-button" type="button" data-toggle id="mobile-menu-toggle"></button>
-          </span>
-        </div>
-      </div>
-      <div class="hide-for-medium" id="mobile-menu">
-        <div id="mobile-menu-container">
-          <ul class="menu vertical" id="mobile-menu-items">
-            <li><a href="#" class="top-3-menu" id="mobile-study">Study</a></li>
-            <li><a href="#" class="top-3-menu">What's On</a></li>
-            <li ><a href="#" class="top-3-menu">Get Involved</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Alumni</a></li>
-            <li><a href="#">Your Support</a></li>
-            <li><a href="#"><i class="icon-search"></i></a></li>
-          </ul>  
-        </div>        
-      </div>  
-      <div class="hide-for-medium hide" id="mobile-menu-foldout">
-        <div id="mobile-menu-foldout-topbar">
-          <div class="float-right">
-            <button class="icon-cross mobile-menu-foldout-toggle-button" type="button" data-toggle id="mobile-menu-foldout-toggle"></button>
+          <button class="icon-menu-five float-right hide-for-medium mobile-toggle" type="button"></button>
+          <img src="img/rcm-logo-portrait.svg" id="vert-logo" />   
+          <div id="nav-container">
+            <ul class="menu vertical" id="primary-nav">
+              <li><a href="#" class="top-3-menu">Study</a>
+                <ul class="menu vertical">
+                  <li class="top-3-menu hr-below"><a href="#">Why RCM?</a></li>
+                  <li><a href="#" class="top-3-menu">Faculties</a>
+                  <ul class="menu vertical">
+                    <li><a href="#">Brass</a></li>
+                    <li><a href="#">Conducting</a></li>
+                    <li><a href="#">Composition</a></li>
+                    <li><a href="#">Historical Performance</a></li>
+                    <li><a href="#">Keyboard</a></li>
+                    <li><a href="#">Percussion</a></li>
+                    <li><a href="#">Strings</a></li>
+                    <li><a href="#">Vocal Studies</a></li>
+                    <li><a href="#">Woodwind</a></li>
+                  </ul>
+                  <li class="top-3-menu hr-above"><a href="#" >Courses</a></li>
+                  <li class="top-3-menu"><a href="#" >RCM Life</a></li>
+                  <li class="top-3-menu"><a href="#" >Apply</a></li>
+                </ul>  
+              </li>
+              <li><a href="#" class="top-3-menu">What's on</a></li>
+              <li class="menu-spacer"><a href="#" class="top-3-menu">Get Involved</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Visit</a></li>
+              <li><a href="#">Global</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#"><i class="icon-search"></i></a></li>
+            </ul>
           </div>
-        </div>
-        <div class="mobile-foldout" id="mobile-study-menu">
-          <div id="foldout-menu-container">
-            <ul class="menu vertical" id="mobile-foldout-menu-items">
-              <li><a href="#">Why RCM?</a></li>
-              <li><a href="#" class="top-3-menu">Faculties</a></li>
-              <li><a href="#">Brass</a></li>
-              <li><a href="#">Conducting</a></li>
-              <li><a href="#">Composition</a></li>
-              <li><a href="#">Historical Performance</a></li>
-              <li><a href="#">Keyboard</a></li>
-              <li><a href="#">Percussion</a></li>
-              <li><a href="#">Strings</a></li>
-              <li><a href="#">Vocal Studies</a></li>
-              <li><a href="#">Woodwind</a></li>
-              <li><a href="#" >Courses</a></li>
-              <li><a href="#" >RCM Life</a></li>
-              <li><a href="#" >Apply</a></li>
-            </ul>  
-          </div>        
-        </div>
       </div>
-      <div class="master-menu master-columns show-for-medium">
-        <img src="img/rcm-logo-portrait.svg" id="vert-logo"/>
-        <div id="vert-menu-container">
-          <ul class="menu vertical" id="menu-items">
-            <li><a href="#" class="top-3-menu" id="study">Study</a></li>
-            <li><a href="#" class="top-3-menu">What's on</a></li>
-            <li class="menu-spacer"><a href="#" class="top-3-menu">Get Involved</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Visit</a></li>
-            <li><a href="#">Global</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#"><i class="icon-search"></i></a></li>
-          </ul>  
-        </div>        
       </div>
-      <div class="master-content master-columns" id="main-content">
-        <div class="overlay-menu hide"></div>
-        <div class="desktop-foldout hide" id="study-menu">
-          <div id="foldout-menu-container" class="show-for-medium">
-            <ul class="menu vertical" id="foldout-menu-items">
-              <li class="top-3-menu hr-below"><a href="#">Why RCM?</a></li>
-              <li><a href="#" class="top-3-menu">Faculties</a></li>
-              <li><a href="#">Brass</a></li>
-              <li><a href="#">Conducting</a></li>
-              <li><a href="#">Composition</a></li>
-              <li><a href="#">Historical Performance</a></li>
-              <li><a href="#">Keyboard</a></li>
-              <li><a href="#">Percussion</a></li>
-              <li><a href="#">Strings</a></li>
-              <li><a href="#">Vocal Studies</a></li>
-              <li><a href="#">Woodwind</a></li>
-              <li class="top-3-menu hr-above"><a href="#" >Courses</a></li>
-              <li class="top-3-menu"><a href="#" >RCM Life</a></li>
-              <li class="top-3-menu"><a href="#" >Apply</a></li>
-            </ul>  
-          </div>     
-        </div>
+      <div class="container">
+      <div id="content-panel">
+        <div id="menu-overlay"></div>
+        <div id="content">
                       
