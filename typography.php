@@ -25,8 +25,22 @@
 <p>Regular visitors include the likes of <strong>Lang Lang</strong>, <strong>Dame Kiri Te Kanawa</strong> and <strong>Bernard Haitink</strong>. The RCM’s many performing groups – including five orchestras, two jazz bands and the RCM International Opera School – are celebrated for the vitality and excellence of their performances, and are regularly invited to perform at significant venues both in the UK and overseas.</p>
 <p>The RCM’s buildings, facilities and location are the envy of the world. The RCM is situated in South Kensington, the home of science, arts and inspiration,&nbsp;directly opposite the <strong>Royal Albert Hall</strong>&nbsp;. Our iconic building, our <strong>concert hall</strong>, <strong>Britten Theatre</strong>, <strong>studios</strong>, <strong>library</strong> and <strong>RCM Collections&nbsp;</strong>all provide inspiration for RCM students.</p>
           <hr />
-          <p class="button">This is a button</p>
+                 <h1><a href="#">Heading 1 - Page Title</a></h1>
+          <hr />
+          <a class="button">This is a button</a>
+          <div class="row">
+            <div class="small-4 columns">
+              <a class="button">This is a button with lots of text that means it will overflow to two lines</a>
+            </div>
           </div>
+        <hr />
+        <a class="button in-page-button">This is a button</a>
+          <div class="row">
+            <div class="small-4 columns">
+              <a class="button in-page-button">This is a button with lots of text that means it will overflow to two lines</a>
+            </div>
+          </div>
+        </div>
         </div>
 <? include('./includes/footer.html');?>
 

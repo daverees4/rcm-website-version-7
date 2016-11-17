@@ -155,4 +155,15 @@ $(document).ready(function() {
         $(this).children("ul").toggleClass("hide");
         $(this).children("i").toggleClass("icon-arrow-right").toggleClass("icon-arrow-down");
     });
+    $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").append("<i class='float-right icon-cross'></i>");
+    $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2) > a").append("<i class='float-right icon-arrow-right'></i>");
+    $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().addClass("hide");
+    $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").on("click", function() {
+        $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().toggleClass("hide");
+        $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)>a>.icon-arrow-right").toggleClass("hide");
+    });
+    $("#tertiary-menu-mobile >.tertiary-menu > li > a >.icon-cross").on("click", function() {
+        $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().toggleClass("hide");
+        $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)>a>.icon-arrow-right").toggleClass("hide");
+    });
 });
