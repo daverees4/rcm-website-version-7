@@ -22,11 +22,32 @@ img {
 }
 
 
+.master-container {
+  margin: 0 auto;
+}
+
+#navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top:0;
+  background-color: #fff;
+}
+
+
 
 @media screen and ( min-width: 1000px ){ 
 .master-container {
   max-width: 120rem;
   }
+  
+.row, #navbar {
+  max-width: inherit;
+  margin:0 auto;
+}
+
 } 
 
 /* Typography */
@@ -208,6 +229,10 @@ border-top: 0.0625rem solid #7cc8c5;
   width: 109%;
   max-width: none;
 }
+
+.navbar-open {
+  height:480px;
+}
 }
 
 .button {
@@ -249,22 +274,24 @@ border-top: 0.0625rem solid #7cc8c5;
     margin: 0;
     padding: 0;
   }
+  
+  .row {
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
 } 
 
 @media screen and ( min-width: 1000px ){ 
   .row {
     margin-left: -0.625rem;
     margin-right:  1.875rem;
+    max-width: none;
     }
 }
 
-/* Containers */
 
-.container {
-  max-width: 550px;
-  margin: 0 auto;
-  background-color: #fff;
-}
 
 /* Search and Nav Overlays */
 
@@ -300,22 +327,23 @@ border-top: 0.0625rem solid #7cc8c5;
 /* Navigation */
 #nav-panel {
   height: 3.75rem;
-  position: fixed;
+  
   top:0;
   width: 100%;
   background-color: #fff;
   padding: 0 1rem;
-  max-width: 550px;
   z-index: 1000;
+max-width: 550px;
+margin: 0 auto;
   }
   
 
-
+/* changes for small beyond 550px */
   
 @media screen and ( min-width: 550px ){ 
 
   #nav-container, #nav-panel{
-    margin: 0;
+
     padding: 0;
   }
   
@@ -331,8 +359,7 @@ border-top: 0.0625rem solid #7cc8c5;
 }
 
 #logo-content, #menu-content, #content {
-  max-width: 34.375rem;
-  margin:0 auto
+ margin:0 auto
 }
 
 #mobile-logo {
@@ -370,10 +397,13 @@ border-top: 0.0625rem solid #7cc8c5;
     display: block !important;
   }
   
-  #nav-panel {
+  .grey-border-full {
   border-bottom: 3px solid #c6c6c6;
   }
   
+  .blue-border-full {
+    border-bottom: 3px solid #38a8aa;
+  }
 
 }
   
@@ -462,12 +492,22 @@ line-height: 2.635rem;
 }
 
 #nav-container {
-margin: 0 -1rem;
+
 background-color: #fff;
-padding: 1.75rem 1rem 0 1rem;
+max-width: 550px;
+position:fixed;
 display: none;
+width: 100%;
+
+padding: 1.75rem 1rem 0 1rem;
 }
 
+@media screen and ( max-width: 550px ) {
+#nav-container {
+
+left:0;
+}
+}
 
 .mobile-overlay-on, .menu-on  {
   display: block !important;
@@ -481,7 +521,7 @@ display: none;
 .tertiary-menu {
 padding-left:0;
 padding-right:0;
-  border-bottom: 3px solid #38a8aa;
+
 }
 
 .tertiary-menu > li > a {
@@ -509,9 +549,14 @@ padding-right:0;
 }
 
 
+/* S2 changes */
 
 
 @media screen and ( min-width: 1000px ) and (min-height: 550px) {
+  
+  #nav-container {
+    position: static;
+  }
   
 .mobile-overlay-on {
   display: none !important;
@@ -568,16 +613,12 @@ padding-right:0;
     height: 100%;
   }
   
-  .container {
-    max-width: inherit;
-  }
   
   #vert-logo {
   display:block;
   width:5.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.875rem; 
   }
 
   #mobile-logo {
@@ -634,6 +675,10 @@ padding-right:0;
     margin-left: auto;
     padding-left: 0.44rem;
   }  
+  
+  .desktop-spacer {
+    margin-top: 0.875rem; 
+  }
 }
 
 @media screen and ( min-height: 672px ) and (min-width: 1000px ){
@@ -674,14 +719,18 @@ padding-right:0;
   
   #vert-logo {
     width: 6.7rem;
+
+  }
+  .desktop-spacer {
     margin-top: 2.25rem; 
   }
+  
 }
 
 @media screen and ( min-height: 728px ) and (min-width: 1000px ){
   #vert-logo {
   width: 8.36rem;
-  margin-top: 2.25rem; 
+
   }
   
   #nav-container {
@@ -704,11 +753,15 @@ padding-right:0;
     padding: 5.3rem 2.25rem 0 2.25rem;
     
   }
+  
+    .desktop-spacer {
+  margin-top: 2.25rem; 
+  }
     
 }
 
 @media screen and ( min-height: 768px ) and (min-width: 1000px ){ 
-  #vert-logo {
+  .desktop-spacer {
   margin-top: 3.5rem;
   }
   
@@ -736,6 +789,15 @@ padding-right:0;
     
   }
     
+}
+
+
+/* Detail Page */
+
+@media screen and (min-width: 1324px ){ 
+.main-page-content { 
+  margin-left: 8.3333333333%  
+}
 }
 
 

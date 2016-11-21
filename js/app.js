@@ -24,11 +24,13 @@ $(".mobile-toggle").on("click", function () {
   $(this).toggleClass("icon-cross icon-menu-five");
   $("#nav-container").toggleClass("menu-on");
   $("#menu-overlay").toggleClass("mobile-overlay-on");  
+        $("#navbar").toggleClass("navbar-open");  
   } else {
     $("#primary-nav > li > ul.menu-on").toggleClass("menu-on");
     $(".secondary-close").removeClass("secondary-close");
     $("#menu-overlay").toggleClass("overlay-on");     
-    $("#primary-nav > li > ul > li > ul").removeClass("menu-on");  
+    $("#primary-nav > li > ul > li > ul").removeClass("menu-on"); 
+
   }
 });
 
@@ -40,6 +42,8 @@ $("#primary-nav > li > a").on("click", function() {
   $(".mobile-toggle").toggleClass("icon-cross icon-menu-five");
   $("#nav-container").toggleClass("menu-on");
   $("#menu-overlay").toggleClass("mobile-overlay-on"); 
+  $("#navbar").toggleClass("navbar-open"); 
+  
   $(this).addClass("active"); 
   } else if ($(".mobile-toggle").hasClass(".secondary-close")) {
     $(".secondary-close").removeClass("secondary-close");

@@ -4056,6 +4056,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/16by9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41712,
+		"inputAbbreviatedPath": "\/img\/16by9.jpg",
+		"outputAbbreviatedPath": "\/img\/16by9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/4-col.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4074,6 +4085,17 @@
 		"initialSize": 50405,
 		"inputAbbreviatedPath": "\/img\/6-col.png",
 		"outputAbbreviatedPath": "\/img\/6-col.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/6by4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23339,
+		"inputAbbreviatedPath": "\/img\/6by4.jpg",
+		"outputAbbreviatedPath": "\/img\/6by4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
