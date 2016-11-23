@@ -2,8 +2,7 @@
   <div class="grey-border-full"></div>
       <div id="tertiary-mobile-container" class="hide-for-medium">        
       <div class="row">
-          <div class="mobile-overlay"></div>
-          <div id="tertiary-menu-mobile">          
+          <div id="tertiary-menu-mobile" class="columns">          
              <ul class="menu vertical tertiary-menu">           
               <li><a href="#">RCM Life</a></li>
               <li><a href="#">Student Services</a></li>
@@ -31,7 +30,7 @@
 
         <div class="row">
           <div class="medium-8 columns">
-            <img src="img/16by9.jpg" class="detail-hero" />
+            <img src="http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.jpg" class="detail-hero" />
             <div class="main-page-content">
             <h4>The RCM’s new hall of residence, Prince Consort Village provides high-quality accommodation for around 400 students.</h4>
             <p>During the year, the Student Services department also produces a list of landlords offering private accommodation to RCM students.</p>
@@ -47,7 +46,17 @@
               <li>You have valid immigration permission to be in the UK To do this they will need to see your passport and/or visa, if applicable.</li>
             </ul>
             <p>For further details, please contact Student Services on +44 (0)20 7591 4339 or email studentservices@rcm.ac.uk</p>
-            <img src="img/6by4.jpg" />
+            <img src="http://daverees4.webfactional.com/play/rcm-website-version-7/img/6by4.jpg" />
+            <div class="flex-video widescreen">
+            <div id="myElement">Loading the player...</div>
+<script type="text/javascript">
+var playerInstance = jwplayer("myElement");
+playerInstance.setup({
+file: "//www.youtube.com/watch?v=p5-fw-dIhi4",
+image: "http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.jpg"
+});
+</script>
+            </div>
             </div>
             
           </div>

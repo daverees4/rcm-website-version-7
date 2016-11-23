@@ -17,7 +17,7 @@ img {
 
 /* Outside frame and vertical spacing */
   
-.columns, .hero {
+.row, .hero {
   margin-bottom: 20px;
 }
 
@@ -50,12 +50,25 @@ img {
 
 } 
 
+@media screen and ( min-width: 1000px ){ 
+.master-container {
+  max-width: 120rem;
+  }
+  
+.row, #navbar {
+  max-width: inherit;
+  margin:0 auto;
+}
+
+} 
+
 /* Typography */
 
 /* Size 1 */
 
 a {
   display: inline-block;
+  border-bottom: 1px solid #000;
 }
 
 p {
@@ -219,14 +232,17 @@ border-top: 0.0625rem solid #7cc8c5;
   border-bottom: 0.0625rem solid #7cc8c5;  
 }
 
+.button {
+  border-bottom: none;
+}
+
 @media screen and ( max-width: 999px ){ 
   .button {
   width: 100%;
   }
   
   .detail-hero {
-  margin: 0 -1rem;
-  width: 109%;
+
   max-width: none;
 }
 
@@ -261,7 +277,7 @@ border-top: 0.0625rem solid #7cc8c5;
 
 /* Equalizing Margins for content grid */
 .row {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 @media screen and ( min-width: 550px ){ 
@@ -291,13 +307,45 @@ border-top: 0.0625rem solid #7cc8c5;
     }
 }
 
+@media screen and ( min-width: 1466px ){ 
+  .row {
+    margin-left: -1.25rem;
+    margin-right:  3.75rem;
+    max-width: none;
+    }
+}
+
+
 
 
 /* Search and Nav Overlays */
 
+
+
+
+.menu-overlay {
+  position: relative;
+}
+
+.menu-overlay:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0.6;
+   background-color: #007377;
+}
+
+
+
+
+@media screen and ( min-width: 1000px ){ 
 #menu-overlay {
     position:fixed;
     top:0;
+    left:19%;
     width:100%;
     height:100%;
     background-color: #007377;
@@ -305,6 +353,8 @@ border-top: 0.0625rem solid #7cc8c5;
     display: none;
     max-width: 550px;
     z-index:100;
+    margin-left: 18rem;
+}
 }
 
 #search-overlay {
@@ -322,6 +372,8 @@ border-top: 0.0625rem solid #7cc8c5;
   display: block;
 }
 
+/* Navigation Colours */
+
 
 
 /* Navigation */
@@ -337,6 +389,10 @@ max-width: 550px;
 margin: 0 auto;
   }
   
+  
+  
+  
+  
 
 /* changes for small beyond 550px */
   
@@ -344,7 +400,7 @@ margin: 0 auto;
 
   #nav-container, #nav-panel{
 
-    padding: 0;
+    padding: 0 0.5rem;
   }
   
   .detail-hero {
@@ -356,6 +412,7 @@ margin: 0 auto;
 
 #content-panel {
   margin-top: 3.75rem;
+  z-index: -100;
 }
 
 #logo-content, #menu-content, #content {
@@ -445,9 +502,10 @@ margin: 0 auto;
   display: none;
   height: 100%;
   padding-top: 5rem;
+
   -webkit-box-shadow: -5px 0px 5px 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -5px 0px 5px 1px rgba(0,0,0,0.15);
-  box-shadow: -5px 0px 5px 1px rgba(0,0,0,0.15);
+  box-shadow: -5px 0px 5px 1px rgba(0,0,0,0.15);  
   padding: 5rem 2.25rem 0 2.25rem;
   max-height: 100%;
   overflow-y: scroll
@@ -489,6 +547,7 @@ margin: 0 auto;
   font-size: 1.25rem;
 line-height: 2.635rem;
   padding: 0 1rem 0 1rem;
+  border: none;
 }
 
 #nav-container {
@@ -661,7 +720,6 @@ padding-right:0;
     margin-left: 0;
     margin-top: 0;
     padding: 2.75rem 2.25rem 0 2.25rem;
-    
   }
   
   #primary-nav {
@@ -807,6 +865,7 @@ padding-right:0;
 
 #footer, #footer a {
   color: #706f6f;
+  border-bottom-color: #706f6f
 }
 
 #footer-border {
@@ -840,6 +899,11 @@ padding-right:0;
   font-size: 2.8675rem;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+#social-icons > a{
+  border-bottom: none;
+  
 }
 
 #social-icons  {

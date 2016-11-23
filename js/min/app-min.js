@@ -117,12 +117,10 @@ $(document).ready(function() {
         if (!$(".mobile-toggle").hasClass("secondary-close")) {
             $(this).toggleClass("icon-cross icon-menu-five");
             $("#nav-container").toggleClass("menu-on");
-            $("#menu-overlay").toggleClass("mobile-overlay-on");
             $("#navbar").toggleClass("navbar-open");
         } else {
             $("#primary-nav > li > ul.menu-on").toggleClass("menu-on");
             $(".secondary-close").removeClass("secondary-close");
-            $("#menu-overlay").toggleClass("overlay-on");
             $("#primary-nav > li > ul > li > ul").removeClass("menu-on");
         }
     });
@@ -135,18 +133,17 @@ $(document).ready(function() {
             $("#nav-container").toggleClass("menu-on");
             $("#menu-overlay").toggleClass("mobile-overlay-on");
             $("#navbar").toggleClass("navbar-open");
-            $(this).addClass("active");
-        } else if ($(".mobile-toggle").hasClass(".secondary-close")) {
-            $(".secondary-close").removeClass("secondary-close");
-            $("#menu-overlay").toggleClass("overlay-on");
-            $(this).siblings("ul").toggleClass("menu-on");
-            $("#menu-overlay").toggleClass("overlay-on");
-            $(this).removeClass("active");
+            alert("one");
         } else {
-            $(".mobile-toggle").toggleClass("secondary-close");
-            $(this).siblings("ul").toggleClass("menu-on");
-            $("#menu-overlay").toggleClass("overlay-on");
-            $(this).addClass("active");
+            if ($(this).siblings("ul").hasClass("menu-on")) {
+                $(".mobile-toggle").toggleClass("secondary-close");
+                $(this).siblings("ul").toggleClass("menu-on");
+                $("#menu-overlay").toggleClass("overlay-on");
+            } else {
+                $("#primary-nav > li > ul").removeClass("menu-on");
+                $(this).siblings("ul").toggleClass("menu-on");
+                $(".mobile-toggle").addClass("secondary-close");
+            }
         }
     });
     $("#primary-nav > li > ul > li > a").on("click", function() {
