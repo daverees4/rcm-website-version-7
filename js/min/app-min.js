@@ -133,7 +133,6 @@ $(document).ready(function() {
             $("#nav-container").toggleClass("menu-on");
             $("#menu-overlay").toggleClass("mobile-overlay-on");
             $("#navbar").toggleClass("navbar-open");
-            alert("one");
         } else {
             if ($(this).siblings("ul").hasClass("menu-on")) {
                 $(".mobile-toggle").toggleClass("secondary-close");
