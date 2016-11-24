@@ -72,7 +72,7 @@ a {
 }
 
 p {
-  margin: 1rem 0 1rem 0;
+  margin: 0rem 0 1rem 0;
 }
 
 h1, .h1 {
@@ -858,6 +858,29 @@ padding-right:0;
 }
 }
 
+
+
+
+/* Concertina */
+
+.concertina {
+  border-top: 1px solid #000;
+  cursor: pointer;
+}
+
+.concertina-title {
+  margin: 0.5rem 0;
+}
+
+.concertina-last{
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.concertina-content {
+  display: none;
+  margin-top: 3.25rem;
+}
 
 
 

@@ -47,16 +47,7 @@
             </ul>
             <p>For further details, please contact Student Services on +44 (0)20 7591 4339 or email studentservices@rcm.ac.uk</p>
             <img src="http://daverees4.webfactional.com/play/rcm-website-version-7/img/6by4.jpg" />
-            <div class="flex-video widescreen">
-            <div id="myElement">Loading the player...</div>
-<script type="text/javascript">
-var playerInstance = jwplayer("myElement");
-playerInstance.setup({
-file: "//www.youtube.com/watch?v=p5-fw-dIhi4",
-image: "http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.jpg"
-});
-</script>
-            </div>
+
             </div>
             
           </div>
