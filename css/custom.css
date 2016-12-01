@@ -2,10 +2,36 @@
    ---------------------------------------------
 Contents
 
-1. Grid 
+1. Colours
+2. Grid 
 */
 
-/* 1. Grid
+
+/* 1. Colours
+ ---------
+*/
+
+.grey-20-back {
+  background-color: #f3f3f3;
+}
+
+.study-foldout {
+  background-color: #bde3e1 !important;
+}
+
+.whatson-foldout {
+  background-color: #dfd2f0 !important;
+}
+
+.getinvolved-foldout {
+    background-color: #d0e2f5 !important;
+}
+
+
+
+
+
+/* 2. Grid
  ---------
 */
 
@@ -21,6 +47,20 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and ( max-width: 549px ){  
+  .row .row {
+    margin: 0 -1rem;
+    }
+  .add-gutter {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 550px) and ( max-width: 999px ){  
+  .row .row {
+    margin: 0 0rem;
+    }
+}
 
 .master-container {
   margin: 0 auto;
@@ -41,6 +81,10 @@ img {
 @media screen and ( min-width: 1000px ){ 
 .master-container {
   max-width: 120rem;
+  }
+  
+  .add-gutter {
+    padding: 0 10px;
   }
   
 .row, #navbar {
@@ -64,10 +108,14 @@ img {
 
 /* Typography */
 
+.use-medium {
+    font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
+}
+
 /* Size 1 */
 
 a {
-  display: inline-block;
+  display: inline;
   border-bottom: 1px solid #000;
 }
 
@@ -335,7 +383,7 @@ border-top: 0.0625rem solid #7cc8c5;
   width:100%;
   height:100%;
   opacity:0.6;
-   background-color: #007377;
+  background-color: #007377;
 }
 
 
@@ -589,7 +637,11 @@ padding-right:0;
 
 .tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li:nth-child(2) > a{
   color: #38a8aa;
-  border-bottom: 1px solid #38a8aa;
+
+}
+
+.tertiary-border {
+    border-bottom: 1px solid #38a8aa !important;
 }
 
 .active {
@@ -597,6 +649,9 @@ padding-right:0;
 }
 
 @media screen and ( min-width: 1000px ){ 
+  .tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li:nth-child(2) > a{
+  border-bottom: 1px solid #38a8aa;
+}
 
 .tertiary-menu {
     border-bottom: 1px solid #38a8aa;
@@ -695,7 +750,7 @@ padding-right:0;
     max-width: inherit
   }
   
-  .icon-arrow-right {
+  .menu>li>.icon-arrow-right {
    display: none;
   }
   
@@ -837,7 +892,7 @@ padding-right:0;
     position: fixed;
     top: 0;
     left: 19%;
-    background-color: #bde3e1;
+    background-color: #dcdcdc;
     height: 100%;
     opacity: 1;
     z-index: 1001;
@@ -884,11 +939,53 @@ padding-right:0;
 
 
 
+/* Course Page */
+
+.content-box {
+  margin-bottom: 1px;
+}
+
+.content-box p {
+  margin: 0;
+}
+
+.owl-icons {
+  font-size: 2rem;
+  margin-top:0.75rem;
+}
+
+.owl-icons i {
+  margin-right:0;
+  margin-left:0;
+  cursor: pointer;
+}
+
+
+
+
+/* Blocks */
+
+
+
 /* Footer */
 
-#footer, #footer a {
+#footer, #footer a, .newsletter-button {
   color: #706f6f;
   border-bottom-color: #706f6f
+}
+
+#footer a:hover{
+  border-bottom-color: #c5003e;
+}
+
+#footer {
+  margin-bottom: 1.25rem;
+}
+
+
+#newsletter-signup {
+  border-bottom: 0.0625rem solid #c5003e;
+  border-bottom-color: #c5003e;
 }
 
 #footer-border {
@@ -937,10 +1034,11 @@ padding-right:0;
 }
 
 @media screen and ( min-width: 1024px ){
-  #footer-border {
+  #footer-border, #footer {
     margin-bottom: 2.25rem;
   }
   
+
   #footer p {
   line-height: 1.625rem;
   margin-bottom: 0;
