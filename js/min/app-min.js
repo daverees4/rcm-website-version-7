@@ -72,4 +72,12 @@ $(document).ready(function() {
         $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)>a>.icon-arrow-right").toggleClass("hide");
         $(".tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li:nth-child(2) > a").removeClass("tertiary-border");
     });
+    $(".link-hero").on("mouseover", function() {
+        $(this).children(".hero-overlay-caption").css("display", "inline");
+        $(this).addClass("hero-with-text-overlay");
+    });
+    $(".link-hero").on("mouseout", function() {
+        $(this).children(".hero-overlay-caption").css("display", "none");
+        $(this).removeClass("hero-with-text-overlay");
+    });
 });
