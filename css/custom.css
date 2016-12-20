@@ -895,6 +895,69 @@ padding-right:0;
 
 
 
+@media screen and ( min-height: 768px ) and (min-width: 1000px ){ 
+  
+   #vert-logo {
+  width: 8.36rem;
+
+  }
+  
+  #nav-container {
+    width: 8.36rem;
+    padding-left: 0.69rem;
+  }
+  
+    
+    #primary-nav > li > ul {
+    position: fixed;
+    top: 0;
+    left: 19%;
+    background-color: #bde3e1;
+ 
+    height: 100%;
+    opacity: 1;
+    z-index: 1001;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 5.3rem 2.25rem 0 2.25rem;
+    
+  }
+  
+    .desktop-spacer {
+  margin-top: 2.25rem; 
+  }
+  
+  .desktop-spacer {
+  margin-top: 3.5rem;
+  }
+  
+  #nav-container {
+  position: static;
+  margin-top: 4.375rem;
+  }
+  
+  #primary-nav {
+    position: static;
+  }  
+  
+    
+    #primary-nav > li > ul {
+    position: fixed;
+    top: 0;
+    left: 19%;
+    background-color: #dcdcdc;
+    height: 100%;
+    opacity: 1;
+    z-index: 1001;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 6.3rem 2.25rem 0 2.25rem;
+    
+  }
+    
+}
+
+
 
 /* Detail Page */
 
@@ -1083,6 +1146,10 @@ display: none;
 
 
 /* Twitter Box */
+
+.twitter-box {
+  min-height: 400px;
+}
 
 
 .twitter-with-text-fixed {

@@ -242,3 +242,8 @@ var configProfile = {
 };
 
 twitterFetcher.fetch(configProfile);
+
+if ($(".twitter-box > ul > li >.media").length) {
+    alert("no tweet image!");
+    $(".twitter-box > ul > li").append("<div class='twitter-filler'><h1>Hello!</h1></div>");
+}
