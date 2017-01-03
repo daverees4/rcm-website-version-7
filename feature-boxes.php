@@ -102,9 +102,11 @@
                   <li><a href="#">Alexander Technique</a></li>
                   <li><a href="#">Students' Union</a></li>        
                 </ul>
-                <a class="button in-page-button right-hand-menu-button">Courses Available</a>
-                <a class="button in-page-button right-hand-menu-button">Latest from the Vocal Faculty</a>
-                <a class="button in-page-button right-hand-menu-button">Contact us </a>
+                <ul class="menu vertical" id="in-page-links">
+                  <li><a class="button in-page-button right-hand-menu-button">Courses Available</a></li>
+                  <li><a class="button in-page-button right-hand-menu-button">Latest from the Vocal Faculty</a></li>
+                  <li><a class="button in-page-button right-hand-menu-button">Contact us</a></li>
+                </ul>
               </div>
             </div>
             <div class="row">
@@ -112,7 +114,7 @@
                 <h3>Link Hover Boxes</h3>
               </div>
             </div>
-            <div class="row">
+            <div class="row link-boxes-row">
               <div class="medium-6 columns">
                 <a href="#">
                 <div class="hero-with-text-fixed link-hero">

@@ -34,6 +34,7 @@ $(document).ready(function() {
             $(this).toggleClass("icon-cross icon-menu-five");
             $("#nav-container").toggleClass("menu-on");
             $("#navbar").toggleClass("navbar-open");
+            $("#content-panel").toggleClass("mobile-menu-overlay");
         } else {
             $("#primary-nav > li > ul.menu-on").toggleClass("menu-on");
             $(".secondary-close").removeClass("secondary-close");
@@ -41,19 +42,19 @@ $(document).ready(function() {
         }
     });
     $("#primary-nav > li > a").on("click", function() {
+        if ($("#primary-nav > li > ul.menu-on").length == 0 || $(this).siblings("ul").hasClass("menu-on")) {
+            $("#content-panel").toggleClass("menu-overlay");
+        }
         if ($(".mobile-toggle").hasClass("icon-menu-five")) {
             $(this).siblings("ul").toggleClass("menu-on");
-            $("#menu-overlay").toggleClass("overlay-on");
             $(".mobile-toggle").toggleClass("secondary-close");
             $(".mobile-toggle").toggleClass("icon-cross icon-menu-five");
             $("#nav-container").toggleClass("menu-on");
-            $("#menu-overlay").toggleClass("mobile-overlay-on");
             $("#navbar").toggleClass("navbar-open");
+            $("#content-panel").toggleClass("mobile-menu-overlay");
         } else {
             if ($(this).siblings("ul").hasClass("menu-on")) {
-                $(".mobile-toggle").toggleClass("secondary-close");
                 $(this).siblings("ul").toggleClass("menu-on");
-                $("#menu-overlay").toggleClass("overlay-on");
             } else {
                 $("#primary-nav > li > ul").removeClass("menu-on");
                 $(this).siblings("ul").toggleClass("menu-on");
@@ -227,23 +228,26 @@ $(document).ready(function() {
     return window.twitterFetcher = L;
 });
 
+function handleTweets(tweets) {
+    var element = document.getElementById("example1");
+    element.innerHTML = tweets;
+    if (!$(".twitter-box").children(".media").length > 0) {
+        $(".twitter-box").append('<div class="media"><img src="img/16by9.jpg" /></div>');
+    }
+}
+
 var configProfile = {
     profile: {
         screenName: "rcmlondon"
     },
-    domId: "example1",
     maxTweets: 1,
     enableLinks: true,
     showUser: true,
     showTime: true,
     showImages: true,
     lang: "en",
-    showRetweet: false
+    showRetweet: false,
+    customCallback: handleTweets
 };
 
 twitterFetcher.fetch(configProfile);
-
-if ($(".twitter-box > ul > li >.media").length) {
-    alert("no tweet image!");
-    $(".twitter-box > ul > li").append("<div class='twitter-filler'><h1>Hello!</h1></div>");
-}

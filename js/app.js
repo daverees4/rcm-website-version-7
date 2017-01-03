@@ -36,39 +36,56 @@ $(".mobile-toggle").on("click", function () {
   if(!$(".mobile-toggle").hasClass("secondary-close")) {
   $(this).toggleClass("icon-cross icon-menu-five");
   $("#nav-container").toggleClass("menu-on");
-        $("#navbar").toggleClass("navbar-open");  
-        
+  $("#navbar").toggleClass("navbar-open");  
+  $("#content-panel").toggleClass("mobile-menu-overlay");
+   
   } else {
     $("#primary-nav > li > ul.menu-on").toggleClass("menu-on");
     $(".secondary-close").removeClass("secondary-close");
     $("#primary-nav > li > ul > li > ul").removeClass("menu-on"); 
-
+   
   }
 });
 
 $("#primary-nav > li > a").on("click", function() {
+  
+  
+  
+  if($("#primary-nav > li > ul.menu-on").length ==0 || $(this).siblings("ul").hasClass("menu-on")){
+      $("#content-panel").toggleClass("menu-overlay");
+  }
 
-  if($(".mobile-toggle").hasClass("icon-menu-five")) {
-  $(this).siblings("ul").toggleClass("menu-on");
-  $("#menu-overlay").toggleClass("overlay-on");   
-  $(".mobile-toggle").toggleClass("secondary-close");
-  $(".mobile-toggle").toggleClass("icon-cross icon-menu-five");
-  $("#nav-container").toggleClass("menu-on");
-  $("#menu-overlay").toggleClass("mobile-overlay-on"); 
-  $("#navbar").toggleClass("navbar-open"); 
-  }  else {
-      if($(this).siblings("ul").hasClass("menu-on")) {
-     $(".mobile-toggle").toggleClass("secondary-close");   
-     $(this).siblings("ul").toggleClass("menu-on");
-     $("#menu-overlay").toggleClass("overlay-on"); 
-     } else {
-       $("#primary-nav > li > ul").removeClass("menu-on");
-      $(this).siblings("ul").toggleClass("menu-on");
-        $(".mobile-toggle").addClass("secondary-close");  
+
+  if($(".mobile-toggle").hasClass("icon-menu-five")) {    
+    $(this).siblings("ul").toggleClass("menu-on");    
+    $(".mobile-toggle").toggleClass("secondary-close");
+    $(".mobile-toggle").toggleClass("icon-cross icon-menu-five");
+    $("#nav-container").toggleClass("menu-on");
+    $("#navbar").toggleClass("navbar-open"); 
+    $("#content-panel").toggleClass("mobile-menu-overlay");
+  }  
+  
+  else {
+    /* Switching to other menu from open state */
+    
+    if($(this).siblings("ul").hasClass("menu-on")) {
+        $(this).siblings("ul").toggleClass("menu-on"); 
+
      } 
-
+     
+      /* Open/Close Secondary Menu */
+     else {
+       $("#primary-nav > li > ul").removeClass("menu-on");
+       $(this).siblings("ul").toggleClass("menu-on");
+       $(".mobile-toggle").addClass("secondary-close");  
+     } 
+     
+   
            
   }
+  
+
+    
 });
 
 $("#primary-nav > li > ul > li > a").on("click", function() {
@@ -209,23 +226,30 @@ b.push(d);c++}E(b);z=!1;0<x.length&&(L.fetch(x[0]),x.splice(0,1))}};return windo
 // A simple example to get my latest tweet and write to a HTML element with
 // id "example1". Also automatically hyperlinks URLS and user mentions and
 // hashtags.
+
+function handleTweets(tweets) {
+    var element = document.getElementById('example1');
+    element.innerHTML = tweets;
+    if(!$('.twitter-box').children('.media').length > 0) {
+        $('.twitter-box').append('<div class="media"><img src="img/16by9.jpg" /></div>');
+     }
+  }
+
+
+
 var configProfile = {
   "profile": {"screenName": 'rcmlondon'},
-  "domId": 'example1',
   "maxTweets": 1,
   "enableLinks": true, 
   "showUser": true,
   "showTime": true,
   "showImages": true,
   "lang": 'en',
-  "showRetweet": false
+  "showRetweet": false,
+  "customCallback": handleTweets
 };
 twitterFetcher.fetch(configProfile);
 
-if($(".twitter-box > ul > li >.media").length){
-  alert("no tweet image!");
-  $(".twitter-box > ul > li").append("<div class='twitter-filler'><h1>Hello!</h1></div>");
-}
 
 
 

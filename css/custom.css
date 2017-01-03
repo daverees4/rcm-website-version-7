@@ -54,9 +54,6 @@ img {
 
 /* Outside frame and vertical spacing */
   
-.row, .hero {
-  margin-bottom: 20px;
-}
 
 .dynamic-hero {
   content: ' ';
@@ -124,6 +121,63 @@ img {
 }
 
 } 
+
+/* Equalizing Margins for content grid */
+.row {
+  margin: 0 0.5rem;
+}
+
+@media screen and ( min-width: 550px ){ 
+.row{
+   margin-left: 0;
+  margin-right: 0;
+  }
+  
+  #nav-container{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .row {
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+} 
+
+@media screen and ( min-width: 1000px ){ 
+  .row {
+    margin-left: -0.625rem;
+    margin-right:  1.875rem;
+    max-width: none;
+    }
+}
+
+@media screen and ( min-width: 1466px ){ 
+  .row {
+    margin-left: -1.25rem;
+    margin-right:  3.75rem;
+    max-width: none;
+    }
+}
+
+
+
+
+
+/* 2. Typography
+ ---------
+*/
+
+p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .tertiary-menu, .study-foldout, .alert, .link-boxes-row {
+  margin-bottom: 0.75rem;
+}
+
+.link-hero img {
+  margin-bottom: 0;
+}
+
 
 
 
@@ -289,7 +343,7 @@ p, li {
 
 
 
-/* Buttons, HRs */
+/* 4 - Buttons, HRs */
 
 .hr-above {
 border-top: 0.0625rem solid #7cc8c5;
@@ -348,57 +402,28 @@ border-top: 0.0625rem solid #7cc8c5;
 }
 
 
-/* Equalizing Margins for content grid */
-.row {
-  margin: 0 0.5rem;
+#in-page-links > ul > li, #in-page-links > li {
+  margin-bottom: 1px;
 }
-
-@media screen and ( min-width: 550px ){ 
-.row{
-   margin-left: 0;
-  margin-right: 0;
-  }
-  
-  #nav-container{
-    margin: 0;
-    padding: 0;
-  }
-  
-  .row {
-  max-width: 550px;
-  margin: 0 auto;
-  display: block;
-}
-
-} 
-
-@media screen and ( min-width: 1000px ){ 
-  .row {
-    margin-left: -0.625rem;
-    margin-right:  1.875rem;
-    max-width: none;
-    }
-}
-
-@media screen and ( min-width: 1466px ){ 
-  .row {
-    margin-left: -1.25rem;
-    margin-right:  3.75rem;
-    max-width: none;
-    }
-}
-
-
 
 
 /* Search and Nav Overlays */
 
+@media screen and ( max-width: 1023px ){ 
 
-
-
-.menu-overlay {
-  position: relative;
+.mobile-menu-overlay:after {
+    position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0.6;
+  background-color: #000000;
+  }
 }
+
+@media screen and ( min-width: 1024px ){ 
 
 .menu-overlay:after {
   position: absolute;
@@ -408,26 +433,36 @@ border-top: 0.0625rem solid #7cc8c5;
   width:100%;
   height:100%;
   opacity:0.6;
+  background-color: #000000;
+}
+
+
+
+.study-overlay:after {
+  opacity:0.7;
   background-color: #007377;
 }
+
+.whatson-overlay:after {
+  opacity:0.7;
+  background-color: #5c068c;
+}
+
+.getinvolved-overlay:after {
+  opacity:0.7;
+  background-color: #00205b;
+}
+}
+
+
+
+
 
 
 
 
 @media screen and ( min-width: 1000px ){ 
-#menu-overlay {
-    position:fixed;
-    top:0;
-    left:19%;
-    width:100%;
-    height:100%;
-    background-color: #007377;
-    opacity: 0.6;
-    display: none;
-    max-width: 550px;
-    z-index:100;
-    margin-left: 18rem;
-}
+
 .dynamic-hero {
 
   content: ' ';
@@ -491,7 +526,7 @@ margin: 0 auto;
   }
   
   .detail-hero {
-    margin: 0;
+
     width: 100%
   }
   
@@ -712,6 +747,10 @@ padding-right:0;
 
 
 @media screen and ( min-width: 1000px ) and (min-height: 550px) {
+  
+  #nav-panel {
+    max-width: 365px;
+  }
   
   
   
@@ -1156,6 +1195,17 @@ display: none;
   margin: 0 auto;
 }
 
+
+@media screen and ( min-width: 1024px ){
+  
+.twitter-with-text-fixed {
+
+  max-width: none;
+
+}
+
+  }
+
 .twitter-overlay-text {
   padding: 1rem;
   color: #fff;
@@ -1170,19 +1220,19 @@ z-index: 1000000;
   list-style-type: none;
 }
 
-.twitter-box ul li .user, .twitter-box ul li .interact , .twitter-box ul li .timePosted {
+.twitter-box .user, .twitter-box .interact , .twitter-box .timePosted {
   display: none;
 }
 
-.twitter-box ul li .tweet, .twitter-box ul li .tweet a {
+.twitter-box  .tweet, .twitter-box  .tweet a {
   color: #fff;
 }
 
-.twitter-box ul li .tweet a {
+.twitter-box .tweet a {
   border-bottom-color: #fff;
 }
 
-.twitter-box ul li .tweet{
+.twitter-box .tweet{
   padding: 1rem;
   color: #fff;
 position: absolute;

@@ -21,7 +21,7 @@
         <div class="blue-border-full"></div>
 
 
-    <div class="row">
+    <div class="row desktop-spacer">
       <div class="large-12 columns">
       <h1>Accommodation</h1>
       </div>
@@ -51,8 +51,19 @@
             </ul>
             <p>For further details, please contact Student Services on +44 (0)20 7591 4339 or email studentservices@rcm.ac.uk</p>
             <img src="http://daverees4.webfactional.com/play/rcm-website-version-7/img/6by4.jpg" />
-
-
+          </div>
+          <div class="row">
+                                  <div class="flex-video widescreen">
+            <div id="myElement">Loading the player...</div>
+<script type="text/javascript">
+var playerInstance = jwplayer("myElement");
+playerInstance.setup({
+file: "//www.youtube.com/watch?v=p5-fw-dIhi4",
+image: "http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.jpg"
+});
+</script>
+                                  </div>
+              
             </div>
             <div class="show-for-medium">
                         <iframe id="unistats-widget-frame" title="Unistats KIS Widget" src="http://widget.unistats.ac.uk/Widget/10007778/BMUS/Horizontal/Small/en-GB/Full%20Time" scrolling="no" style="overflow: hidden; border: 0px none transparent; width: 700px; height: 200px;">
@@ -99,7 +110,7 @@
   
           </div>
         </div>
-        <div class="grey-20-back">
+        <div class="grey-20-back add-gutter">
         <div class="row grey-20-back">
           <div class="morefromrcm-topbar medium-12 columns">
             <div class="owl-icons">
