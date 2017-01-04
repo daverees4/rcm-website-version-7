@@ -21,7 +21,7 @@
         <div class="blue-border-full"></div>
 
 
-    <div class="row desktop-spacer">
+    <div class="row header-spacer">
       <div class="large-12 columns">
       <h1>Accommodation</h1>
       </div>
@@ -31,7 +31,7 @@
         <div class="row">
           <div class="medium-8 columns">
            <div class="row"> 
-             <div class="small-12 small-collapse medium-uncollapse">
+             <div class="small-12 small-collapse medium-uncollapse columns">
             <img src="http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.jpg" class="detail-hero" />
              </div>
            </div>
@@ -77,7 +77,7 @@ image: "http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.j
             
           </div>
           <div class="medium-4 large-3 large-offset-1 columns show-for-medium">
-            <ul class="menu vertical tertiary-menu">
+            <ul class="menu vertical tertiary-menu tertiary-right">
               <li><a href="#">RCM Life</a></li>
               <li><a href="#">Student Services</a></li>
               <li><a href="#">Money Matters</a></li>

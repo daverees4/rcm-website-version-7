@@ -23,12 +23,14 @@
         <div class="row hide-for-medium">
           <div class="small-12 columns">
 
-          <a class="button in-page-button right-hand-menu-button">Courses Available</a>
-          <a class="button in-page-button right-hand-menu-button">Latest from the Vocal Faculty</a>
-          <a class="button in-page-button right-hand-menu-button">Contact us </a>
+         <ul class="menu vertical" id="in-page-links">
+                  <li><a class="button in-page-button right-hand-menu-button">Courses Available</a></li>
+                  <li><a class="button in-page-button right-hand-menu-button">Latest from the Vocal Faculty</a></li>
+                  <li><a class="button in-page-button right-hand-menu-button">Contact us</a></li>
+                </ul>
           </div>
         </div>
-          <div class="row">
+          <div class="row header-spacer">
             <div class="large-12 columns">
             <h1>Feature Boxes</h1>
             </div>

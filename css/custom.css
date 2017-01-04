@@ -76,6 +76,7 @@ img {
   .row .row {
     margin: 0 0rem;
     }
+    
 }
 
 .master-container {
@@ -144,17 +145,28 @@ img {
   display: block;
 }
 
+.hero {
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
 } 
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ) and (min-height: 42em){ 
   .row {
     margin-left: -0.625rem;
     margin-right:  1.875rem;
     max-width: none;
     }
+    .hero{
+      max-width: none;
+      display: block;
+}
 }
 
-@media screen and ( min-width: 1466px ){ 
+@media screen and ( min-width: 1466px ) (min-height: 42em){ 
   .row {
     margin-left: -1.25rem;
     margin-right:  3.75rem;
@@ -166,18 +178,59 @@ img {
 
 
 
-/* 2. Typography
+/* 2. Typography and Vertical Spacing
  ---------
 */
 
-p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .tertiary-menu, .study-foldout, .alert, .link-boxes-row {
+p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .link-boxes-row {
   margin-bottom: 0.75rem;
 }
+
+
+
+@media screen and ( min-width: 1024px ) and (min-height: 42em){ 
+  .tertiary-menu {
+    margin-bottom: 0.75rem;
+  }
+  
+  .header-spacer {
+    margin-top: 45px;
+    margin-bottom: 14px;
+  }
+  
+  .tertiary-right {
+    margin-top: -33px;
+  }
+  
+
+}
+
+@media screen and ( min-width: 1324px ) and (min-height: 42em){ 
+
+  .header-spacer {
+    margin-top: 48px
+    margin-bottom: none;
+  }
+  
+    .detail-hero {
+    margin-top: -18px;
+  }
+  
+    .tertiary-right {
+    margin-top: -50px;
+  }
+  
+}
+
+
 
 .link-hero img {
   margin-bottom: 0;
 }
 
+.hero-with-text-fixed img{
+  margin-bottom: 0;
+}
 
 
 
@@ -245,7 +298,7 @@ p, li {
   text-align: center;
 }
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ) and (min-height: 42em) { 
   h1, .h1 {
     font-size: 1.75rem;
     line-height: 2.5rem;
@@ -292,7 +345,7 @@ p, li {
   }
 }
 
-@media screen and ( min-width: 1324px ){ 
+@media screen and ( min-width: 1324px ) and (min-height: 42em) { 
   h1, .h1 {
     font-size: 2.5rem;
     line-height: 3.875rem;
@@ -357,7 +410,7 @@ border-top: 0.0625rem solid #7cc8c5;
   border-bottom: none;
 }
 
-@media screen and ( max-width: 999px ){ 
+@media screen and (max-width: 1023px) , screen and (max-height: 671px) { 
   .button {
   width: 100%;
   }
@@ -461,7 +514,7 @@ border-top: 0.0625rem solid #7cc8c5;
 
 
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ){ 
 
 .dynamic-hero {
 
@@ -723,7 +776,7 @@ padding-right:0;
   color: #38a8aa;
 }
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ){ 
   
   #primary-nav > li > ul {
     overflow-y: none;
@@ -746,7 +799,7 @@ padding-right:0;
 /* S2 changes */
 
 
-@media screen and ( min-width: 1000px ) and (min-height: 550px) {
+@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
   
   #nav-panel {
     max-width: 365px;
@@ -886,7 +939,7 @@ padding-right:0;
   }
 }
 
-@media screen and ( min-height: 550px ) and (min-width: 1000px ){
+@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
   #primary-nav > li > a {
     font-size: 1.25rem;
     line-height: 2.125rem;  
@@ -934,7 +987,7 @@ padding-right:0;
 
 
 
-@media screen and ( min-height: 768px ) and (min-width: 1000px ){ 
+@media screen and ( min-height: 768px ) and (min-width: 1024px ){ 
   
    #vert-logo {
   width: 8.36rem;
@@ -1064,13 +1117,13 @@ padding-right:0;
   margin-bottom: 1rem;
 }
 
-@media screen and ( min-height: 550px ) and (min-width: 1000px ){
+@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
   .feature-box {
     padding: 1rem 1rem 1rem 1.5rem;
   }
 }
 
-@media screen and ( min-height: 550px ) and (min-width: 1324px ){
+@media screen and ( min-height: 42rem ) and (min-width: 1324px ){
   .feature-box-content {
     margin-left: 8.3333333333%;
     margin-right: 8.3333333333%;
@@ -1082,9 +1135,9 @@ padding-right:0;
  
 }
 
-@media screen and ( min-height: 550px ) and (min-width: 550px ){
+@media screen and ( min-height: 42rem ) and (min-width: 550px ){
   .flex-video {
-    margin: 0 -0.5rem;
+    margin: 0;
   }
 }
 
@@ -1159,7 +1212,7 @@ display: none;
 }
 
 
-@media screen and ( min-height: 550px ) and (min-width: 1024px ){
+@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
   .hero-with-text-fixed {
   position: relative;
   max-width: none;
