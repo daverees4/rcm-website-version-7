@@ -1053,7 +1053,7 @@ padding-right:0;
 
 /* Detail Page */
 
-@media screen and (min-width: 1324px ){ 
+@media screen and (min-width: 1324px ) and (min-height: 42rem) { 
 .main-page-content { 
   margin-left: 8.3333333333%  
 }
@@ -1249,7 +1249,7 @@ display: none;
 }
 
 
-@media screen and ( min-width: 1024px ){
+@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
   
 .twitter-with-text-fixed {
 
@@ -1386,7 +1386,7 @@ margin-bottom: 5.5rem;
   
 }
 
-@media screen and ( min-width: 1024px ){
+@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
   #footer-border, #footer {
     margin-bottom: 2.25rem;
   }
