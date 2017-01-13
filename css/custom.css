@@ -106,10 +106,7 @@ img {
   max-width: 120rem;
   }
   
-  .blue-border-full {
-    margin-bottom: 0;
-  }
-  
+
   .add-gutter {
     padding: 0 1rem;
   }
@@ -211,6 +208,11 @@ p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .study-foldout, .
   .tertiary-right {
     margin-top: -33px;
   }
+  
+  .blue-border-full {
+    margin-bottom: 0;
+  }
+  
   
 
 }
