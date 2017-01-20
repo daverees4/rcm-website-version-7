@@ -28,7 +28,15 @@ $(".gallery").owlCarousel({
   pagination: false,
   items:1,
   singleItem: true,
+  itemsDesktop: false,
+  itemsDesktopSmall: false, 
+  itemsTablet: false,
 });
+
+var gallery = $(".gallery").data('owlCarousel');
+
+$(".gallery-left").on("click", function() {gallery.next();});
+$(".gallery-right").on("click", function() {gallery.prev();});
 
 /* Menu */
 

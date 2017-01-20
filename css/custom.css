@@ -1121,6 +1121,16 @@ padding-right:0;
   cursor: pointer;
 }
 
+.gallery-arrows {
+  position: relative;
+  top: -62px;
+  background-color: #fff;
+}
+
+.gallery-left, .gallery-right {
+  background-color: #fff;
+}
+
 
 
 

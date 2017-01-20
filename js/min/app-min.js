@@ -27,7 +27,17 @@ $(document).ready(function() {
         navigation: false,
         pagination: false,
         items: 1,
-        singleItem: true
+        singleItem: true,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false
+    });
+    var gallery = $(".gallery").data("owlCarousel");
+    $(".gallery-left").on("click", function() {
+        gallery.next();
+    });
+    $(".gallery-right").on("click", function() {
+        gallery.prev();
     });
     $(".mobile-toggle").on("click", function() {
         if (!$(".mobile-toggle").hasClass("secondary-close")) {

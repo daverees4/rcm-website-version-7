@@ -86,6 +86,10 @@
                         <p>Image 3 - 3 of 3</p> 
                       </div>
                     </div>
+                    <div class="owl-icons gallery-arrows">
+                      <i class="float-right icon-arrow-right gallery-left next"></i>
+                      <i class="float-right icon-arrow-left gallery-right previous"></i>
+                    </div>
                  
                
                   </div>
@@ -119,21 +123,21 @@
             <div class="row link-boxes-row">
               <div class="medium-6 columns">
                 <a href="#">
+                  <div class="hero-with-text-fixed link-hero">
+                    <img src="img/6by4.jpg"  />
+                    <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
+                    <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
+                  </div>
+                </a>
+              </div>
+              <div class="medium-6 columns">            
                 <div class="hero-with-text-fixed link-hero">
-                <img src="img/6by4.jpg"  />
-                <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
-                <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
+                  <img src="img/6by4.jpg"  />
+                  <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
+                  <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
                 </div>
-              </a>
-            </div>
-            <div class="medium-6 columns">            
-              <div class="hero-with-text-fixed link-hero">
-                <img src="img/6by4.jpg"  />
-                <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
-                <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
               </div>
             </div>
-          </div>
           
             <div class="row">
               <div class="large-12 columns">
