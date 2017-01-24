@@ -7,11 +7,6 @@ Contents
 */
 
 
-/* hide social icons for now */
-
-#social-icons {
-  display: none;
-}
 
 /* 1. Colours
  ---------
@@ -1429,6 +1424,11 @@ margin-bottom: 5.5rem;
 }
 
 
+/* hide social icons for now */
+
+#social-icons {
+  display: none;
+}
 
 
 
