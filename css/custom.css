@@ -101,7 +101,7 @@ img {
 
 
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ){ 
 .master-container {
   max-width: 120rem;
   }
@@ -118,7 +118,7 @@ img {
 
 } 
 
-@media screen and ( min-width: 1000px ){ 
+@media screen and ( min-width: 1024px ){ 
 .master-container {
   max-width: 120rem;
   }
