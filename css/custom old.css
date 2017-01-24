@@ -161,7 +161,7 @@ img {
 
 } 
 
-@media screen and ( min-width: 1024px ) { 
+@media screen and ( min-width: 1024px ) and (min-height: 42em){ 
   .row {
     margin-left: -0.625rem;
     margin-right:  1.875rem;
@@ -173,7 +173,7 @@ img {
 }
 }
 
-@media screen and ( min-width: 1466px ){ 
+@media screen and ( min-width: 1466px ) (min-height: 42em){ 
   .row {
     margin-left: -1.25rem;
     margin-right:  3.75rem;
@@ -195,7 +195,7 @@ p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .study-foldout, .
 
 
 
-@media screen and ( min-width: 1024px ){ 
+@media screen and ( min-width: 1024px ) and (min-height: 42em){ 
   .tertiary-menu {
     margin-bottom: 0.75rem;
   }
@@ -217,7 +217,7 @@ p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .study-foldout, .
 
 }
 
-@media screen and ( min-width: 1324px ){ 
+@media screen and ( min-width: 1324px ) and (min-height: 42em){ 
 
   .header-spacer {
     margin-top: 48px
@@ -310,7 +310,7 @@ p, li {
   text-align: center;
 }
 
-@media screen and ( min-width: 1024px )  { 
+@media screen and ( min-width: 1024px ) and (min-height: 42em) { 
   h1, .h1 {
     font-size: 1.75rem;
     line-height: 2.5rem;
@@ -357,7 +357,7 @@ p, li {
   }
 }
 
-@media screen and ( min-width: 1324px )  { 
+@media screen and ( min-width: 1324px ) and (min-height: 42em) { 
   h1, .h1 {
     font-size: 2.5rem;
     line-height: 3.875rem;

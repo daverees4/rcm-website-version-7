@@ -329,7 +329,7 @@
   margin-right: 0;
   float: left; }
 
-@media screen and (min-width: 64em)   {
+@media screen and (min-width: 64em) and (min-height: 42em) {
   .medium-1 {
     width: 8.3333333333%; }
 
@@ -593,7 +593,7 @@
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-@media screen and (min-width: 82.75em)  {
+@media screen and (min-width: 82.75em) and (min-height: 42em){
   .large-1 {
     width: 8.3333333333%; }
 
@@ -857,7 +857,7 @@
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-@media screen and (min-width: 91.625em)  {
+@media screen and (min-width: 91.625em) and (min-height: 42em){
   .xlarge-1 {
     width: 8.3333333333%; }
 
