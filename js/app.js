@@ -107,9 +107,9 @@ $(".dropdown-menu").on("click", function() {
   $(this).children("i").toggleClass("icon-arrow-right").toggleClass("icon-arrow-down"); 
 });
 
-$(".concertina").on("click", function() {
-  $(this).children(".concertina-content").slideToggle();
-  $(this).find(".concertina-titlebar > i").toggleClass("icon-arrow-up icon-arrow-down"); 
+$(".concertina-titlebar").on("click", function() {
+  $(this).siblings(".concertina-content").slideToggle();
+  $(this).siblings().find(".concertina-titlebar > i").toggleClass("icon-arrow-up icon-arrow-down"); 
 });
 
 
