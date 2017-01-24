@@ -7,6 +7,12 @@ Contents
 */
 
 
+/* hide social icons for now */
+
+#social-icons {
+  display: none;
+}
+
 /* 1. Colours
  ---------
 */
@@ -411,7 +417,7 @@ border-top: 0.0625rem solid #7cc8c5;
   border-bottom: none;
 }
 
-@media screen and (max-width: 1023px) , screen and (max-height: 671px) { 
+@media screen and (max-width: 1023px){ 
   .button {
   width: 100%;
   }
