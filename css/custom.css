@@ -811,7 +811,7 @@ padding-right:0;
 /* S2 changes */
 
 
-@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
+@media screen and ( min-width: 1024px ){
   
   #nav-panel {
     max-width: 365px;
@@ -951,7 +951,7 @@ padding-right:0;
   }
 }
 
-@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
+@media screen  and (min-width: 1024px ){
   #primary-nav > li > a {
     font-size: 1.25rem;
     line-height: 2.125rem;  
@@ -999,7 +999,7 @@ padding-right:0;
 
 
 
-@media screen and ( min-height: 768px ) and (min-width: 1024px ){ 
+@media screen and (min-width: 1024px ){ 
   
    #vert-logo {
   width: 8.36rem;
@@ -1065,7 +1065,7 @@ padding-right:0;
 
 /* Detail Page */
 
-@media screen and (min-width: 1324px ) and (min-height: 42rem) { 
+@media screen and (min-width: 1324px ) { 
 .main-page-content { 
   margin-left: 8.3333333333%  
 }
@@ -1142,13 +1142,13 @@ padding-right:0;
   margin-bottom: 1rem;
 }
 
-@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
+@media screen  (min-width: 1024px ){
   .feature-box {
     padding: 1rem 1rem 1rem 1.5rem;
   }
 }
 
-@media screen and ( min-height: 42rem ) and (min-width: 1324px ){
+@media screen and (min-width: 1324px ){
   .feature-box-content {
     margin-left: 8.3333333333%;
     margin-right: 8.3333333333%;
@@ -1160,7 +1160,7 @@ padding-right:0;
  
 }
 
-@media screen and ( min-height: 42rem ) and (min-width: 550px ){
+@media screen and (min-width: 550px ){
   .flex-video {
     margin: 0;
   }
@@ -1237,7 +1237,7 @@ display: none;
 }
 
 
-@media screen and ( min-height: 42rem ) and (min-width: 1024px ){
+@media screen  and (min-width: 1024px ){
   .hero-with-text-fixed {
   position: relative;
   max-width: none;
@@ -1274,7 +1274,7 @@ display: none;
 }
 
 
-@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
+@media screen and ( min-width: 1024px )  {
   
 .twitter-with-text-fixed {
 
@@ -1411,7 +1411,7 @@ margin-bottom: 5.5rem;
   
 }
 
-@media screen and ( min-width: 1024px ) and (min-height: 42rem) {
+@media screen and ( min-width: 1024px ) {
   #footer-border, #footer {
     margin-bottom: 2.25rem;
   }
