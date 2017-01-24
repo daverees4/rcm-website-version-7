@@ -986,9 +986,9 @@ padding-right:0;
   
 }
 
+/* Changes for s3 */
 
-
-@media screen and (min-width: 1024px ){ 
+@media screen and (min-width: 1324px ){ 
   
    #vert-logo {
   width: 8.36rem;
