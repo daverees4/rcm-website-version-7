@@ -118,17 +118,6 @@ img {
 
 } 
 
-@media screen and ( min-width: 1024px ){ 
-.master-container {
-  max-width: 120rem;
-  }
-  
-.row, #navbar {
-  max-width: inherit;
-  margin:0 auto;
-}
-
-} 
 
 /* Equalizing Margins for content grid */
 .row {
@@ -638,7 +627,7 @@ margin: 0 auto;
   width:85%;
   }
   
-@media screen and ( max-width: 999px ){ 
+@media screen and ( max-width: 1023px ){ 
   .mobile-topbar-on{
     display: block !important;
   }
