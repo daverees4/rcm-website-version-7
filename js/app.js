@@ -109,7 +109,7 @@ $(".dropdown-menu").on("click", function() {
 
 $(".concertina-titlebar").on("click", function() {
   $(this).siblings(".concertina-content").slideToggle();
-  $(this).siblings().find(".concertina-titlebar > i").toggleClass("icon-arrow-up icon-arrow-down"); 
+  $(this).find(".concertina-titlebar > i").toggleClass("icon-arrow-up icon-arrow-down"); 
 });
 
 
