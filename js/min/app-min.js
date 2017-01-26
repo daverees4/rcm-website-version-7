@@ -123,7 +123,7 @@ $(document).ready(function() {
     };
 })(jQuery);
 
-$("shuffle-item").shuffle();
+$(".shuffle-item").shuffle();
 
 (function(E, q) {
     "function" === typeof define && define.amd ? define([], q) : "object" === typeof exports ? module.exports = q() : q();

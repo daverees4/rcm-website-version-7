@@ -169,7 +169,7 @@ $(".link-hero").on("mouseout", function() {
  
 })(jQuery);
 
-$("shuffle-item").shuffle();
+$(".shuffle-item").shuffle();
 
 
 /* Twitter */
