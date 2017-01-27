@@ -532,6 +532,7 @@ border-top: 0.0625rem solid #7cc8c5;
     z-index:1000;
     background-color: #c5003e;
     opacity: 0.6;
+    display:none;
 
 
 }
