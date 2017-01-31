@@ -165,13 +165,27 @@ img {
 
 
 
-/* 2. Typography and Vertical Spacing
+/* 2.  Vertical Spacing
  ---------
 */
 
-p, h1, h2, h3, h4, h5, h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .link-boxes-row {
-  margin-bottom: 0.75rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -384,7 +398,46 @@ p, li {
   }
 }
 
-/* anchors */
+/* vertical spacing */
+
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .link-boxes-row {
+  margin-bottom: 1.25rem;
+}
+
+
+h3, .h3 {
+  margin-bottom: 0rem;
+}
+
+.main-page-content ul {
+  margin-top: -1rem;
+}
+
+.main-page-content li {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 1024px){ 
+  h3, .h3 {
+  margin-bottom: 0.3rem;
+}
+
+.main-page-content .index-title {
+  margin-top: -0.5rem;
+}
+
+.quote {
+  margin-bottom: 1.75rem;
+}
+
+}
+
+@media screen and (min-width: 1324px){ 
+  h3, .h3 {
+    margin-bottom: 1rem;
+  }
+
+}
 
 
 
@@ -525,6 +578,7 @@ border-top: 0.0625rem solid #7cc8c5;
 }
 
 #search-overlay {
+  display: none;
     position:fixed;
     top:0;
     width:100%;
@@ -539,6 +593,7 @@ border-top: 0.0625rem solid #7cc8c5;
 
 
 #search-wrapper {
+  display: none;
     position: fixed;
   top: 50%;
   left: 50%;
@@ -961,7 +1016,7 @@ padding-right:0;
   
   #primary-nav {
   position: fixed;
-    bottom: 0.625rem;
+
   }
   
   #nav-container {

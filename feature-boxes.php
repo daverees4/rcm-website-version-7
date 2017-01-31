@@ -211,7 +211,7 @@ image: "http://daverees4.webfactional.com/play/rcm-website-version-7/img/16by9.j
                 </div>
                                 <div class="quote-block">
               <p class="quote">"And a third quote fading in."</p>
-<p class="quote-author">Adam Ferguson , Bachelor or Music</p>
+<p class="quote-author">Adam Ferguson , Bachelor of Music</p>
                 </div>
                 </div>
               </div>
