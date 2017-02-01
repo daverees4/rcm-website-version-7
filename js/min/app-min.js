@@ -6,7 +6,7 @@ $(document).ready(function() {
         items: 2,
         itemsDesktop: false,
         itemsDesktopSmall: false,
-        itemsTablet: false
+        itemsTablet: 1
     });
     var owl = $(".owl-carousel").data("owlCarousel");
     $(".next").on("click", function() {
