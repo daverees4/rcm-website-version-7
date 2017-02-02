@@ -122,10 +122,10 @@
             </div>
             <div class="row link-boxes-row">
               <div class="medium-6 columns">
-                <a href="#">
+                <a href="http://google.com">
                   <div class="hero-with-text-fixed link-hero">
                     <img src="img/6by4.jpg"  />
-                    <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
+                    <h1 class="hero-overlay-text"><a>Title</a></h1>
                     <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
                   </div>
                 </a>
@@ -133,7 +133,7 @@
               <div class="medium-6 columns">            
                 <div class="hero-with-text-fixed link-hero">
                   <img src="img/6by4.jpg"  />
-                  <h1 class="hero-overlay-text"><a href="#">RCM life</a></h1>
+                  <h1 class="hero-overlay-text"><a>RCM life</a></h1>
                   <p class="hero-overlay-caption">What's it like to study at the world's greatest conservatoire?</p>
                 </div>
               </div>

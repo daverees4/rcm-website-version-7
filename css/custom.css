@@ -1271,7 +1271,7 @@ padding-right:0;
 
 .gallery-arrows {
   position: relative;
-  top: -62px;
+  top: -55px;
   background-color: #fff;
 }
 
@@ -1279,6 +1279,9 @@ padding-right:0;
   background-color: #fff;
 }
 
+.gallery-item img {
+  margin-bottom: 0.25rem;
+}
 
 
 
@@ -1327,8 +1330,9 @@ padding-right:0;
 
 .hero-with-text-fixed {
   position: relative;
-  max-width: 550px;
+
   margin: 0 auto;
+  
 }
 
 .hero-with-text-fixed:after {
@@ -1340,6 +1344,7 @@ padding-right:0;
   height:100%;
   opacity:0.15;
   background-color: #000;
+
 }
 
 
@@ -1351,23 +1356,26 @@ top: 0;
 left: 50%;
 -webkit-transform: translateX(-50%);
 transform: translateX(-50%);
-margin-top:1.5rem;
+margin-top:0.5rem;
 z-index: 1000000;
+text-align: center;
+width: 75%;
 
 }
 
 .hero-overlay-caption{
   color: #fff;
 position: absolute;
-bottom: 0;
+bottom: 40%;
 left: 50%;
 -webkit-transform: translateX(-50%);
 transform: translateX(-50%);
 z-index: 1000001;
 text-align: center;
 width: 75%;
-margin-bottom: 5.5rem;
+
 display: none;
+
 }
 
 .morefromthercm {
@@ -1401,12 +1409,14 @@ display: none;
 
 
 .hero-overlay-text {
-    margin-top: 4.5rem;
+    margin-top: 0.75rem;
+}
 }
 
-
-
-  
+@media screen and (min-width: 1324) {
+  .hero-overlay-text {
+    margin-top: 1rem;
+}
 }
 
 
