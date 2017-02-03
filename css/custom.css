@@ -401,7 +401,7 @@ p, li {
 
 /* vertical spacing */
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .feature-box, .link-boxes-row {
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .feature-box-row, .alert-row, .link-boxes-row {
   margin-bottom: 1.25rem;
 }
 
