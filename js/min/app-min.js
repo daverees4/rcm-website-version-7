@@ -43,13 +43,6 @@ $(document).ready(function() {
         itemsDesktopSmall: false,
         itemsTablet: false
     });
-    var gallery = $(".gallery").data("owlCarousel");
-    $(".gallery-left").on("click", function() {
-        gallery.next();
-    });
-    $(".gallery-right").on("click", function() {
-        gallery.prev();
-    });
     $(".mobile-toggle").on("click", function() {
         if (!$(".mobile-toggle").hasClass("secondary-close")) {
             $(this).toggleClass("icon-cross icon-menu-five");

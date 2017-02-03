@@ -48,10 +48,7 @@ $(".gallery").owlCarousel({
   itemsTablet: false,
 });
 
-var gallery = $(".gallery").data('owlCarousel');
 
-$(".gallery-left").on("click", function() {gallery.next();});
-$(".gallery-right").on("click", function() {gallery.prev();});
 
 /* Menu */
 
