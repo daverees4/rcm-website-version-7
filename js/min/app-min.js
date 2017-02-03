@@ -16,14 +16,23 @@ $(document).ready(function() {
         owl.prev();
     });
     $(".quote-carousel").each(function() {
-        $(this).owlCarousel({
-            navigation: false,
-            pagination: false,
-            items: 1,
-            autoPlay: 5e3,
-            transitionStyle: "fade",
-            singleItem: true
-        });
+        if ($(this).find(".quote-block").length === 1) {
+            $(this).owlCarousel({
+                navigation: false,
+                pagination: false,
+                items: 1,
+                singleItem: true
+            });
+        } else {
+            $(this).owlCarousel({
+                navigation: false,
+                pagination: false,
+                items: 1,
+                autoPlay: 5e3,
+                transitionStyle: "fade",
+                singleItem: true
+            });
+        }
     });
     $(".gallery").owlCarousel({
         navigation: false,

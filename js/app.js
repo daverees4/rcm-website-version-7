@@ -15,6 +15,16 @@ $(".next").on("click", function() {owl.next();});
 $(".previous").on("click", function() {owl.prev();});
 
 $( ".quote-carousel" ).each(function() {
+  
+  if($(this).find('.quote-block').length===1){
+    $(this).owlCarousel({
+  navigation: false,
+  pagination: false,
+  items:1,
+  singleItem: true,
+});
+    
+    } else {
 
 $(this).owlCarousel({
   navigation: false,
@@ -24,6 +34,7 @@ $(this).owlCarousel({
   transitionStyle: "fade",
   singleItem: true,
 });
+}
 
 });
 
