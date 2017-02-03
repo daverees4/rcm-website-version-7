@@ -15,13 +15,15 @@ $(document).ready(function() {
     $(".previous").on("click", function() {
         owl.prev();
     });
-    $(".quote-carousel").owlCarousel({
-        navigation: false,
-        pagination: false,
-        items: 1,
-        autoPlay: 5e3,
-        transitionStyle: "fade",
-        singleItem: true
+    $(".quote-carousel").each(function() {
+        $(this).owlCarousel({
+            navigation: false,
+            pagination: false,
+            items: 1,
+            autoPlay: 5e3,
+            transitionStyle: "fade",
+            singleItem: true
+        });
     });
     $(".gallery").owlCarousel({
         navigation: false,

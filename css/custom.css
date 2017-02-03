@@ -435,6 +435,10 @@ h3, .h3 {
   margin-bottom: 0.3rem;
 }
 
+.blue-border-full {
+  margin-bottom: 0;
+}
+
 .main-page-content .index-title {
   margin-top: -0.5rem;
 }

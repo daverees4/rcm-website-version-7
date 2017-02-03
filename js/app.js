@@ -14,13 +14,17 @@ var owl = $(".owl-carousel").data('owlCarousel');
 $(".next").on("click", function() {owl.next();});
 $(".previous").on("click", function() {owl.prev();});
 
-$(".quote-carousel").owlCarousel({
+$( ".quote-carousel" ).each(function() {
+
+$(this).owlCarousel({
   navigation: false,
   pagination: false,
   items:1,
   autoPlay: 5000,
   transitionStyle: "fade",
   singleItem: true,
+});
+
 });
 
 $(".gallery").owlCarousel({
