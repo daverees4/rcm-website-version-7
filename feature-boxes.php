@@ -37,34 +37,42 @@
           </div>
           <div class="row">
             <div class="medium-8 columns">
-              <h3>Mid Content Feature</h3>
-              <div class="row study-foldout">
-                <div class="feature-box">
-                  <div class="small-12 columns">
-                    <img src="img/16by9.jpg" />
-                    <div class="feature-box-content">
-                      <h4>One to One Lessons</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                      <a class="button">Meet the Professors</a>
+              <div class="row">
+                <div class="row">
+                  <div class="feature-box">
+                    <div class="small-12 columns feature-box-inner">
+                      <img src="img/16by9.jpg" />
+                      <div class="feature-box-content">
+                        <h4>One to One Lessons</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <a class="button">Meet the Professors</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h3>Alert Box</h3>
-                <div class="row alert">
+              </div>
+                 <div class="row">
+                <div class="row">
                   <div class="feature-box">
-                    <div class="medium-6 large-5 columns">
-                      <img src="img/16by9.jpg" class="hide-for-medium" />
-                      <a href="#"><h3>Apply Now for 2017</h3></a>
-                      <p>Applications are now open for entry in 2017. Come and study in one of the world's top conservatoires.</p>
-                      <a class="button">Meet the Professors</a>
-                    </div>
-                    <div class="medium-6 large-offset-1 columns">
-                      <img src="img/16by9.jpg" class="show-for-medium" />
+                    <div class="small-12 columns alert-box-inner">
+                    
+                     
+          <div class="medium-6 large-5 columns ">
+                    <img src="img/16by9.jpg" class="hide-for-medium" />
+                    <a href="#"><h3>Apply Now for 2017</h3></a>
+                    <p>Applications are now open for entry in 2017. Come and study in one of the world's top conservatoires.</p>
+                    <a class="button">Meet the Professors</a>
+                  </div>
+                  <div class="medium-6 large-offset-1 columns ">
+                    <img src="img/16by9.jpg" class="show-for-medium" />
+                  </div>
+
+                     
                     </div>
                   </div>
                 </div>
-                <div class="row">
+              </div>
+                          <div class="row">
                   <div class="small-12 columns">
                     <h3>Gallery</h3>
                   </div>
