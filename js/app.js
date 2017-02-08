@@ -311,7 +311,7 @@ twitterFetcher.fetch(configProfile);
 
 
 $('.main-page-content>p:last-child').each(function() {
-  if($(this).parent().next().hasClass('feature-box-row')) {
+  if($(this).parent().next().hasClass('feature-box-row') || $(this).parent().next().hasClass('gallery-row')) {
     $(this).addClass('paragraph-topup');   
   };
 });
