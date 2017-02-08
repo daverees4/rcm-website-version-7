@@ -510,7 +510,7 @@ border-top: 0.0625rem solid #7cc8c5;
 
 .button {
   border-bottom: none;
-}
+  margin-bottom: 0rem;}
 
 @media screen and (max-width: 1023px){ 
   .button {

@@ -310,6 +310,10 @@ var configProfile = {
 twitterFetcher.fetch(configProfile);
 
 
+$('.main-page-content>p:last-child').each(function() {
+  console.log($(this).html());
+});
+
 
 
 
