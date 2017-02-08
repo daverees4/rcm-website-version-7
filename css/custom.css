@@ -418,7 +418,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 .paragraph-topup, .feature-box-row {
-  margin-bottom: 2.8rem !important;
+  margin-bottom: 2.3rem !important;
 }
 
 
@@ -451,7 +451,7 @@ h3, .h3 {
 @media screen and (min-width: 1024px){ 
   
 .paragraph-topup, .feature-box-row  {
-  margin-bottom: : 3.75rem !important;
+  margin-bottom:  3.25rem !important;
 }
   
   h3, .h3 {
@@ -486,7 +486,7 @@ h3, .h3 {
 @media screen and (min-width: 1324px){ 
   
 .paragraph-topup, .feature-box-row {
- margin-bottom: : 4.25rem !important;
+ margin-bottom:  3.75rem !important;
 }
 
   h3, .h3 {
@@ -1367,15 +1367,10 @@ padding-top: 1.25rem;
 .feature-box-inner {
 
 
-padding: 1.625rem;
+padding: 1.625rem 1.625rem 0.325rem
 }
 
 
-
-.feature-box{
-  padding: 0.5rem;
-
-}
 
 
 
