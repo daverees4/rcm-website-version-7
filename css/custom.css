@@ -409,13 +409,15 @@ p, li {
 
 
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last {
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last {
   margin-bottom: 1.25rem;
 }
 
 
 
-.paragraph-topup {
+
+
+.paragraph-topup, .feature-box-row {
   margin-bottom: 2.8rem;
 }
 
@@ -448,7 +450,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1024px){ 
   
-.paragraph-topup {
+.paragraph-topup, .feature-box-row  {
   margin-bottom: : 3.75rem;
 }
   
@@ -483,7 +485,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1324px){ 
   
-.paragraph-topup {
+.paragraph-topup, .feature-box-row {
  margin-bottom: : 4.25rem;
 }
 
