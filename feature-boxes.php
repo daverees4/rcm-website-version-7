@@ -37,7 +37,7 @@
           </div>
           <div class="row">
             <div class="medium-8 columns">
-              <div class="row">
+              <div class="row feature-box-row">
                 <div class="row">
                   <div class="feature-box">
                     <div class="small-12 columns feature-box-inner">
@@ -51,7 +51,7 @@
                   </div>
                 </div>
               </div>
-                 <div class="row">
+                 <div class="row feature-box-row">
                 <div class="row">
                   <div class="feature-box">
                     <div class="small-12 columns alert-box-inner">
