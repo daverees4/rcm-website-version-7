@@ -412,7 +412,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 .paragraph-topup {
-  height: 1.5625rem;
+  margin-bottom: 2.8rem;
 }
 
 
@@ -445,7 +445,7 @@ h3, .h3 {
 @media screen and (min-width: 1024px){ 
   
 .paragraph-topup {
-  height: 2.5rem;
+  height: 3.75rem;
 }
   
   h3, .h3 {
@@ -480,7 +480,7 @@ h3, .h3 {
 @media screen and (min-width: 1324px){ 
   
 .paragraph-topup {
-  height: 3rem;
+  height: 4.25rem;
 }
 
   h3, .h3 {
