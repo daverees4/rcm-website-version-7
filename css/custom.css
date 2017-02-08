@@ -1382,9 +1382,13 @@ padding: 1.625rem 1.625rem 0.325rem
     margin-right: 8.3333333333%;
   }
   .feature-box-inner {
-    padding-left: 1.625rem;
-    padding-right: 1.625rem;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 1.5rem;
+  }
+  
+  .feature-box-inner img {
+    padding: 0 1.625rem;
   }
 }
 
