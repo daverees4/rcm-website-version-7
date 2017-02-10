@@ -486,7 +486,7 @@ h3, .h3 {
 @media screen and (min-width: 1324px){ 
   
 .paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row {
- margin-bottom:  3.75rem !important;
+ margin-bottom:  4rem !important;
 }
 
   h3, .h3 {
@@ -745,6 +745,7 @@ margin: 0 auto;
   z-index: -100;
   width: 100%;
   position:absolute;
+  max-width: 1556px;
 }
 
 #logo-content, #menu-content, #content {
@@ -1045,6 +1046,8 @@ padding-right:0;
     margin-top: 0;
 
   }
+  
+  
   
   #content, #drop-down-bar {
     max-width: inherit
