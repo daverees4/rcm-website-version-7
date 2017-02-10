@@ -496,7 +496,7 @@ h3, .h3 {
 @media screen and (min-width: 1324px){ 
   
 .paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row {
- margin-bottom:  4rem !important;
+ margin-bottom:  3.75rem !important;
 }
 
   h3, .h3 {
