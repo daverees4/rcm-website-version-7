@@ -409,12 +409,8 @@ p, li {
 
 
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last {
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .link-hero {
   margin-bottom: 1.25rem;
-}
-
-.summary-p-last {
-  margin-bottom: 0;
 }
 
 
@@ -457,6 +453,16 @@ h3, .h3 {
 .paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row {
   margin-bottom:  3.25rem !important;
 }
+
+.summary-p-last {
+  margin-bottom: 0;
+}
+
+
+.link-hero {
+  margin-bottom: 0;
+}
+
   
   h3, .h3 {
   margin-bottom: 0.3rem;
