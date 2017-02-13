@@ -409,7 +409,7 @@ p, li {
 
 
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .link-hero {
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last{
   margin-bottom: 1.25rem;
 }
 
@@ -417,8 +417,8 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row {
-  margin-bottom: 2.3rem !important;
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .link-hero  {
+  margin-bottom: 2.75rem !important;
 }
 
 
@@ -1430,7 +1430,7 @@ padding: 1.625rem 1.625rem 0.325rem
 .hero-with-text-fixed {
   position: relative;
 
-  margin: 0 auto;
+
   
 }
 

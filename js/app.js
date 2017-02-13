@@ -311,7 +311,7 @@ twitterFetcher.fetch(configProfile);
 
 
 $('.main-page-content>p:last-child').each(function() {
-  if($(this).parent().next().hasClass('feature-box-row') || $(this).parent().next().hasClass('gallery-row') || $(this).parent().next().hasClass('alert-row') ||  $(this).parent().next().hasClass(' .link-boxes-row') || $(this).parent().next().hasClass('concertina-last') || $(this).parent().next().hasClass('carousel-row')) {
+  if($(this).parent().next().hasClass('feature-box-row') || $(this).parent().next().hasClass('gallery-row') || $(this).parent().next().hasClass('alert-row') ||  $(this).parent().next().hasClass('link-boxes-row') || $(this).parent().next().hasClass('concertina-last') || $(this).parent().next().hasClass('carousel-row')) {
     $(this).addClass('paragraph-topup');   
   };
 });
