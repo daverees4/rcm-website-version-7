@@ -315,7 +315,7 @@ $('.main-page-content>p:last-child').each(function() {
     $(this).addClass('paragraph-topup');   
   };
   
-  if($(this).parent().parent().next().hasClass('link-boxes-row')) {
+  if($(this).parent().parent().parent().next().hasClass('link-boxes-row')) {
     $(this).addClass('paragraph-topup');      
   }
 });
