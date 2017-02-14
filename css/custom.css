@@ -47,6 +47,10 @@ Contents
 .icon-social-twitter:before { color: #0287cb } /* '?' */
 .icon-social-youtube:before { color: #c5003e;} /* '?' */ 
 
+.tertiary-menu a {
+  color: #38a8aa;
+}
+
 
 
 /* 2. Grid
@@ -1116,17 +1120,13 @@ padding-right:0;
     line-height: 2.125rem;  
   }
   
-  .menu > li > a, .menu  {
+  .menu > li > a {
   font-size: 1.25rem;
   line-height: 2.125rem;
   padding: 0 1rem 0 1rem;
 }
 
-.tertiary-menu > .li > .currentbranch0 > a {
-    font-size: 1.25rem;
-  line-height: 2.125rem;
-  color: #38a8aa; 
-}
+
   
     #primary-nav > li > ul {
     position: fixed;
