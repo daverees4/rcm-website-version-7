@@ -1125,8 +1125,7 @@ padding-right:0;
 .tertiary-menu > .li > .currentbranch0 > a {
     font-size: 1.25rem;
   line-height: 2.125rem;
-  padding: 0 1rem 0 1rem;
-  color: #38a8aa;
+  color: #38a8aa; 
 }
   
     #primary-nav > li > ul {
