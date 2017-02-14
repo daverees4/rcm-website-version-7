@@ -311,13 +311,10 @@ twitterFetcher.fetch(configProfile);
 
 
 $('.main-page-content>p:last-child').each(function() {
-  if($(this).parent().next().hasClass('feature-box-row') || $(this).parent().next().hasClass('gallery-row') || $(this).parent().next().hasClass('alert-row') ||  $(this).parent().next().hasClass('link-boxes-row') || $(this).parent().next().hasClass('concertina-last') || $(this).parent().next().hasClass('carousel-row') || $(this).parent().next().hasClass('inline-image') || $(this).parent().next().hasClass('inline-video')) {
+  if($(this).parent().next().hasClass('feature-box-row') || $(this).parent().next().hasClass('gallery-row') || $(this).parent().next().hasClass('alert-row') ||  $(this).parent().next().hasClass('concertina-last') || $(this).parent().next().hasClass('carousel-row') || $(this).parent().next().hasClass('inline-image') || $(this).parent().next().hasClass('inline-video')) {
     $(this).addClass('paragraph-topup');   
   };
   
-  if($(this).parent().parent().parent().next().hasClass('link-boxes-row')) {
-    $(this).addClass('paragraph-topup');      
-  }
 });
 
 
