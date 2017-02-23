@@ -137,19 +137,19 @@ $(".concertina-titlebar").on("click", function() {
 
 
 
-$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").append("<i class='float-right icon-cross'></i>");
-$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2) > a").parent().prepend("<i class='float-right icon-arrow-right'></i>");
-$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().addClass("hide");
-$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").on("click", function() {
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)>a>.icon-arrow-right").toggleClass("hide"); 
+$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").prepend("<i class='float-right icon-cross'></i>");
+$("#tertiary-menu-mobile >.tertiary-menu > li.tag > a").parent().prepend("<i class='float-right icon-arrow-right'></i>");
+$("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().addClass("hide");
+$("#tertiary-menu-mobile >.tertiary-menu > li.tag").on("click", function() {
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>a>.icon-arrow-right").toggleClass("hide"); 
   $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li:nth-child(2) > a").addClass("tertiary-border");
 });
 
 $("#tertiary-menu-mobile >.tertiary-menu > li > a >.icon-cross").on("click", function() {
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)>a>.icon-arrow-right").toggleClass("hide");
-    $(".tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li:nth-child(2) > a").removeClass("tertiary-border");
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>a>.icon-arrow-right").toggleClass("hide");
+    $(".tertiary-menu > li:nth-child(1) > a, .tertiary-menu > li.tag > a").removeClass("tertiary-border");
 });
 
 $(".link-hero").on("mouseover", function() {
