@@ -949,8 +949,15 @@ padding-right:0;
 
 }
 
+
+
 .tertiary-border {
     border-bottom: 1px solid #38a8aa !important;
+}
+
+.teriary-border-surround {
+  border-top: solid #38a8aa !important;
+  border-bottom: 1px solid #38a8aa !important;
 }
 
 .active {
