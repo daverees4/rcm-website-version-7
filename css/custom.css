@@ -260,7 +260,7 @@ img {
 /* Size 1 */
 
 #tertiary-menu-mobile-landing {
-  margin: 0 1.25rem;
+  margin: 1.25rem 0;
 }
 
 a, .underline {
