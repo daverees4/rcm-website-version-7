@@ -259,6 +259,10 @@ img {
 
 /* Size 1 */
 
+#tertiary-mobile-menu-landing {
+  margin: 0 1.25rem;
+}
+
 a, .underline {
   display: inline;
   border-bottom: 1px solid #000;
