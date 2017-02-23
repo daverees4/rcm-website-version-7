@@ -138,7 +138,7 @@ $(".concertina-titlebar").on("click", function() {
 
 
 $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").append("<i class='float-right icon-cross'></i>");
-$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2) > a").parent().append("<i class='float-right icon-arrow-right'></i>");
+$("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2) > a").parent().prepend("<i class='float-right icon-arrow-right'></i>");
 $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().addClass("hide");
 $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").on("click", function() {
   $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(2)").siblings().toggleClass("hide");
