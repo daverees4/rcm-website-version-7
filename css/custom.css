@@ -429,7 +429,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card {
   margin-bottom: 2.75rem !important;
 }
 
@@ -465,7 +465,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1024px){ 
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .hero-with-text-fixed   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .hero-with-text-fixed, .contact-card   {
   margin-bottom:  3.25rem !important;
 }
 
@@ -510,7 +510,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1324px){ 
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .hero-with-text-fixed   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .hero-with-text-fixed, .contact-card   {
  margin-bottom:  3.875rem !important;
 }
 
@@ -580,6 +580,12 @@ border-top: 0.0625rem solid #7cc8c5;
   text-align: left;
   border: none;
 }
+
+.contact-card {
+  background-color:  #38a8aa;
+  padding: 1.25rem;
+}
+
 
 .right-hand-menu-button {
   margin:0 0 1px 0;
