@@ -951,7 +951,7 @@ padding-right:0;
 
 }
 
-.tertiary-menu > li > a {
+.tertiary-menu > li > a, .tertiary-menu > li > span > a {
   padding: 0 !important ;
 }
 
@@ -1150,7 +1150,7 @@ padding-right:0;
     line-height: 2.125rem;  
   }
   
-  .menu > li > a, .menu > li > span > a {
+  .menu > li > a {
   font-size: 1.25rem;
   line-height: 2.125rem;
   padding: 0 1rem 0 1rem;
