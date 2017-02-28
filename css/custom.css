@@ -958,8 +958,6 @@ padding-right:0;
 .menu-highlight a {
   color: #38a8aa;
   border-bottom: 1px solid #38a8aa;
-  font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
-
 }
 
 
@@ -977,6 +975,10 @@ padding-right:0;
   color: #38a8aa;
 }
 
+  .menu-highlight{
+  border-bottom: 1px solid #38a8aa;
+}
+
 @media screen and ( min-width: 1024px ){ 
   
   #primary-nav > li > ul {
@@ -984,7 +986,7 @@ padding-right:0;
   }
   
   .menu-highlight{
- 
+  border-bottom: 1px solid #38a8aa;
 }
 
 .tertiary-menu {
