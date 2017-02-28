@@ -850,7 +850,7 @@ margin: 0 auto;
   }
 
 
-.top-3-menu, .tertiary-menu {
+.top-3-menu {
   font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
   }
   
@@ -957,6 +957,8 @@ padding-right:0;
 
 .menu-highlight a {
   color: #38a8aa;
+  border-bottom: 1px solid #38a8aa;
+  font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
 
 }
 
@@ -982,7 +984,7 @@ padding-right:0;
   }
   
   .menu-highlight{
-  border-bottom: 1px solid #38a8aa;
+ 
 }
 
 .tertiary-menu {
@@ -1493,7 +1495,7 @@ transform: translateX(-50%);
 margin-top:0.5rem;
 z-index: 1000000;
 text-align: center;
-width: 75%;
+width: 90%;
 
 }
 
