@@ -955,6 +955,9 @@ padding-right:0;
   padding: 0 !important ;
 }
 
+.tertiary-menu >li >span >a {
+  display: block;
+}
 .menu-highlight a {
   color: #38a8aa;
   border-bottom: 1px solid #38a8aa;
