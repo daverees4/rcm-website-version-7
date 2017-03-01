@@ -142,12 +142,12 @@ $("#tertiary-menu-mobile >.tertiary-menu > li.tag > a").parent().prepend("<i cla
 $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().addClass("hide");
 $("#tertiary-menu-mobile >.tertiary-menu > li.tag").on("click", function() {
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>a>.icon-arrow-down").toggleClass("hide"); 
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>.icon-arrow-down").toggleClass("hide"); 
 });
 
 $("#tertiary-menu-mobile >.tertiary-menu > li  >.icon-cross").on("click", function() {
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>a>.icon-arrow-down").toggleClass("hide");
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag>.icon-arrow-down").toggleClass("hide");
 
 });
 
