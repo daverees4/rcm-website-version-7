@@ -983,7 +983,7 @@ padding-right:0;
 }
 
 .teriary-border-surround {
-  border-top: solid #38a8aa !important;
+  border-top: 1px solid #38a8aa !important;
   border-bottom: 1px solid #38a8aa !important;
 }
 
