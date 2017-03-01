@@ -579,6 +579,7 @@ border-top: 0.0625rem solid #7cc8c5;
   color: #c5003e;
   text-align: left;
   border: none;
+  padding: 0.25rem 1rem;
 }
 
 .contact-card {
