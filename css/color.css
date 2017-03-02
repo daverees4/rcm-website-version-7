@@ -1,0 +1,23 @@
+.menu-highlight {
+    border-bottom: 3px solid #38a8aa;
+}
+
+.in-page-button {
+    background-color: #bde3e1;
+    color: #38a8aa;
+}
+
+.button:hover, .button-2:hover {
+    background-color: #38a8aa;
+    color: #fff;
+}
+
+.feature-box-inner {
+    background-color: #bde3e1 !important;
+}
+
+
+.button {
+    border: 0.0625rem solid #38a8aa;
+}
+
