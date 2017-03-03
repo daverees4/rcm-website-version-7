@@ -146,6 +146,8 @@ $("#tertiary-menu-mobile >.tertiary-menu > li.tag > .icon-arrow-down").on("click
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
   $(".tertiary-arrow").toggleClass("hide");
   $("#tertiary-menu-mobile >.tertiary-menu > li > .icon-cross").toggleClass("hide");
+   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").toggleClass("tag-open");
+  
 });
 
 $("#tertiary-menu-mobile >.tertiary-menu > li  > .icon-cross").on("click", function() {
@@ -153,6 +155,7 @@ $("#tertiary-menu-mobile >.tertiary-menu > li  > .icon-cross").on("click", funct
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
   $(".tertiary-arrow").toggleClass("hide");
   $("#tertiary-menu-mobile >.tertiary-menu > li > .icon-cross").toggleClass("hide");
+  $("#tertiary-menu-mobile >.tertiary-menu > li.tag").toggleClass("tag-open");
 });
 
 $(".link-hero").on("mouseover", function() {
