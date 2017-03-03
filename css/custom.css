@@ -995,7 +995,11 @@ padding-right:0;
 }
 
 .tag {
-  border-bottom: 0;
+  border-bottom: 0 !important;
+}
+
+.tag-open {
+    border-bottom: 3px solid #38a8aa !important;
 }
 
 @media screen and ( min-width: 1024px ){ 
