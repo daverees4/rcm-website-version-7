@@ -965,6 +965,8 @@ padding-right:0;
   font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
 }
 
+
+
 #tertiary-menu-mobile-landing {
   margin: 1.25rem 0;
   border-top: 3px solid #38a8aa !important;
@@ -988,9 +990,13 @@ padding-right:0;
   color: #38a8aa;
 }
 
-  .menu-highlight{
-  border-bottom: 31px solid #38a8aa;
-}1
+.menu-highlight{
+  border-bottom: 3px solid #38a8aa;
+}
+
+.tag {
+  border-bottom: 0;
+}
 
 @media screen and ( min-width: 1024px ){ 
   
