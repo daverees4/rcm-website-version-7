@@ -142,14 +142,14 @@ $("#tertiary-menu-mobile >.tertiary-menu > li.tag > a").parent().prepend("<i cla
 $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").parent().prepend("<i class='float-right icon-cross mobile-icons hide'></i>");
 $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().addClass("hide");
 
-$("#tertiary-menu-mobile >.tertiary-menu > li.tag").on("click", function() {
+$("#tertiary-menu-mobile >.tertiary-menu > li.tag > .icon-arrow-down").on("click", function() {
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").parent().prepend("<i class='float-right icon-cross mobile-icons'></i>");
   $(".tertiary-arrow").toggleClass("hide");
   $("#tertiary-menu-mobile >.tertiary-menu > li > .icon-cross").toggleClass("hide");
 });
 
-$("#tertiary-menu-mobile >.tertiary-menu > li  >.icon-cross").on("click", function() {
+$("#tertiary-menu-mobile >.tertiary-menu > li  > .icon-cross").on("click", function() {
+  console.log("cross clicked");
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
   $(".tertiary-arrow").toggleClass("hide");
   $("#tertiary-menu-mobile >.tertiary-menu > li > .icon-cross").toggleClass("hide");
