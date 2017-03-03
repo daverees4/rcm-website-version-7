@@ -143,7 +143,7 @@ $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").parent().prepen
 $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().addClass("hide");
 $("#tertiary-menu-mobile >.tertiary-menu > li.tag").on("click", function() {
   $("#tertiary-menu-mobile >.tertiary-menu > li.tag").siblings().toggleClass("hide");
-  $("#tertiary-menu-mobile >.tertiary-menu > li:nth-child(1) > a").parent().prepend("<i class='float-right icon-cross mobile-icons'></i>");
+  $("#tertiary-menu-mobile >.icon-cross").siblings().toggleClass("hide");
   $(".tertiary-arrow").toggleClass("hide");
 });
 
