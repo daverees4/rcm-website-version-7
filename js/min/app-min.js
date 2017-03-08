@@ -73,7 +73,7 @@ $(document).ready(function() {
         if ($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("study-pri-link")) {
             $("#content-panel").addClass("study-overlay");
         }
-        if ($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("whatson-pri-link")) {
+        if ($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("whats-onpri-link")) {
             $("#content-panel").addClass("whatson-overlay");
         }
         if ($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("get-involved-pri-link")) {
