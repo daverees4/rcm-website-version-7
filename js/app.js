@@ -79,11 +79,32 @@ $(".mobile-toggle").on("click", function () {
 
 $("#primary-nav > li > a").on("click", function() {
   
+  $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
   
   
-  if($("#primary-nav > li > ul.menu-on").length ==0 || $(this).siblings("ul").hasClass("menu-on")){
+  
+  
+  
+  if($("#primary-nav > li > ul.menu-on").length ==0 || $(this).siblings("ul").hasClass("menu-on")){     
       $("#content-panel").toggleClass("menu-overlay");
   }
+  
+  if($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("study-pri-link")) {
+    $("#content-panel").addClass("study-overlay");
+  }
+  
+  if($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("whatson-pri-link")) {
+    $("#content-panel").addClass("whatson-overlay");
+  }
+  
+  if($("#content-panel").hasClass("menu-overlay") && $(this).hasClass("get-involved-pri-link")) {
+    $("#content-panel").addClass("getinvolved-overlay");
+  }
+  
+  
+  
+  
+  
 
 
   if($(".mobile-toggle").hasClass("icon-menu-five")) {    

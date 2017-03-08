@@ -632,18 +632,18 @@ border-top: 0.0625rem solid #7cc8c5;
 
 
 .study-overlay:after {
-  opacity:0.7;
-  background-color: #007377;
+  opacity:0.7 !important;
+  background-color: #007377 !important;
 }
 
 .whatson-overlay:after {
-  opacity:0.7;
-  background-color: #5c068c;
+  opacity:0.7 !important;
+  background-color: #5c068c !important;
 }
 
 .getinvolved-overlay:after {
-  opacity:0.7;
-  background-color: #00205b;
+  opacity:0.7 !important;
+  background-color: #00205b !important;
 }
 }
 
@@ -1520,6 +1520,24 @@ width: 90%;
 
 }
 
+.home-hero-overlay-text {
+  color: #fff;
+position: absolute;
+top: 0;
+left: 50%;
+top:45%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+margin-top:0.5rem;
+z-index: 1000000;
+text-align: center;
+width: 90%;
+
+}
+
+
+
+
 .hero-overlay-caption{
   color: #fff;
 position: absolute;
@@ -1678,6 +1696,7 @@ margin-bottom: 5.5rem;
 
 #newsletter-signup {
   border: 0.0625rem solid #c5003e;
+  mar
 }
 
 #footer-border {
@@ -1696,9 +1715,10 @@ margin-bottom: 5.5rem;
   margin-bottom: 0.5rem;
 }
 
-#address-block, #contact-block {
+#address-block, #contact-block, #documents-block, #newsletter-signup {
   margin-bottom: 0.8125rem;
 }
+
 
 #footer p {
   line-height: 1.5rem;
