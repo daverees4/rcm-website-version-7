@@ -425,6 +425,7 @@ p, li {
   
   .landing-hero-overlay-text {
   font-size: 3.75rem;
+  margin-top: 2.75rem !important;
 
 }
 }
