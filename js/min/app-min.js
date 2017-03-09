@@ -53,6 +53,12 @@ $(document).ready(function() {
             gallery.prev();
         });
     });
+    $(".search-trigger, .search-cross").on("click", function() {
+        $("#search-overlay, #search-wrapper").toggleClass("hide");
+    });
+    $(".search-icon").click(function() {
+        $("#SearchForm").submit();
+    });
     $(".mobile-toggle").on("click", function() {
         if (!$(".mobile-toggle").hasClass("secondary-close")) {
             $(this).toggleClass("icon-cross icon-menu-five");
@@ -65,7 +71,7 @@ $(document).ready(function() {
             $("#primary-nav > li > ul > li > ul").removeClass("menu-on");
         }
     });
-    $("#primary-nav > li > a").on("click", function() {
+    $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
         $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
         if ($("#primary-nav > li > ul.menu-on").length == 0 || $(this).siblings("ul").hasClass("menu-on")) {
             $("#content-panel").toggleClass("menu-overlay");
