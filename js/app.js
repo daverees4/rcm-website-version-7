@@ -199,7 +199,7 @@ $(".link-hero").on("mouseout", function() {
 });
 
 $(".link-hero").on("click", function() {
-  console.log("clicked!");
+  $(this).children("a")[0].click();
 })
 
 
