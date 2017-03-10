@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 $(document).foundation();
-
 $(".owl-carousel").owlCarousel({
   navigation: false,
   pagination: false,
@@ -49,11 +48,17 @@ $(".gallery").owlCarousel({
   itemsTablet: false,
 });
 
+var gallery=null;
 
+$( ".gallery" ).each(function() {
+  
 
+gallery = $(this).data('owlCarousel');
 
+$(this).find(".gallery-left").on("click", function() {gallery.next();});
+$(this).find(".gallery-right").on("click", function() {gallery.prev();});
 
-
+});
 
 /* Menu */
 
