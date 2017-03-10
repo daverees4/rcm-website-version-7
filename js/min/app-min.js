@@ -138,6 +138,9 @@ $(document).ready(function() {
         $(this).children(".hero-overlay-caption").css("display", "none");
         $(this).removeClass("hero-with-text-overlay");
     });
+    $(".link-hero").on("click", function() {
+        console.log("clicked!");
+    });
 });
 
 (function($) {

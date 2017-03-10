@@ -196,8 +196,14 @@ $(".link-hero").on("mouseover", function() {
 $(".link-hero").on("mouseout", function() {
   $(this).children(".hero-overlay-caption").css("display", "none");
    $(this).removeClass("hero-with-text-overlay");
- 
 });
+
+$(".link-hero").on("click", function() {
+  console.log("clicked!");
+})
+
+
+
 });
 
 /* Shuffle */
