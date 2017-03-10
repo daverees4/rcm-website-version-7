@@ -34,6 +34,15 @@ $(document).ready(function() {
             });
         }
     });
+    $(".gallery").owlCarousel({
+        navigation: false,
+        pagination: false,
+        items: 1,
+        singleItem: true,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false
+    });
     $(".search-trigger, .search-cross").on("click", function() {
         $("#search-overlay, #search-wrapper").toggleClass("hide");
     });

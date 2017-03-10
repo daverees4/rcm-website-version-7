@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 $(document).foundation();
+
 $(".owl-carousel").owlCarousel({
   navigation: false,
   pagination: false,
@@ -37,6 +38,18 @@ $(this).owlCarousel({
 }
 
 });
+
+$(".gallery").owlCarousel({
+  navigation: false,
+  pagination: false,
+  items:1,
+  singleItem: true,
+  itemsDesktop: false,
+  itemsDesktopSmall: false, 
+  itemsTablet: false,
+});
+
+
 
 
 
