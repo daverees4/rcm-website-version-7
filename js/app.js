@@ -38,27 +38,7 @@ $(this).owlCarousel({
 
 });
 
-$(".gallery").owlCarousel({
-  navigation: false,
-  pagination: false,
-  items:1,
-  singleItem: true,
-  itemsDesktop: false,
-  itemsDesktopSmall: false, 
-  itemsTablet: false,
-});
 
-var gallery=null;
-
-$( ".gallery" ).each(function() {
-  
-
-gallery = $(this).data('owlCarousel');
-
-$(this).find(".gallery-left").on("click", function() {gallery.next();});
-$(this).find(".gallery-right").on("click", function() {gallery.prev();});
-
-});
 
 /* Menu */
 
