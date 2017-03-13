@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(document).foundation();
-    $(".owl-carousel").owlCarousel({
+    $(".faculty-carousel").owlCarousel({
         navigation: false,
         pagination: false,
         items: 2,
@@ -8,7 +8,7 @@ $(document).ready(function() {
         itemsDesktopSmall: false,
         itemsTablet: 1
     });
-    var owl = $(".owl-carousel").data("owlCarousel");
+    var owl = $(".faculty-carousel").data("owlCarousel");
     $(".next").on("click", function() {
         owl.next();
     });
