@@ -1794,7 +1794,7 @@ margin-bottom: 5.5rem;
 }
 
 .newsletter-button:hover {
-  background-color: #c5003e;
+  background-color: #c5003e !important;
   color: #fff !important;  
 }
 
