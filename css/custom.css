@@ -1816,6 +1816,10 @@ margin-bottom: 5.5rem;
   
 }
 
+#social-icons a img {
+  width: 2.5rem;
+}
+
 @media screen and ( min-width: 1024px ) {
   #footer-border, #footer {
     margin-bottom: 2.25rem;
@@ -1843,11 +1847,6 @@ margin-bottom: 5.5rem;
 }
 
 
-/* hide social icons for now */
-
-#social-icons {
-  display: none;
-}
 
 
 
