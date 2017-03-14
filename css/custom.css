@@ -55,6 +55,9 @@ Contents
   line-height: 2.125rem;
 }
 
+.logo {
+  border-bottom: none !important;
+}
 
 
 /* 2. Grid
