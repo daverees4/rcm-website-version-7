@@ -1654,7 +1654,7 @@ width: 90%;
 }
 
 
-.home-arrow-wrap {
+.home-arrow{
   display:none;
 }
 
@@ -1749,7 +1749,7 @@ display: none;
     margin-top: 0.75rem;
 }
 
-.home-arrow-wrap {
+.home-arrow {
   display:inline;
 }
 
