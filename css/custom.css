@@ -1655,6 +1655,10 @@ width: 90%;
 
 
 .home-arrow-wrap {
+  display:none;
+}
+
+.home-arrow-wrap {
   position:absolute;
   z-index:1;
   left:50%;
@@ -1744,6 +1748,15 @@ display: none;
 .hero-overlay-text {
     margin-top: 0.75rem;
 }
+
+.home-arrow-wrap {
+  display:inline;
+}
+
+
+
+
+
 }
 
 @media screen and (min-width: 1324) {
