@@ -276,6 +276,7 @@ a, .underline {
 
 .underline-white {
   border-bottom: 1px solid #fff;
+  display:inline-block;
 }
 
 p {
