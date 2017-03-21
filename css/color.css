@@ -17,8 +17,7 @@ border-bottom: 1px solid #38a8aa;
 
 .feature-box-button {
    background-color: none;
-   
-}
+   }
 
 
 .button {
@@ -36,6 +35,15 @@ border-bottom: 1px solid #38a8aa;
   background-color:  #38a8aa;  
 }
 
+.alert-button, .feature-box-button {
+  border:none;
+}
+
+
+
+.alert-button:hover{
+  background-color: #000;
+}
 
 
 

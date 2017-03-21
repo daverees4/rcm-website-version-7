@@ -274,6 +274,10 @@ a, .underline {
   border-bottom: 1px solid #000;
 }
 
+.underline-white {
+  border-bottom: 1px solid #fff;
+}
+
 p {
   margin: 0rem 0 1rem 0;
 }
@@ -635,7 +639,7 @@ border-top: 0.0625rem solid #7cc8c5;
 
 /* Search and Nav Overlays */
 
-.search-icon, .search-cross, .search-trigger {
+.search-icon, .search-cross, .search-trigger, .homepage-arrow {
   cursor: pointer;
 }
 
@@ -1555,6 +1559,10 @@ padding-top: 1.25rem;
 padding: 1.625rem 1.625rem 0.325rem
 }
 
+
+.video-box-heading{
+  line-height: 2.5rem;
+}
 
 
 
