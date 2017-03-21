@@ -1,0 +1,530 @@
+<%@ Page language="c#" %>
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Net" %>
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%@ Import Namespace="System.Configuration" %>
+<%@ Import Namespace="System.Xml" %>
+<%@ Import Namespace="System.Xml.XPath" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+
+
+ 
+<%
+
+
+
+
+  XmlDocument xmlDoc = new XmlDocument();
+  bool error=false;
+  
+  //This is where we look for the events in cache - if not load again (5 minute limit)
+   
+  if (Cache.Get("StaffData2017<t4 type="content" name="xmlfilename" output="normal" modifiers=""  />") == null) { 
+    try {
+       xmlDoc.Load("http://www.rcm.ac.uk/staffxml/<t4 type="content" name="xmlfilename" output="normal" modifiers=""  />.xml");
+     }
+     catch {
+       Response.Write("This page is currently being updated.  Please check back soon. <br /><br />");
+       error=true;
+     }   
+   Cache.Insert("StaffData2017<t4 type="content" name="xmlfilename" output="normal" modifiers=""  />", xmlDoc, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration);	   
+} 
+   else { 
+    xmlDoc = (XmlDocument)HttpContext.Current.Cache.Get("StaffData2017<t4 type="content" name="xmlfilename" output="normal" modifiers=""  />"); 
+    }
+   
+   if (!error) {
+                           string id=Request.QueryString["id"];
+	
+            
+   string query = "//root/DeptContact/Job/userdetails[contains(PersonalID, '"+id+"')]"; 
+
+   XmlNodeList itemNodes = xmlDoc.SelectNodes(query);
+ 
+			
+   if (itemNodes.Count==0) {   
+   %>
+   <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error | Royal College of Music</title>
+
+
+<!-- navigation object : _Bring in header --><t4 type="navigation" id="220"/>
+
+ <div class="grey-border-full"></div>
+      <div id="tertiary-mobile-container" class="hide-for-medium">        
+      <div class="row">
+          <div id="tertiary-menu-mobile" class="columns">          
+            <ul class="menu vertical tertiary-menu">
+               <li class="menu-highlight"><t4 type="navigation" id="227"/></li>
+               <li class="menu-highlight"><t4 type="navigation" id="226"/></li>
+               <t4 type="navigation" id="223"/>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="blue-border-full"></div>
+
+
+    <div class="row header-spacer" style="margin-bottom: 0">
+      <div class="large-12 columns">
+    
+      <h1>Sorry</h1>
+      </div>
+    </div>
+
+
+        <div class="row">
+          <div class="medium-8 columns">
+    
+<%
+   
+      Response.Write("<p>There was an error retrieving this profile, please try again later.  Please visit our <a href='http://www.rcm.ac.uk/about/stafflisting'>staff listings</a>.</p>");
+	} else {
+    foreach(XmlNode itemNode in itemNodes) {
+
+    
+
+    
+    %>
+    
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%             
+     try {
+     if(itemNode.SelectSingleNode("Title").InnerText!=null) {
+       if(itemNode.SelectSingleNode("Title").InnerText=="Dr" || itemNode.SelectSingleNode("Title").InnerText=="Professor" )
+        Response.Write(itemNode.SelectSingleNode("Title").InnerText); 
+      }
+      } catch {}
+      %>&nbsp;<% Response.Write(itemNode.SelectSingleNode("PreferredName").InnerText); %>&nbsp;<% Response.Write(itemNode.SelectSingleNode("Surname").InnerText); %> | Royal College of Music</title>
+
+
+<!-- navigation object : _Bring in header --><t4 type="navigation" id="220"/>
+
+ <div class="grey-border-full"></div>
+      <div id="tertiary-mobile-container" class="hide-for-medium">        
+      <div class="row">
+          <div id="tertiary-menu-mobile" class="columns">          
+            <ul class="menu vertical tertiary-menu">
+               <li class="menu-highlight"><t4 type="navigation" id="227"/></li>
+               <li class="menu-highlight"><t4 type="navigation" id="226"/></li>
+               <t4 type="navigation" id="223"/>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="blue-border-full"></div>
+
+
+    <div class="row header-spacer">
+      <div class="large-12 columns">
+    
+      <h1 style="margin-bottom: 0;"> 
+      <%             
+     try {
+     if(itemNode.SelectSingleNode("Title").InnerText!=null) {
+       if(itemNode.SelectSingleNode("Title").InnerText=="Dr" || itemNode.SelectSingleNode("Title").InnerText=="Professor" )
+        Response.Write(itemNode.SelectSingleNode("Title").InnerText+"&nbsp;"); 
+      }
+      } catch {}
+      %><% Response.Write(itemNode.SelectSingleNode("PreferredName").InnerText); %>&nbsp;<% Response.Write(itemNode.SelectSingleNode("Surname").InnerText); %></h1>
+      </div>
+    </div>
+
+
+        <div class="row">
+          <div class="medium-8 columns">
+    
+
+      <h3>
+      <% 
+      
+      
+      
+      
+      
+      
+      
+     try {
+      Response.Write(itemNode.SelectSingleNode("userprofile/Postnominal").InnerText);       
+      } catch {
+      Console.WriteLine("no Postnominal Present");
+      }
+      %>
+      </h3>
+
+      
+      
+      <%
+if (File.Exists("D:/rcmwebv5/staffxml/images/"+itemNode.SelectSingleNode("PersonalID").InnerText+".jpg")) { %> 
+             <a href="./details?id=<% Response.Write(itemNode.SelectSingleNode("PersonalID").InnerText); %>"><img src="http://www.rcm.ac.uk/staffxml/images/<% Response.Write(itemNode.SelectSingleNode("PersonalID").InnerText); %>.jpg" /></a>
+             <% } else { %>
+          <a href="./details?id=<% Response.Write(itemNode.SelectSingleNode("PersonalID").InnerText); %>"><img src="http://www.rcm.ac.uk/staffxml/images/missing.jpg" /></a>           
+            <% }%>
+            <div style="margin-bottom: 1.25rem">
+                  <%
+            try {
+               XmlNodeList userjobsNodes = itemNode.SelectNodes("userprofile/UserJobs/UserJob");                 
+                List<string> rolesList = new List<string>();
+               foreach(XmlNode userjobtitleNode in userjobsNodes) {
+                    if (!rolesList.Contains(userjobtitleNode.SelectSingleNode("JobTitle").InnerText)) {
+                        rolesList.Add(userjobtitleNode.SelectSingleNode("JobTitle").InnerText);
+                      
+                 Response.Write("<h3 style='margin-bottom: 0'><a href='http://www.rcm.ac.uk/"+userjobtitleNode.SelectSingleNode("Department").InnerText+"/professors/#rank-"+userjobtitleNode.SelectSingleNode("JobRanking").InnerText+"'>"+userjobtitleNode.SelectSingleNode("JobTitle").InnerText+"</a></h3>");
+               }
+          }} catch{}
+          %>
+                  </div>
+      <% 
+     try {
+      Response.Write(itemNode.SelectSingleNode("userprofile/BiographyLong").InnerText);       
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+      
+      <%  
+      try {
+
+      XmlNodeList websiteNodes = itemNode.SelectNodes("userprofile/URLs/URL");
+      
+     
+      
+     foreach(XmlNode websiteNode in websiteNodes) { 
+      if(websiteNode.SelectSingleNode("Label").InnerText!=null && websiteNode.SelectSingleNode("Address").InnerText!=null) { %>
+     
+     <p><% Response.Write(websiteNode.SelectSingleNode("Label").InnerText); %> <a href="<% Response.Write (websiteNode.SelectSingleNode("Address").InnerText); %>">Visit website</a></p>
+       
+     <%  } 
+     }
+     
+     } catch {}
+     %>
+     <p><span style="color:#706f6f">Faculties / departments: </span>  
+      <%
+          try {
+                XmlNodeList userdepartmentNodes = itemNode.SelectNodes("userprofile/UserJobs/UserJob"); 
+               List<string> newList = new List<string>();
+                   string departmentsstring="";
+                   string urltag="";
+               foreach(XmlNode userjobsNode in userdepartmentNodes) {
+                    if (!newList.Contains(userjobsNode.SelectSingleNode("Department").InnerText)) {
+                      
+                      
+                      if(userjobsNode.SelectSingleNode("Department").InnerText=="Historical Performance") {
+                         urltag="hp"; 
+                      } else if(userjobsNode.SelectSingleNode("Department").InnerText=="Junior Department") {
+                         urltag="junior"; 
+                      } else if(userjobsNode.SelectSingleNode("Department").InnerText=="Vocal Studies") {
+                         urltag="vocalstudies"; 
+                      } else if(userjobsNode.SelectSingleNode("Department").InnerText=="") {
+                         urltag="vocalstudies"; 
+                      } 
+                      
+                      
+                      else {
+                        urltag=userjobsNode.SelectSingleNode("Department").InnerText;
+                      }
+                      
+                      
+                      
+                      
+                      
+                      
+      newList.Add(userjobsNode.SelectSingleNode("Department").InnerText);
+                 departmentsstring+="<a href='http://www.rcm.ac.uk/"+urltag+"'>"+userjobsNode.SelectSingleNode("Department").InnerText+"</a>, ";
+                 }
+               }
+              Response.Write(departmentsstring.Substring(0, departmentsstring.Length-2));
+          } catch{}
+          %>
+      
+      </p>
+<% if("<t4 type="content" name="xmlfilename" output="normal" modifiers=""  />"=="research") { %>
+      
+                    <div class="concertina">
+                 <div class="concertina-titlebar">
+                <i class="float-right icon-arrow-down"></i>
+                 <h3 class="concertina-title">Research</h3>
+                 </div>
+                <div class="concertina-content">
+
+             <% 
+             
+     try {
+     if(itemNode.SelectSingleNode("userprofile/ResearchArea").InnerText!=null) {
+      Response.Write("<h4>Research areas</h4>");   
+      
+        XmlNodeList researchareaNodes = itemNode.SelectNodes("userprofile/ResearchArea/ResearchAreaName");
+      
+     foreach(XmlNode researchareaNode in researchareaNodes) { %>
+     
+     <p style="margin-bottom: 0"><% Response.Write(researchareaNode.InnerText); %> </p>
+        
+       
+     <%  } 
+       Response.Write("<p>&nbsp;</p>"); 
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+
+
+
+             <% 
+             
+     try {
+     if(itemNode.SelectSingleNode("userprofile/ResearchProject").InnerText!=null) {
+      Response.Write("<h4>Research projects</h4>");   
+      
+        XmlNodeList researchprojectNodes = itemNode.SelectNodes("userprofile/ResearchProject/ResearchProjectName");
+      
+     foreach(XmlNode researchprojectNode in researchprojectNodes) { %>
+     
+     <p style="margin-bottom: 0"><% Response.Write(researchprojectNode.InnerText); %> </p>
+           
+     <%  } 
+       Response.Write("<p>&nbsp;</p>"); 
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+
+
+      
+      
+                        <% 
+             
+     try {
+     if(itemNode.SelectSingleNode("userprofile/Supervisors").InnerText!=null) {
+      Response.Write("<h4>Research supervisors</h4>");   
+      
+        XmlNodeList researchsupersNodes = itemNode.SelectNodes("userprofile/Supervisors/SupervisorName");
+      
+     foreach(XmlNode researchsupersNode in researchsupersNodes) { %>
+     
+     <p style="margin-bottom: 0"><% Response.Write(researchsupersNode.InnerText); %> </p>
+       
+     <%  } 
+       Response.Write("<p>&nbsp;</p>"); 
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+
+
+      
+                  <% 
+             
+     try {
+     if(itemNode.SelectSingleNode("userprofile/Students").InnerText!=null) {
+      Response.Write("<h4>Research students</h4>");   
+      
+        XmlNodeList researchstudentNodes = itemNode.SelectNodes("userprofile/Students/StudentName/StudentName");
+      
+     foreach(XmlNode researchstudentNode in researchstudentNodes) { %>
+     
+     <p style="margin-bottom: 0"><% Response.Write(researchstudentNode.InnerText); %> </p>
+      
+       
+     <%  } 
+       Response.Write("<p>&nbsp;</p>"); 
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+
+
+     
+
+
+
+
+                
+                </div>
+              </div>
+              
+                            <div class="concertina">
+                 <div class="concertina-titlebar">
+                <i class="float-right icon-arrow-down"></i>
+                 <h3 class="concertina-title">Publications</h3>
+                 </div>
+                <div class="concertina-content">
+      <%
+WebClient webClient = new WebClient();
+webClient.Encoding = Encoding.UTF8;
+
+string html;
+
+  if (Cache.Get("ResearchData2017_"+itemNode.SelectSingleNode("PersonalID").InnerText) == null) { 
+    
+/* html = webClient.DownloadString("http://researchonline.rcm.ac.uk/cgi/search/archive/advanced/export_rcm_HTML.html?screen=Search&dataset=archive&_action_export=1&output=HTML&exp=0|1|-date/creators_name/title|archive|-|creators_id:creators_id:ANY:EX:"+itemNode.SelectSingleNode("UserName").InnerText+"@rcm.ac.uk|-|eprint_status:eprint_status:ANY:EQ:archive|metadata_visibility:metadata_visibility:ANY:EQ:show"); 
+*/
+
+html = webClient.DownloadString("http://researchonline.rcm.ac.uk/cgi/search/archive/advanced/export_rcm_HTML.html?screen=Search&dataset=archive&_action_export=1&output=HTML&exp=0%7C1%7C-date%2Fcreators_name%2Ftitle%7Carchive%7C-%7Ccreators_name%3Acreators_name%3AALL%3AEQ%3A"+itemNode.SelectSingleNode("Surname").InnerText+"%7C-%7Ceprint_status%3Aeprint_status%3AANY%3AEQ%3Aarchive%7Cmetadata_visibility%3Ametadata_visibility%3AANY%3AEQ%3Ashow&n=&cache=1852");
+
+
+
+if(html=="") {
+  Response.Write("<p>We could not find any research listings from this staff member.</p>");
+} else {
+Response.Write(html);
+   Cache.Insert("ResearchData2017_"+itemNode.SelectSingleNode("PersonalID").InnerText, html, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration);	
+}
+}
+ 
+   else { 
+   Response.Write(HttpContext.Current.Cache.Get("ResearchData2017_"+itemNode.SelectSingleNode("PersonalID").InnerText)); 
+ 
+    }
+    
+%>
+                </div>
+              </div>
+             <% 
+             }
+             
+             
+             
+     try {
+     if(itemNode.SelectSingleNode("userprofile/BlogAuthor").InnerText!=null) {
+      Response.Write("<p><a href='"+itemNode.SelectSingleNode("userprofile/BlogAuthor").InnerText+"' class='button'>Read "+itemNode.SelectSingleNode("Forename").InnerText+"'s blog posts</a></p>");   
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+      
+      
+      
+      <hr />
+      <h2>Contact</h2>
+      <div class="main-body-content">
+      <p>For enquires please contact:</p>
+      <div class="contact-card">
+      
+      
+
+      
+<%
+try {
+	if(itemNode.SelectSingleNode("userprofile/Email").InnerText!=null) {
+  	
+  	Response.Write("<h4 style='margin-bottom: 0'>");
+	         
+     try {
+     if(itemNode.SelectSingleNode("Title").InnerText!=null) {
+       if(itemNode.SelectSingleNode("Title").InnerText=="Dr" || itemNode.SelectSingleNode("Title").InnerText=="Professor" ) {
+        Response.Write(itemNode.SelectSingleNode("Title").InnerText+"&nbsp;"); 
+        }
+      }
+      } catch {}
+      
+    if(itemNode.SelectSingleNode("PreferredName").InnerText!=null) {
+                  Response.Write(itemNode.SelectSingleNode("PreferredName").InnerText+"&nbsp;");
+            }
+            
+            if(itemNode.SelectSingleNode("Surname").InnerText!=null) {
+                  Response.Write(itemNode.SelectSingleNode("Surname").InnerText+"</h4>");
+            }
+            
+                      try {
+                XmlNodeList usercontactNodes = itemNode.SelectNodes("userprofile/UserJobs/UserJob"); 
+               List<string> contactList = new List<string>();
+               Response.Write("<p style='margin-bottom: 0'>");
+                 string contactstring="";
+               foreach(XmlNode usercontactNode in usercontactNodes) {
+                    if (!contactList.Contains(usercontactNode.SelectSingleNode("JobTitle").InnerText)) {
+      contactList.Add(usercontactNode.SelectSingleNode("JobTitle").InnerText);
+                 contactstring =contactstring+usercontactNode.SelectSingleNode("JobTitle").InnerText+", ";
+                 
+                 }
+               }
+               Response.Write(contactstring.Substring(0, contactstring.Length-2));
+      
+                  Response.Write("</p>");
+          } catch{}
+      
+    }
+} catch {
+	try {
+		if(itemNode.SelectSingleNode("userprofile/DepartmentContactName").InnerText!=null) {
+      		Response.Write("<h4 style='margin-bottom: 0'>"+itemNode.SelectSingleNode("userprofile/DepartmentContactName").InnerText+"</h4>");   
+      	}
+    }
+    catch {}
+}
+  
+      %>
+      
+            <%
+
+          %>
+      
+                <% 
+     try {
+     if(itemNode.SelectSingleNode("userprofile/Phone").InnerText!=null) {
+      Response.Write("<p style='margin-bottom: 0'>"+itemNode.SelectSingleNode("userprofile/DepartmentPhone").InnerText+"</p>");   
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+      
+           <% 
+     try {
+     if(itemNode.SelectSingleNode("userprofile/DepartmentPhone").InnerText!=null) {
+      Response.Write("<p style='margin-bottom: 0'>"+itemNode.SelectSingleNode("userprofile/DepartmentPhone").InnerText+"</p>");   
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+           <% 
+     try {
+     if(itemNode.SelectSingleNode("userprofile/DepartmentEmail").InnerText!=null) {
+      Response.Write("<p style='margin-bottom: 0'><a href='mailto:"+itemNode.SelectSingleNode("userprofile/DepartmentEmail").InnerText+"'>"+itemNode.SelectSingleNode("userprofile/DepartmentEmail").InnerText+"</a></p>");   
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+      
+                 <% 
+     try {
+     if(itemNode.SelectSingleNode("userprofile/Email").InnerText!=null) {
+      Response.Write("<p style='margin-bottom: 0'><a href='mailto:"+itemNode.SelectSingleNode("userprofile/Email").InnerText+"'>"+itemNode.SelectSingleNode("userprofile/Email").InnerText+"</a></p>");   
+      }
+      } catch {
+      Console.WriteLine("no Biography Present");
+      }
+      %>
+       
+       
+
+ 
+      <%
+      break;
+      }
+    
+  }
+}
+%>
+      </div>
+</div>

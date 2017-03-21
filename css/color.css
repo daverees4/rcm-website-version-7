@@ -15,6 +15,10 @@ border-bottom: 1px solid #38a8aa;
     background-color: #bde3e1 !important;
 }
 
+.feature-box-button {
+   background-color: #bde3e1;
+}
+
 
 .button {
     border: 0.0625rem solid #38a8aa;
@@ -30,5 +34,7 @@ border-bottom: 1px solid #38a8aa;
   opacity:0.95;
   background-color:  #38a8aa;  
 }
+
+
 
 
