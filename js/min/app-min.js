@@ -8,12 +8,42 @@ $(document).ready(function() {
         itemsDesktopSmall: false,
         itemsTablet: 1
     });
-    var owl = $(".faculty-carousel").data("owlCarousel");
-    $(".next").on("click", function() {
-        owl.next();
+    var facultycarousel = $(".faculty-carousel").data("owlCarousel");
+    $(".fc-next").on("click", function() {
+        facultycarousel.next();
     });
-    $(".previous").on("click", function() {
-        owl.prev();
+    $(".fc-previous").on("click", function() {
+        facultycarousel.prev();
+    });
+    $(".home-events").owlCarousel({
+        navigation: false,
+        pagination: false,
+        items: 2,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: 1
+    });
+    var homeeventscarousel = $(".home-events").data("owlCarousel");
+    $(".he-next").on("click", function() {
+        homeeventscarousel.next();
+    });
+    $(".he-previous").on("click", function() {
+        homeeventscarousel.prev();
+    });
+    $(".morefromthercm").owlCarousel({
+        navigation: false,
+        pagination: false,
+        items: 2,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: 1
+    });
+    var morefromthercmcarousel = $(".morefromthercm").data("owlCarousel");
+    $(".mf-next").on("click", function() {
+        morefromthercmcarousel.next();
+    });
+    $(".mf-previous").on("click", function() {
+        morefromthercmcarousel.prev();
     });
     $(".quote-carousel").each(function() {
         if ($(this).find(".quote-block").length === 1) {
@@ -301,4 +331,17 @@ $(".main-page-content>p:last-child").each(function() {
     if ($(this).parent().next().hasClass("feature-box-row") || $(this).parent().next().hasClass("gallery-row") || $(this).parent().next().hasClass("alert-row") || $(this).parent().next().hasClass("concertina-last") || $(this).parent().next().hasClass("carousel-row") || $(this).parent().next().hasClass("inline-image") || $(this).parent().next().hasClass("inline-video")) {
         $(this).addClass("paragraph-topup");
     }
+});
+
+$(window).scroll(function() {
+    var topWindow = $(window).scrollTop();
+    var topWindow = topWindow * 1.5;
+    var windowHeight = $(window).height();
+    var position = topWindow / windowHeight;
+    position = 1 - position;
+    $(".home-arrow-wrap").css("opacity", position);
+});
+
+$(".homepage-arrow").on("click", function() {
+    $("body").scrollTo("#content-column");
 });

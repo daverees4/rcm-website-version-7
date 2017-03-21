@@ -389,6 +389,11 @@ $(window).scroll( function(){
 
 });
 
+//scroll to main content on 
+$(".homepage-arrow").on("click", function() {
+  $('body').scrollTo('#content-column');
+})
+
 
 
 
