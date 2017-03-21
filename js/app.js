@@ -92,6 +92,16 @@ $(".mobile-toggle").on("click", function () {
   }
 });
 
+//scroll to main content on 
+$(".homepage-arrow").on("click", function() {
+
+    $('html, body').animate({
+        scrollTop: $("#content-column").offset().top
+    }, 2000);
+    return false;
+})
+
+
 $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
   
   $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
@@ -389,10 +399,8 @@ $(window).scroll( function(){
 
 });
 
-//scroll to main content on 
-$(".homepage-arrow").on("click", function() {
-  $('body').scrollTo('#content-column');
-})
+
+
 
 
 

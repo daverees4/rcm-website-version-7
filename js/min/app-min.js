@@ -82,6 +82,12 @@ $(document).ready(function() {
             $("#primary-nav > li > ul > li > ul").removeClass("menu-on");
         }
     });
+    $(".homepage-arrow").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $("#content-column").offset().top
+        }, 2e3);
+        return false;
+    });
     $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
         $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
         if ($("#primary-nav > li > ul.menu-on").length == 0 || $(this).siblings("ul").hasClass("menu-on")) {
@@ -340,8 +346,4 @@ $(window).scroll(function() {
     var position = topWindow / windowHeight;
     position = 1 - position;
     $(".home-arrow-wrap").css("opacity", position);
-});
-
-$(".homepage-arrow").on("click", function() {
-    $("body").scrollTo("#content-column");
 });
