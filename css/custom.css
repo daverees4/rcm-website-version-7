@@ -39,6 +39,10 @@ Contents
 }
 
 
+.zero-index {
+  z-index: 0 !important;
+}
+
 /* Icon Colours */
 
 .icon-social-facebook:before { color: #0b1e62} /* '?' */
