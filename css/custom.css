@@ -282,6 +282,11 @@ a, .underline {
   border-bottom-color: #9d9d9c;
 }
 
+.grey-link {
+  color:#9d9d9c;
+  border-bottom: 1px solid #9d9d9c;
+}
+
 .underline-white {
   border-bottom: 1px solid #fff;
   display:inline-block;
@@ -1652,6 +1657,8 @@ margin-top:0.5rem;
 z-index: 1000000;
 text-align: center;
 width: 90%;
+border-bottom: #fff 3px solid;
+display: inline-block;
 
 }
 
