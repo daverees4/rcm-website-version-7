@@ -168,6 +168,7 @@
       
       
       <%
+        string urltag="";
 if (File.Exists("D:/rcmwebv5/staffxml/images/"+itemNode.SelectSingleNode("PersonalID").InnerText+".jpg")) { %> 
              <a href="./details?id=<% Response.Write(itemNode.SelectSingleNode("PersonalID").InnerText); %>"><img src="http://www.rcm.ac.uk/staffxml/images/<% Response.Write(itemNode.SelectSingleNode("PersonalID").InnerText); %>.jpg" /></a>
              <% } else { %>
@@ -178,11 +179,26 @@ if (File.Exists("D:/rcmwebv5/staffxml/images/"+itemNode.SelectSingleNode("Person
             try {
                XmlNodeList userjobsNodes = itemNode.SelectNodes("userprofile/UserJobs/UserJob");                 
                 List<string> rolesList = new List<string>();
+                
                foreach(XmlNode userjobtitleNode in userjobsNodes) {
                     if (!rolesList.Contains(userjobtitleNode.SelectSingleNode("JobTitle").InnerText)) {
                         rolesList.Add(userjobtitleNode.SelectSingleNode("JobTitle").InnerText);
+                      if(userjobtitleNode.SelectSingleNode("Department").InnerText=="Historical Performance") {
+                         urltag="hp/professors"; 
+                      } else if(userjobtitleNode.SelectSingleNode("Department").InnerText=="Junior Department") {
+                         urltag="junior/teachers"; 
+                      } else if(userjobtitleNode.SelectSingleNode("Department").InnerText=="Vocal Studies") {
+                         urltag="vocal/vocalprofessors"; 
+                      } else if(userjobtitleNode.SelectSingleNode("Department").InnerText=="RCM International Opera School") {
+                         urltag="vocal/operaprofessors"; 
+                      }  else if(userjobtitleNode.SelectSingleNode("Department").InnerText=="Directorate") {
+                         urltag="about/governance/directorate"; 
+                      } else {
+                        urltag=userjobtitleNode.SelectSingleNode("Department").InnerText+"/professors";
+                      }
                       
-                 Response.Write("<h3 style='margin-bottom: 0'><a href='http://www.rcm.ac.uk/"+userjobtitleNode.SelectSingleNode("Department").InnerText+"/professors/#rank-"+userjobtitleNode.SelectSingleNode("JobRanking").InnerText+"'>"+userjobtitleNode.SelectSingleNode("JobTitle").InnerText+"</a></h3>");
+                      
+                 Response.Write("<h3 style='margin-bottom: 0'><a href='http://www.rcm.ac.uk/"+urltag+"/#rank-"+userjobtitleNode.SelectSingleNode("JobRanking").InnerText+"'>"+userjobtitleNode.SelectSingleNode("JobTitle").InnerText+"</a></h3>");
                }
           }} catch{}
           %>
@@ -218,7 +234,7 @@ if (File.Exists("D:/rcmwebv5/staffxml/images/"+itemNode.SelectSingleNode("Person
                 XmlNodeList userdepartmentNodes = itemNode.SelectNodes("userprofile/UserJobs/UserJob"); 
                List<string> newList = new List<string>();
                    string departmentsstring="";
-                   string urltag="";
+                 
                foreach(XmlNode userjobsNode in userdepartmentNodes) {
                     if (!newList.Contains(userjobsNode.SelectSingleNode("Department").InnerText)) {
                       
@@ -228,13 +244,12 @@ if (File.Exists("D:/rcmwebv5/staffxml/images/"+itemNode.SelectSingleNode("Person
                       } else if(userjobsNode.SelectSingleNode("Department").InnerText=="Junior Department") {
                          urltag="junior"; 
                       } else if(userjobsNode.SelectSingleNode("Department").InnerText=="Vocal Studies") {
-                         urltag="vocalstudies"; 
-                      } else if(userjobsNode.SelectSingleNode("Department").InnerText=="") {
-                         urltag="vocalstudies"; 
-                      } 
-                      
-                      
-                      else {
+                         urltag="vocal"; 
+                      } else if(userjobsNode.SelectSingleNode("Department").InnerText=="RCM International Opera School") {
+                         urltag="vocal/opera"; 
+                      }  else if(userjobsNode.SelectSingleNode("Department").InnerText=="Directorate") {
+                         urltag="about/governance/directorate"; 
+                      } else {
                         urltag=userjobsNode.SelectSingleNode("Department").InnerText;
                       }
                       
