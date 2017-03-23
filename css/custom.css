@@ -275,7 +275,7 @@ a, .underline {
 }
 
 .black-link {
-  border-bottom: #000;
+  border-bottom: 1px solid #000;
 }
 
 .black-link:hover {
@@ -345,7 +345,7 @@ p, li {
   text-align: center;
 }
 
-.landing-hero-overlay-text {
+.landing-hero-overlay-text, .home-hero-overlay-text {
   font-size: 2rem;
 }
 
@@ -399,6 +399,10 @@ p, li {
   font-size: 3.125rem;
     margin-top: 2.5rem !important;
   }
+  
+  .home-hero-overlay-text {
+    font-size: 3.125rem;
+  }
 }
 
 @media screen and ( min-width: 1324px )  { 
@@ -450,6 +454,10 @@ p, li {
   .landing-hero-overlay-text {
   font-size: 3.75rem;
   margin-top: 2.75rem !important;
+  }
+  
+  .home-hero-overlay-text {
+   font-size: 3.75rem; 
   }
   
   .black-link {
@@ -1657,8 +1665,7 @@ margin-top:0.5rem;
 z-index: 1000000;
 text-align: center;
 width: 90%;
-border-bottom: #fff 3px solid;
-display: inline-block;
+
 
 }
 
