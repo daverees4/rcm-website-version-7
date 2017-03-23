@@ -111,7 +111,7 @@ $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
       $("#content-panel").toggleClass("menu-overlay");
       
       
-      $('.home-hero-overlay-text,.landing-hero-overlay-text,.homepage-arrow').toggleClass("zero-index");
+      $('.home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap').toggleClass("zero-index");
   }
   
   
