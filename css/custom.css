@@ -1793,12 +1793,6 @@ display: none;
 
 }
 
-.hero-with-text-overlay:after {
-  opacity:0.95;
-  background-color: #c5003e;  
-}
-
-
 .hero-overlay-text {
     margin-top: 0.75rem;
 }
@@ -1817,6 +1811,22 @@ display: none;
   .hero-overlay-text {
     margin-top: 1rem;
 }
+
+
+.hero-with-text-overlay:after {
+  opacity:0.95;
+  background-color: #c5003e;  
+}
+
+.caption-on {
+  display: inline; 
+}
+
+.caption-off {
+  display: none;
+}
+
+
 }
 
 
