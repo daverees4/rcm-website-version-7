@@ -213,7 +213,7 @@ $(".link-hero").on("mouseover", function() {
 });
 
 $(".link-hero").on("mouseout", function() {
-  $(this).children(".hero-overlay-caption").removeClass("caption-off");
+  $(this).children(".hero-overlay-caption").removeClass("caption-on");
    $(this).removeClass("hero-with-text-overlay");
 });
 
