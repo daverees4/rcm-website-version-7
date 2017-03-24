@@ -208,12 +208,12 @@ $("#tertiary-menu-mobile >.tertiary-menu > li  > .icon-cross").on("click", funct
 });
 
 $(".link-hero").on("mouseover", function() {
-  $(this).children(".hero-overlay-caption").addClass("caption-on");
+  $(this).children(".hero-overlay-caption").css("display", "inline");
    $(this).addClass("hero-with-text-overlay");
 });
 
 $(".link-hero").on("mouseout", function() {
-  $(this).children(".hero-overlay-caption").removeClass("caption-on");
+  $(this).children(".hero-overlay-caption").css("display", "none");
    $(this).removeClass("hero-with-text-overlay");
 });
 
