@@ -296,6 +296,10 @@ a, .underline {
   display:inline-block;
 }
 
+.rollover-link {
+  border-bottom: #fff 1px solid;
+}
+
 p {
   margin: 0rem 0 1rem 0;
 }
@@ -407,6 +411,10 @@ p, li {
   .home-hero-overlay-text {
     font-size: 3.125rem;
   }
+  
+  .rollover-link {
+  border-bottom: #fff 2px solid;
+}
 }
 
 @media screen and ( min-width: 1324px )  { 
@@ -467,6 +475,9 @@ p, li {
   .black-link {
   display: inline;
   border-bottom: #000 2px solid;
+}
+.rollover-link {
+  border-bottom: #fff 3px solid;
 }
 }
 
