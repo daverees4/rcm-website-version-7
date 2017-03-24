@@ -1063,7 +1063,7 @@ position:fixed;
 display: none;
 width: 100%;
 
-padding: 1.75rem 1rem 0 1rem;
+padding: 0rem 1rem 0 1rem;
 }
 
 @media screen and ( max-width: 550px ) {
