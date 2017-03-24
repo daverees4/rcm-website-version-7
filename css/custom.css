@@ -497,7 +497,7 @@ p, li {
 
 
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last{
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .hero-with-text-fixed {
   margin-bottom: 1.25rem; 
 }
 
@@ -505,7 +505,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card,  {
   margin-bottom: 2.75rem !important;
 }
 
