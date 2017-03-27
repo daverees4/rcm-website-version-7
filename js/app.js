@@ -102,14 +102,15 @@ $(".homepage-arrow").on("click", function() {
 })
 
 
-$("menu-overlay").on("click", function() {
+$(".menu-overlay").on("click", function() {
+      $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
       $("#content-panel").toggleClass("menu-overlay");
       $('.home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap').toggleClass("zero-index");
 })
 
 $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
   
-  $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
+
   
   
   if($("#primary-nav > li > ul.menu-on").length ==0 || $(this).siblings("ul").hasClass("menu-on")){     
