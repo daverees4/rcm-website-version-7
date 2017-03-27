@@ -167,11 +167,12 @@ $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
     
 });
 
-$("#primary-nav > li > ul > li > a").on("click", function() {
+$("#primary-nav > li > ul > li > a, .primary-menu-dropdown-arrow").on("click", function() {
   $(this).siblings("ul").toggleClass("menu-on");
+  $(this).parent().children(".primary-memu-dropdown-arrow").toggleClass("icon-arrow-right icon-arrow-down")
 });
 
-$("#primary-nav > li > ul > li > ul").parent().prepend("<i class='float-right icon-arrow-right'></i>");
+$("#primary-nav > li > ul > li > ul").parent().prepend("<i class='float-right icon-arrow-right primary-menu-dropdown-arrow'></i>");
 
 $(".dropdown-menu").on("click", function() {
   $(this).children("ul").toggleClass("hide");
