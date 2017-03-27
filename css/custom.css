@@ -1132,6 +1132,11 @@ margin: 0 auto;
 .menu > li {
     line-height: 2.635rem;
 }
+
+.tertiary-menu > li {
+  
+}
+
 .menu > li > a {
   font-size: 1.25rem;
 line-height: 2.635rem;
@@ -1244,6 +1249,10 @@ padding-right:0;
 
 .tertiary-menu {
     border-bottom: 1px solid #38a8aa;
+}
+
+.tertiary-menu > li {
+  padding-bottom: 1rem;
 }
 }
 
