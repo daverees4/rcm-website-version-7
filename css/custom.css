@@ -1418,6 +1418,12 @@ padding-right:0;
   padding: 0 1rem 0 1rem;
 }
 
+  .tertiary-menu > li > a {
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+  padding: 0 1rem 0 1rem;
+}
+
 
   
     #primary-nav > li > ul {
