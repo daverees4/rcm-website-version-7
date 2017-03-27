@@ -170,7 +170,7 @@ $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
 $("#primary-nav > li > ul > li > a, .primary-menu-dropdown-arrow").on("click", function() {
   console.log("hello");
   $(this).siblings("ul").toggleClass("menu-on");
-  $(this).parent().children(".primary-memu-dropdown-arrow").toggleClass("icon-arrow-right icon-arrow-down")
+  $(this).parent().children(".primary-menu-dropdown-arrow").toggleClass("icon-arrow-right icon-arrow-down")
 });
 
 $("#primary-nav > li > ul > li > ul").parent().prepend("<i class='float-right icon-arrow-right primary-menu-dropdown-arrow'></i>");
