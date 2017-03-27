@@ -46,7 +46,7 @@ Contents
   color:  #9058be !important;
 }
 
-.whatson-pri-link:hover, .whatson-foldout>li>a:hover, .whatson-foldout>li>ul>li>a:hover {
+.whats-onpri-link:hover, .whatson-foldout>li>a:hover, .whatson-foldout>li>ul>li>a:hover {
   color:  #9058be  !important;
 }
 
@@ -58,7 +58,7 @@ Contents
   color: #0287cb !important;
 }
 
-.getinvolved-pri-link:hover, .getinvolved-foldout>li>a:hover, .getinvolved-foldout>li>ul>li>a:hover {
+.get-involved-pri-link:hover, .getinvolved-foldout>li>a:hover, .getinvolved-foldout>li>ul>li>a:hover {
   color: #0287cb  !important;
 }
 
