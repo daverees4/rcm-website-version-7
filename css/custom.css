@@ -16,6 +16,10 @@ Contents
   background-color: #f3f3f3;
 }
 
+#primary-nav >li >ul >li >a:hover {
+ color: #c5003e;
+}
+
 #primary-nav > li > ul > li > .primary-menu-dropdown-arrow {
   color: #c5003e;
 }
@@ -49,16 +53,16 @@ border-top: 0.0625rem solid  #c5003e;
 }
 
 .hr-below {
-  border-bottom: 0.0625rem solid  #c5003e;  
+border-bottom: 0.0625rem solid  #c5003e;  
 }
 
 .study-foldout  .hr-above {
-border-top: 0.0625rem solid   #7cc8c5 !important;
+border-top: 0.0625rem solid #7cc8c5 !important;
 }
 
 
 .study-foldout  .hr-bottom {
-border-bottom: 0.0625rem solid   #7cc8c5 !important;
+border-bottom: 0.0625rem solid #7cc8c5 !important;
 }
 
 .whatson-foldout  .hr-above {
