@@ -16,6 +16,10 @@ Contents
   background-color: #f3f3f3;
 }
 
+#primary-nav > li > ul > li > .primary-menu-dropdown-arrow {
+  color: #c5003e;
+}
+
 .study-foldout {
   background-color: #bde3e1 !important;
 }
@@ -1346,7 +1350,7 @@ padding-right:0;
     position: fixed;
     top: 0;
     left: 19%;
-    background-color: #bde3e1;
+
 
     height: 100%;
     opacity: 1;
