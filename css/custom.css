@@ -65,12 +65,11 @@ Contents
 
 .hr-above {
 border-top: 0.0625rem solid  #c5003e;
-margin-top: 0.5rem;
+
 }
 
 .hr-below {
 border-bottom: 0.0625rem solid  #c5003e;  
-margin-bottom: 0.5rem;
 }
 
 .study-foldout  .hr-above {
@@ -192,6 +191,16 @@ img {
 .master-container {
   max-width: 120rem;
   }
+  
+  .hr-above {
+border-top: 0.0625rem solid  #c5003e;
+margin-top: 0.5rem;
+}
+
+.hr-below {
+border-bottom: 0.0625rem solid  #c5003e;  
+margin-bottom: 0.5rem;
+}
   
 
   .add-gutter {
