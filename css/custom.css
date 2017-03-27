@@ -52,6 +52,34 @@ border-top: 0.0625rem solid  #c5003e;
   border-bottom: 0.0625rem solid  #c5003e;  
 }
 
+.study-foldout > .hr-above {
+border-top: 0.0625rem solid   #7cc8c5 !important;
+}
+
+
+.study-foldout > .hr-bottom {
+border-bottom: 0.0625rem solid   #7cc8c5 !important;
+}
+
+.whatson-foldout > .hr-above {
+border-top: 0.0625rem solid  #9058be !important;
+}
+
+
+.whatson-foldout > .hr-bottom {
+border-bottom: 0.0625rem solid #9058be !important;
+}
+
+.getinvolved-foldout > .hr-above {
+border-top: 0.0625rem solid   #0287cb !important;
+}
+
+
+.getinvoled-foldout > .hr-bottom {
+border-bottom: 0.0625rem solid   #0287cb !important;
+}
+
+
 
 
 
