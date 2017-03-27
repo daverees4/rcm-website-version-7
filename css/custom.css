@@ -44,6 +44,15 @@ Contents
   color: #0287cb !important;
 }
 
+.hr-above {
+border-top: 0.0625rem solid  #c5003e;
+}
+
+.hr-below {
+  border-bottom: 0.0625rem solid  #c5003e;  
+}
+
+
 
 
 .alert {
