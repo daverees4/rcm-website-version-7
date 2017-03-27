@@ -16,7 +16,7 @@ Contents
   background-color: #f3f3f3;
 }
 
-#primary-nav >li >ul >li >a:hover, #primary-nav >li >ul >li >ul>a:hover{
+#primary-nav >li >ul >li >a:hover, #primary-nav >li >ul >li >ul>li>a:hover{
  color: #c5003e;
 }
 
