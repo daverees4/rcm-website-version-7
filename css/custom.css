@@ -1914,6 +1914,10 @@ display: none;
     margin-top: 1rem;
 }
 
+.quote-block {
+  margin-left: 9.7%;
+}
+
 
 .hero-with-text-overlay:after {
   opacity:0.95;
