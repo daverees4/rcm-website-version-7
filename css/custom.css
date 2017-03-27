@@ -1912,6 +1912,7 @@ display: none;
 
 
 
+
 .hero-with-text-overlay:after {
   opacity:0.95;
   background-color: #c5003e;  
@@ -1919,10 +1920,6 @@ display: none;
 
 .caption-on {
   display: inline; 
-}
-
-.caption-off {
-  display: none;
 }
 
 

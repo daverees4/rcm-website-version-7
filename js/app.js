@@ -217,12 +217,12 @@ $("#tertiary-menu-mobile >.tertiary-menu > li  > .icon-cross").on("click", funct
 });
 
 $(".link-hero").on("mouseover", function() {
-  $(this).children(".hero-overlay-caption").css("display", "inline");
+  $(this).children(".hero-overlay-caption").addClass("caption-on");
    $(this).addClass("hero-with-text-overlay");
 });
 
 $(".link-hero").on("mouseout", function() {
-  $(this).children(".hero-overlay-caption").css("display", "none");
+  $(this).children(".hero-overlay-caption").removeClass("caption-on");
    $(this).removeClass("hero-with-text-overlay");
 });
 
