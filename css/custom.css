@@ -1256,7 +1256,11 @@ padding-right:0;
 }
 
 .menu-highlight {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.25rem !important;
+}
+
+.menu-highlight-last {
+  margin-bottom: 0.85rem !important;
 }
 }
 
