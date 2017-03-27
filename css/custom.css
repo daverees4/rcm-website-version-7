@@ -65,10 +65,12 @@ Contents
 
 .hr-above {
 border-top: 0.0625rem solid  #c5003e;
+margin-top: 0.5rem;
 }
 
 .hr-below {
 border-bottom: 0.0625rem solid  #c5003e;  
+margin-bottom: 0.5rem;
 }
 
 .study-foldout  .hr-above {
@@ -894,11 +896,7 @@ float:right !important;
     background-color: #c5003e;
     opacity: 0.6;
     
-     -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
-    -moz-transition: background 300ms ease-in 200ms;
-    -o-transition: background 300ms ease-in 200ms;
-    transition: background 300ms ease-in 200ms;
- 
+
 
 
 }
