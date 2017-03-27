@@ -1903,13 +1903,9 @@ display: none;
   display:inline;
 }
 
-
-
-
-
 }
 
-@media screen and (min-width: 1324) {
+@media screen and (min-width: 1324px) {
   .hero-overlay-text {
     margin-top: 1rem;
 }
