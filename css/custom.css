@@ -20,6 +20,10 @@ Contents
   background-color: #bde3e1 !important;
 }
 
+.study-foldout > li > .primary-menu-dropdown-arrow {
+  color:  #7cc8c5;
+}
+
 .whatson-foldout {
   background-color: #dfd2f0 !important;
 }
