@@ -25,7 +25,7 @@ Contents
 }
 
 .study-foldout > li > .primary-menu-dropdown-arrow {
-  color:  #7cc8c5;
+  color:  #7cc8c5 !important;
 }
 
 .whatson-foldout {
@@ -33,7 +33,7 @@ Contents
 }
 
 .whatson-foldout > li > .primary-menu-dropdown-arrow {
-  color:  #9058be;
+  color:  #9058be !important;
 }
 
 .getinvolved-foldout {
@@ -41,7 +41,7 @@ Contents
 }
 
 .getinvolved-foldout > li > .primary-menu-dropdown-arrow {
-  color: #0287cb;
+  color: #0287cb !important;
 }
 
 
