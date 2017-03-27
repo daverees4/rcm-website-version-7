@@ -640,13 +640,7 @@ h3, .h3 {
 
 /* 4 - Buttons, HRs */
 
-.hr-above {
-border-top: 0.0625rem solid #7cc8c5;
-}
 
-.hr-below {
-  border-bottom: 0.0625rem solid #7cc8c5;  
-}
 
 .button {
   border-bottom: none;
