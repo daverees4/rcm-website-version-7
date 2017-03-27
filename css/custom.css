@@ -740,7 +740,7 @@ h3, .h3 {
   color: #c5003e;
   text-align: left;
   border: none;
-  padding: 0.25rem 1rem;
+  padding: 0.65rem 1rem;
 }
 
 .alert-button, .feature-box-button {
@@ -1252,7 +1252,11 @@ padding-right:0;
 }
 
 .tertiary-menu > li {
-  padding-bottom: 1rem;
+  padding-bottom: 0.85rem;
+}
+
+.menu-highlight {
+  padding-bottom: 0.25rem;
 }
 }
 
@@ -1420,7 +1424,7 @@ padding-right:0;
 
   .tertiary-menu > li > a {
   font-size: 1.25rem;
-  line-height: 1.125rem;
+  line-height: 1.5rem;
   padding: 0 1rem 0 1rem;
 }
 
