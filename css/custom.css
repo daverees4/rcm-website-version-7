@@ -20,10 +20,7 @@ Contents
  color: #c5003e;
 }
 
-.study-pri-link:hover, .study-foldout>li>a:hover, .study-foldout>li>ul>lia:hover {
-  color:  #7cc8c5 !important;
-  
-}
+
 
 #primary-nav > li > ul > li > .primary-menu-dropdown-arrow {
   color: #c5003e;
@@ -37,12 +34,20 @@ Contents
   color:  #7cc8c5 !important;
 }
 
+.study-pri-link:hover, .study-foldout>li>a:hover, .study-foldout>li>ul>li>a:hover {
+  color:  #7cc8c5 !important;
+}
+
 .whatson-foldout {
   background-color: #dfd2f0 !important;
 }
 
 .whatson-foldout > li > .primary-menu-dropdown-arrow {
   color:  #9058be !important;
+}
+
+.whatson-pri-link:hover, .whatson-foldout>li>a:hover, .whatson-foldout>li>ul>li>a:hover {
+  color:  #9058be  !important;
 }
 
 .getinvolved-foldout {
@@ -52,6 +57,11 @@ Contents
 .getinvolved-foldout > li > .primary-menu-dropdown-arrow {
   color: #0287cb !important;
 }
+
+.getinvolved-pri-link:hover, .getinvolved-foldout>li>a:hover, .getinvolved-foldout>li>ul>li>a:hover {
+  color: #0287cb  !important;
+}
+
 
 .hr-above {
 border-top: 0.0625rem solid  #c5003e;
