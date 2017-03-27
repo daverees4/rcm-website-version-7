@@ -28,9 +28,19 @@ Contents
   background-color: #dfd2f0 !important;
 }
 
+.whatson-foldout > li > .primary-menu-dropdown-arrow {
+  color:  #9058be;
+}
+
 .getinvolved-foldout {
     background-color: #d0e2f5 !important;
 }
+
+.getinvolved-foldout > li > .primary-menu-dropdown-arrow {
+  color: #0287cb;
+}
+
+
 
 .alert {
   background-color: #fde141 !important;
