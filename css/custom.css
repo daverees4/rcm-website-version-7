@@ -766,6 +766,10 @@ h3, .h3 {
   cursor: pointer;
 }
 
+.searchbox {
+  outline: none;
+}
+
 
 @media screen and ( max-width: 1023px ){ 
 
@@ -796,7 +800,7 @@ float:right !important;
   #search-wrapper {
 
     position: fixed;
-  top: 6.75%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
