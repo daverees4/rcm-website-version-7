@@ -6,6 +6,10 @@ border-bottom: 1px solid #38a8aa;
     border-bottom: 3px solid #38a8aa;
 }
 
+.tertiary-arrow {
+  color:#38a8aa
+}
+
 .button:hover, .button-2:hover {
     background-color: #38a8aa;
     color: #fff;
@@ -48,6 +52,7 @@ border-bottom: 1px solid #38a8aa;
 .alert-button:hover{
   background-color: #000;
 }
+
 
 
 
