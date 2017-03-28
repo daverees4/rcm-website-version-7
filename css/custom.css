@@ -600,11 +600,13 @@ p, li {
 
 
 
-p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .hero-with-text-fixed {
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .blue-border-full, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .hero-with-text-fixed {
   margin-bottom: 1.25rem; 
 }
 
-
+img {
+  margin-bottom: 0.85rem;
+}
 
 
 
@@ -638,7 +640,7 @@ h3, .h3 {
 }
 
 .homeevents-panel img {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.85rem;
 }
 
 .homeevents-panel .index-title {
@@ -697,7 +699,7 @@ h3, .h3 {
 }
 
 .homeevents-panel img {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.85rem;
 }
 
 
