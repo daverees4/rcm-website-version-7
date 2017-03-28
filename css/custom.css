@@ -654,7 +654,7 @@ h3, .h3 {
     margin-bottom: 1.65rem !important;
   }
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row,  .inline-image, .inline-video, .contact-card   {
   margin-bottom:  3.25rem !important;
 }
 
@@ -703,7 +703,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1324px){ 
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .inline-image, .inline-video, .contact-card   {
  margin-bottom:  3.875rem !important;
 }
 
