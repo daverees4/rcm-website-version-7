@@ -116,7 +116,7 @@ $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
   
   if($("#primary-nav > li > ul.menu-on").length ==0 || $(this).siblings("ul").hasClass("menu-on")){     
       $("#content-panel").toggleClass("menu-overlay");
-      
+      $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
       
       $('.home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap').toggleClass("zero-index");
   }
