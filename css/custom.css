@@ -608,7 +608,7 @@ img {
   margin-bottom: 0.85rem;
 }
 
-.inline-video.row.flex-video {
+.inline-video .row .flex-video {
   margin-bottom: 0.85rem;
 }
 
