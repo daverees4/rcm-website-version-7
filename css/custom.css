@@ -608,11 +608,15 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, img, .blue-border-full,
 
 
 
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .detail-hero, .inline-image, .inline-video, .contact-card,  {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .inline-image, .inline-video, .contact-card,  {
   margin-bottom: 2.75rem !important;
 }
 
-.iline-image img {
+.detail-hero {
+  margin-bottom: 0.35rem !important;
+}
+
+.inline-image img {
   margin-bottom: 0;
 }
 
@@ -661,6 +665,10 @@ h3, .h3 {
 
 .link-hero {
   margin-bottom: 0;
+}
+
+.detail-hero {
+  margin-bottom: 0 !important;
 }
 
   
