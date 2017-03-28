@@ -99,6 +99,9 @@ border-top: 0.0625rem solid   #0287cb !important;
 border-bottom: 0.0625rem solid #0287cb !important;
 }
 
+.gallery-item p, .gallery-items i:hover {
+color:#9d9d9c;
+}
 
 
 
