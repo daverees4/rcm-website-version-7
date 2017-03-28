@@ -505,6 +505,10 @@ p, li {
     font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
   }
   
+  .quote-fix-margin {
+    margin-top: -3.7rem;
+  }
+  
   .landing-hero-overlay-text {
   font-size: 3.125rem;
     margin-top: 2.5rem !important;
