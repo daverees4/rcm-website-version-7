@@ -103,6 +103,10 @@ border-bottom: 0.0625rem solid #0287cb !important;
 color:#9d9d9c;
 }
 
+.gallery-item p {
+  width:75%;
+}
+
 
 
 
