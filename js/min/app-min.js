@@ -75,14 +75,14 @@ $(document).ready(function() {
     $(".search-trigger").on("click", function() {
         $("#search-overlay").animate({
             opacity: .6
-        }, 2e3, function() {
+        }, 1e3, function() {
             console.log("faded in!");
         });
     });
     $(".search-cross").on("click", function() {
         $("#search-overlay").animate({
             opacity: 0
-        }, 2e3, function() {
+        }, 1e3, function() {
             console.log("faded in!");
         });
     });

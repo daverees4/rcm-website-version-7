@@ -85,7 +85,7 @@ $(this).owlCarousel({
   $(".search-trigger").on("click", function() {
         $( "#search-overlay" ).animate({
     opacity: 0.6
-  }, 2000, function() {
+  }, 1000, function() {
    console.log("faded in!");
  });
 });
@@ -94,7 +94,7 @@ $(this).owlCarousel({
   
          $( "#search-overlay" ).animate({
     opacity: 0
-  }, 2000, function() {
+  }, 1000, function() {
    console.log("faded in!");
    });
 });
