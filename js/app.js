@@ -70,6 +70,10 @@ $(this).owlCarousel({
 
   $(".search-trigger, .search-cross").on("click", function() {
     $("#search-overlay, #search-wrapper").toggleClass("hide");
+    $( "#book" ).animate({
+    opacity: 0.6
+  }, 2000, function() {
+   console.log("faded in!");  });
   });
   
 
@@ -136,7 +140,7 @@ $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
     $("#content-panel").addClass("getinvolved-overlay");
   }
   
-  
+
 
   
   
