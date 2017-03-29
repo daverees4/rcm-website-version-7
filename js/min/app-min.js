@@ -66,21 +66,25 @@ $(document).ready(function() {
     });
     $(".search-trigger, .search-cross").on("click", function() {
         $("#search-overlay, #search-wrapper").toggleClass("hide");
-        if ($("#search-overlay").hasClass("overlay-faded")) {
-            $("#search-overlay").animate({
-                opacity: .6
-            }, 2e3, function() {
-                console.log("faded in!");
-                $("#search-overlay").addClass("overlay-faded");
-            });
-        } else {
-            $("#search-overlay").animate({
-                opacity: 0
-            }, 2e3, function() {
-                console.log("faded in!");
-                $("#search-overlay").removeClass("overlay-faded");
-            });
-        }
+    });
+    $("#search-overlay").animate({
+        opacity: 0
+    }, 2e3, function() {
+        console.log("faded in!");
+    });
+    $(".search-trigger").on("click", function() {
+        $("#search-overlay").animate({
+            opacity: .6
+        }, 2e3, function() {
+            console.log("faded in!");
+        });
+    });
+    $(".search-cross").on("click", function() {
+        $("#search-overlay").animate({
+            opacity: 0
+        }, 2e3, function() {
+            console.log("faded in!");
+        });
     });
     $(".search-icon").click(function() {
         $("#SearchForm").submit();

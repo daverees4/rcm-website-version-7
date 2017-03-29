@@ -70,22 +70,34 @@ $(this).owlCarousel({
 
   $(".search-trigger, .search-cross").on("click", function() {
     $("#search-overlay, #search-wrapper").toggleClass("hide");
-    if($("#search-overlay").hasClass("overlay-faded")) {
-    $( "#search-overlay" ).animate({
-    opacity: 0.6
-  }, 2000, function() {
-   console.log("faded in!");
-   $("#search-overlay").addClass("overlay-faded");  
-   });
-   } else {
+  });
+  
+
+
+  
          $( "#search-overlay" ).animate({
     opacity: 0
   }, 2000, function() {
    console.log("faded in!");
-   $("#search-overlay").removeClass("overlay-faded");  
    });
-  };
-  });
+
+  
+  $(".search-trigger").on("click", function() {
+        $( "#search-overlay" ).animate({
+    opacity: 0.6
+  }, 2000, function() {
+   console.log("faded in!");
+ });
+});
+
+  $(".search-cross").on("click", function() {
+  
+         $( "#search-overlay" ).animate({
+    opacity: 0
+  }, 2000, function() {
+   console.log("faded in!");
+   });
+});
   
 
 $( ".search-icon" ).click(function() {
