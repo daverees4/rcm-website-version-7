@@ -959,7 +959,7 @@ float:right !important;
   
 
 .search-icon, .search-cross {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -980,13 +980,13 @@ float:right !important;
 }
 
   .search-icon, .search-cross, #search-input {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   
  
 }
 
 .search-cross, .search-icon {
-  margin-top: 1.25rem;
+  margin-top: 1em;
 }
   
   }
@@ -994,12 +994,12 @@ float:right !important;
 
 @media screen and ( min-width: 1324px )  { 
     .search-icon, .search-cross, #search-input {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
  
 }
 
 .search-cross, .search-icon {
-  margin-top: 0.75rem;
+  margin-top: 0rem;
 }
   
   }
