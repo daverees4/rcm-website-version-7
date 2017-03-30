@@ -467,7 +467,7 @@ p, li {
 
 .landing-hero-overlay-text, .mobile-hero-overlay-text {
   font-size: 2rem;
-}
+} 
 
 @media screen and ( min-width: 1024px )  { 
   h1, .h1 {
@@ -1191,7 +1191,7 @@ margin: 0 auto;
 .menu > li > a {
   font-size: 1.25rem;
 line-height: 2.635rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0 0rem;
   border: none;
 }
 
