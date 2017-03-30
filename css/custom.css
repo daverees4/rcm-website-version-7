@@ -1211,6 +1211,7 @@ margin: 0 auto;
 
 .menu > li {
     line-height: 2.635rem;
+    margin-bottom: 0;
 }
 
 .tertiary-menu > li {
