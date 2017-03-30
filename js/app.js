@@ -56,7 +56,7 @@ $(this).owlCarousel({
   navigation: false,
   pagination: false,
   items:1,
-  autoPlay: 5000,
+  autoPlay: 8000,
   transitionStyle: "fade",
   singleItem: true,
 });

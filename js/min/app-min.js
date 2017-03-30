@@ -58,7 +58,7 @@ $(document).ready(function() {
                 navigation: false,
                 pagination: false,
                 items: 1,
-                autoPlay: 5e3,
+                autoPlay: 8e3,
                 transitionStyle: "fade",
                 singleItem: true
             });
