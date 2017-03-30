@@ -465,7 +465,7 @@ p, li {
   text-align: center;
 }
 
-.landing-hero-overlay-text, .home-hero-overlay-text {
+.landing-hero-overlay-text, .mobile-hero-overlay-text {
   font-size: 2rem;
 }
 
@@ -607,7 +607,7 @@ p, li {
   border-bottom: #fff 3px solid;
 }
 
-#content-column.row.row.quote-carousel {
+#content-column .row .row .quote-carousel {
   margin: 0 8.33333333%;
 }
 }
