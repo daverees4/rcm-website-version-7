@@ -361,7 +361,7 @@ var configProfile = {
 
 twitterFetcher.fetch(configProfile);
 
-$(".main-page-content>p:last-child, .main-page-content>h5:last-child, .main-page-content>h6:last-child, .main-page-content>ul:last-child, .concertina-content>p, .concertina-content>h5, .concertina-content>ul").each(function() {
+$(".main-page-content>p:last-child, .main-page-content>h5:last-child, .main-page-content>h6:last-child, .main-page-content>ul:last-child, .concertina-content p, .concertina-content h5, .concertina-content ul").each(function() {
     if ($(this).parent().next().hasClass("feature-box-row") || $(this).parent().next().hasClass("gallery-row") || $(this).parent().next().hasClass("alert-row") || $(this).parent().next().hasClass("concertina-last") || $(this).parent().next().hasClass("carousel-row") || $(this).parent().next().hasClass("inline-image") || $(this).parent().next().hasClass("inline-video")) {
         $(this).addClass("paragraph-topup");
     }
