@@ -440,6 +440,18 @@ h4, .h4 {
 
 h5, .h5 {
   margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+
+h5, .h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 ul {
@@ -542,8 +554,13 @@ li {
     font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
   }
   
-  .quote-fix-margin {
-    margin-top: -3.7rem;
+  .quote-top-of-landing-page {
+    margin-top: -2.6rem;
+    margin-bottom: -1rem;
+  }
+  
+  .quote-between-feature-boxes {
+        margin-top: -2.6rem;
   }
   
 
@@ -642,6 +659,25 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .blue-border-full, .fea
   margin-bottom: 1.25rem; 
 }
 
+
+h2, .h2 {
+  margin-bottom: 0.25rem; 
+}
+
+h3, .h3 {
+  margin-top: 0.25rem;
+}
+
+h5, .h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 img {
   margin-bottom: 0.85rem;
 }
@@ -723,9 +759,26 @@ h3, .h3 {
 }
 
   
-  h3, .h3 {
+h3, .h3 {
   margin-bottom: 0.3rem;
 }
+
+  
+  h2, .h2 {
+    margin-top: 2.5rem;
+  }
+  
+  h3, .h3 {
+
+    margin-top: 1.75rem;
+  }
+  
+
+  
+  h5, .h5 {
+  margin-top: 1.8rem;
+}
+  
 
 .blue-border-full {
   margin-bottom: 0;
@@ -761,6 +814,15 @@ h3, .h3 {
   h3, .h3 {
     margin-bottom: 1rem;
   }
+  
+    h2, .h2 {
+    margin-top: 2.75rem;
+  }
+  
+  h3, .h3 {
+    margin-top: 2rem;
+  }
+  
 
 .homeevents-topbar h2 {
   margin-bottom: 1.25rem;
