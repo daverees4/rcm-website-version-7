@@ -99,7 +99,7 @@ border-top: 0.0625rem solid   #0287cb !important;
 border-bottom: 0.0625rem solid #0287cb !important;
 }
 
-.gallery-item p, .gallery-arrows i:hover {
+.gallery-item p, .gallery-arrows i:hover, .fc-next:hover, .fc-previous:hover {
 color:#9d9d9c;
 }
 
@@ -423,7 +423,7 @@ h2, .h2 {
   line-height: 1.75rem;
   font-family: 'Futura PT W01 Book', Helvetica, Roboto, Arial, sans-serif;
    margin-top: 1.75rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   
 }
 
@@ -657,6 +657,10 @@ li {
 
 p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .blue-border-full, .feature-box-row, .link-hero, .study-foldout, .alert,  .alert-row, .link-boxes-row, .concertina-last, .hero-with-text-fixed, .contact-card, .feature-video-row, .carousel-row {
   margin-bottom: 1.25rem; 
+}
+
+.inline-image {
+  
 }
 
 
