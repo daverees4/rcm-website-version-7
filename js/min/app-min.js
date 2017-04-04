@@ -18,6 +18,9 @@ $(document).ready(function() {
     $(document).on("click", function() {
         if (event.target.className.includes("menu-overlay")) {
             console.log("wash-clicked");
+            $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
+            $("#content-panel").toggleClass("menu-overlay");
+            $(".home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap").toggleClass("zero-index");
         }
     });
     $(".home-events").owlCarousel({
