@@ -110,11 +110,8 @@ $(document).ready(function() {
         }, 2e3);
         return false;
     });
-    $(".menu-overlay").on("click", function() {
+    $(".mobile-menu-overlay").on("click", function() {
         console.log("wash clicked!");
-        $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
-        $("#content-panel").toggleClass("menu-overlay");
-        $(".home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap").toggleClass("zero-index");
     });
     $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
         if ($("#primary-nav > li > ul.menu-on").length == 0 || $(this).siblings("ul").hasClass("menu-on")) {

@@ -134,11 +134,13 @@ $(".homepage-arrow").on("click", function() {
 })
 
 
-$(".menu-overlay").on("click", function() {
+$(".mobile-menu-overlay").on("click", function() {
       console.log("wash clicked!");
+      /*
       $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
       $("#content-panel").toggleClass("menu-overlay");
       $('.home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap').toggleClass("zero-index");
+      */
 })
 
 $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
