@@ -13,6 +13,11 @@ var facultycarousel = $(".faculty-carousel").data('owlCarousel');
 $(".fc-next").on("click", function() {facultycarousel.next();});
 $(".fc-previous").on("click", function() {facultycarousel.prev();});
 
+$(document).on("click", function() {
+  console.log(event);
+})
+
+
 
 $(".home-events").owlCarousel({
   navigation: false,
