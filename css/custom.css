@@ -454,6 +454,14 @@ h6, .h6 {
   margin-bottom: 2rem;
 }
 
+.info-box-heading {
+  margin-top: 0 !important;
+}
+
+.feature-box-inner img {
+  margin-bottom: 1.5rem !important;
+}
+
 ul {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -634,6 +642,11 @@ li {
   margin-top: 2.75rem !important;
   }
   
+  
+  .feature-box-inner img {
+  margin-bottom: 2rem !important;
+}
+  
   .home-hero-overlay-text {
    font-size: 3.75rem; 
   }
@@ -660,6 +673,7 @@ p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .blue-border-full, .fea
 }
 
 .inline-image {
+  margin-bottom: 1.25rem;
   
 }
 
@@ -745,8 +759,12 @@ h3, .h3 {
     margin-bottom: 0 !important;
   }
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row,  .inline-image, .inline-video, .contact-card   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row,  .inline-image, .inline-video  {
   margin-bottom:  3.25rem !important;
+}
+
+.contact-card {
+  margin-bottom: 2.5rem;
 }
 
 .summary-p-last {
@@ -811,7 +829,7 @@ h3, .h3 {
 
 @media screen and (min-width: 1324px){ 
   
-.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .inline-image, .inline-video, .contact-card   {
+.paragraph-topup, .feature-box-row, .alert-row, .link-boxes-row, .concertina-last, .feature-video-row, .carousel-row, .inline-image, .inline-video {
  margin-bottom:  3.875rem !important;
 }
 

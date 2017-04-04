@@ -2038,11 +2038,10 @@ h3 {
 h4 {
   font-size: 1.125rem; }
 
-h5 {
+h5, h6 {
   font-size: 1.0625rem; }
 
-h6 {
-  font-size: 1rem; }
+
 
 @media screen and (min-width: 64em) {
   h1 {
@@ -2057,11 +2056,9 @@ h6 {
   h4 {
     font-size: 1.5625rem; }
 
-  h5 {
+  h5, h6 {
     font-size: 1.25rem; }
 
-  h6 {
-    font-size: 1rem; } }
 a {
   color: #0a0a0a;
   text-decoration: none;
