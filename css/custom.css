@@ -99,7 +99,7 @@ border-top: 0.0625rem solid   #0287cb !important;
 border-bottom: 0.0625rem solid #0287cb !important;
 }
 
-.gallery-item p, .gallery-arrows i:hover, .fc-next:hover, .fc-previous:hover {
+.gallery-item p, .gallery-arrows i:hover, .fc-next:hover, .fc-previous:hover, .mf-next:hover, .mf-previous:hover {
 color:#9d9d9c;
 }
 
