@@ -493,6 +493,10 @@ li {
   font-family: 'Futura PT W01 Medium', Helvetica, Roboto, Arial, sans-serif;
 }
 
+.carousel-title {
+  margin-top: 0 !important;
+}
+
 .quote {
   font-size: 1.125rem;
   line-height: 1.625rem;  
