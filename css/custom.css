@@ -1375,7 +1375,7 @@ padding-right:0;
 
 .right-hand-menu-button {
   font-size: 1.25rem;
-    line-height: 2.125rem;
+    line-height: 1.5rem;
     
 }
 
@@ -1863,7 +1863,7 @@ padding-right:0;
 
 .feature-box-inner {
  background-color:  #bde3e1 !important;
-padding: 1rem;
+padding: 2.25rem 1rem 1rem 1rem;
 }
 
 .alert-box-inner {
@@ -1920,6 +1920,7 @@ padding: 1.625rem 1.625rem 0.325rem
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
   }
   
   .feature-box-inner img {
