@@ -14,7 +14,9 @@ $(".fc-next").on("click", function() {facultycarousel.next();});
 $(".fc-previous").on("click", function() {facultycarousel.prev();});
 
 $(document).on("click", function() {
-  console.log(event.target.className);
+  if(event.target.className.include("menu-overlay")) {
+  console.log('wash-clicked');
+  }
 })
 
 
