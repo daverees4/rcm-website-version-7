@@ -15,6 +15,17 @@ $(document).ready(function() {
     $(".fc-previous").on("click", function() {
         facultycarousel.prev();
     });
+    $(document).on("click", function() {
+        if (event.target.className.includes("menu-overlay")) {
+            console.log("wash-clicked");
+            $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
+            $("#content-panel").toggleClass("menu-overlay");
+            $(".home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap").toggleClass("zero-index");
+            $("#primary-nav > li > ul").removeClass("menu-on");
+            $(this).siblings("ul").toggleClass("menu-on");
+            $(".mobile-toggle").addClass("secondary-close");
+        }
+    });
     $(".home-events").owlCarousel({
         navigation: false,
         pagination: false,
@@ -106,15 +117,6 @@ $(document).ready(function() {
             scrollTop: $("#content-column").offset().top
         }, 2e3);
         return false;
-    });
-    $(".mobile-menu-overlay").on("click", function() {
-        console.log("wash clicked!");
-        $("#content-panel").removeClass("study-overlay whatson-overlay getinvolved-overlay");
-        $("#content-panel").toggleClass("menu-overlay");
-        $(".home-hero-overlay-text,.landing-hero-overlay-text,.home-arrow-wrap").toggleClass("zero-index");
-        $("#primary-nav > li > ul").removeClass("menu-on");
-        $(this).siblings("ul").toggleClass("menu-on");
-        $(".mobile-toggle").addClass("secondary-close");
     });
     $("#primary-nav > li > a:not(.search-trigger)").on("click", function() {
         if ($("#primary-nav > li > ul.menu-on").length == 0 || $(this).siblings("ul").hasClass("menu-on")) {
