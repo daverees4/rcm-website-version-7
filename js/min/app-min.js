@@ -16,7 +16,7 @@ $(document).ready(function() {
         facultycarousel.prev();
     });
     $(document).on("click", function() {
-        if (event.target.className.include("menu-overlay")) {
+        if (event.target.className.includes("menu-overlay")) {
             console.log("wash-clicked");
         }
     });
