@@ -567,7 +567,7 @@ li {
   }
   
   .quote-top-of-landing-page {
-    margin-top: -2.6rem;
+    margin-top: -3.85rem;
     margin-bottom: -1rem;
   }
   
@@ -1863,11 +1863,16 @@ padding-right:0;
 
 .feature-box img {
   margin-bottom:  0.5rem;
+  
 }
 
 .feature-box-inner {
  background-color:  #bde3e1 !important;
 padding: 2.25rem 1rem 1rem 1rem;
+}
+
+.feature-box-inner img {
+  margin-top: 1.25rem;
 }
 
 .alert-box-inner {
@@ -1905,6 +1910,11 @@ padding-top: 1.25rem;
 padding: 1.625rem 1.625rem 0.325rem
 }
 
+.feature-box-inner img{
+margin-top: 0;
+}
+
+
 
 .video-box-heading{
   line-height: 2.5rem;
@@ -1929,6 +1939,8 @@ padding: 1.625rem 1.625rem 0.325rem
   
   .feature-box-inner img {
     padding: 0 1.625rem;
+    margin-top: 1.1rem;
+    
   }
 }
 
