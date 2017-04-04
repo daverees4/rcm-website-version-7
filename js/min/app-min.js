@@ -16,7 +16,7 @@ $(document).ready(function() {
         facultycarousel.prev();
     });
     $(document).on("click", function() {
-        console.log(event);
+        console.log(event.target.className);
     });
     $(".home-events").owlCarousel({
         navigation: false,
