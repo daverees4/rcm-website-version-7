@@ -1403,6 +1403,17 @@ padding-right:0;
   border-bottom: 3px solid #38a8aa;
 }
 
+.tertiary-menu > li {
+  padding-bottom: 0.85rem;
+}
+
+.tertiary-menu > li > a {
+  line-height: 1.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+
+
 @media screen and ( max-width: 1023px ){ 
 .tag {
   border-bottom: 0 !important;
