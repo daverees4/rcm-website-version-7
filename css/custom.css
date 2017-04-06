@@ -1413,7 +1413,9 @@ padding-right:0;
   padding: 0 1rem 0 1rem;
 }
 
-
+#tertiary-menu-mobile > ul > li {
+  margin: 0.425rem 0; 
+}
 
 @media screen and ( max-width: 1023px ){ 
 .tag {
