@@ -1377,9 +1377,10 @@ padding-right:0;
 
 
 #tertiary-menu-mobile-landing {
-  margin: 1.25rem 0;
+  margin: 0 0 1.25rem 0;
   border-top: 3px solid #38a8aa !important;
   border-bottom: 1px solid #38a8aa !important;
+  padding-top: 0.85rem;
 }
 
 .right-hand-menu-button {
