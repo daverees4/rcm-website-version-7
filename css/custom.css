@@ -855,6 +855,10 @@ h3, .h3 {
   margin-bottom: 1.25rem;
 }
 
+.detail-hero {
+  margin-top: -22px;
+}
+
 .homeevents-panel .index-title {
   margin-bottom: 1rem;
 }
